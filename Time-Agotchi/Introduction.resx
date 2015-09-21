@@ -117,16 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>132, 17</value>
-  </metadata>
-  <metadata name="timerAge.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>212, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>35</value>
-  </metadata>
+  <data name="lbResume.Text" xml:space="preserve">
+    <value>Bienvenue dans un monde où le temps a remplacé l'argent. Génétiquement modifiés,
+ les hommes ne vieillissent plus après 25 ans. Mais à partir de cet âge, il faut "gagner"
+ du temps pour rester en vie. Alors que les riches, jeunes et beaux pour l’éternité,
+ accumulent le temps par dizaines d'années, les autres mendient, volent et empruntent 
+les quelques heures qui leur permettront d'échapper à la mort.</value>
+  </data>
 </root>

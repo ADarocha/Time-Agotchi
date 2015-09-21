@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seSuiciderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aProposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbNomPerso = new System.Windows.Forms.Label();
@@ -41,11 +43,19 @@
             this.lbAgePerso = new System.Windows.Forms.Label();
             this.pbSoifPerso = new System.Windows.Forms.ProgressBar();
             this.pbFaimPerso = new System.Windows.Forms.ProgressBar();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbActions = new System.Windows.Forms.GroupBox();
+            this.btJouerBrasFer = new System.Windows.Forms.Button();
+            this.btJouerPoker = new System.Windows.Forms.Button();
+            this.btVolerTemps = new System.Windows.Forms.Button();
+            this.btBoire = new System.Windows.Forms.Button();
+            this.btManger = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.lbTempsRestant = new System.Windows.Forms.Label();
+            this.timerAge = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbStatus.SuspendLayout();
+            this.gbActions.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -61,9 +71,18 @@
             // 
             // optionsToolStripMenuItem
             // 
+            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.seSuiciderToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.optionsToolStripMenuItem.Text = "Options";
+            // 
+            // seSuiciderToolStripMenuItem
+            // 
+            this.seSuiciderToolStripMenuItem.Name = "seSuiciderToolStripMenuItem";
+            this.seSuiciderToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.seSuiciderToolStripMenuItem.Text = "Se suicider";
+            this.seSuiciderToolStripMenuItem.Click += new System.EventHandler(this.seSuiciderToolStripMenuItem_Click);
             // 
             // aProposToolStripMenuItem
             // 
@@ -73,7 +92,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(247, 199);
+            this.pictureBox1.Location = new System.Drawing.Point(248, 169);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(166, 160);
             this.pictureBox1.TabIndex = 1;
@@ -83,7 +102,7 @@
             // 
             this.lbNomPerso.AutoSize = true;
             this.lbNomPerso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNomPerso.Location = new System.Drawing.Point(103, 16);
+            this.lbNomPerso.Location = new System.Drawing.Point(91, 16);
             this.lbNomPerso.Name = "lbNomPerso";
             this.lbNomPerso.Size = new System.Drawing.Size(91, 13);
             this.lbNomPerso.TabIndex = 2;
@@ -140,7 +159,7 @@
             // 
             this.lbNom.AutoSize = true;
             this.lbNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNom.Location = new System.Drawing.Point(6, 16);
+            this.lbNom.Location = new System.Drawing.Point(6, 17);
             this.lbNom.Name = "lbNom";
             this.lbNom.Size = new System.Drawing.Size(38, 13);
             this.lbNom.TabIndex = 6;
@@ -150,7 +169,7 @@
             // 
             this.lbAgePerso.AutoSize = true;
             this.lbAgePerso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAgePerso.Location = new System.Drawing.Point(103, 40);
+            this.lbAgePerso.Location = new System.Drawing.Point(94, 40);
             this.lbAgePerso.Name = "lbAgePerso";
             this.lbAgePerso.Size = new System.Drawing.Size(88, 13);
             this.lbAgePerso.TabIndex = 5;
@@ -170,42 +189,110 @@
             this.pbFaimPerso.Size = new System.Drawing.Size(100, 13);
             this.pbFaimPerso.TabIndex = 3;
             // 
-            // groupBox2
+            // gbActions
             // 
-            this.groupBox2.Location = new System.Drawing.Point(472, 161);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 288);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.gbActions.Controls.Add(this.btJouerBrasFer);
+            this.gbActions.Controls.Add(this.btJouerPoker);
+            this.gbActions.Controls.Add(this.btVolerTemps);
+            this.gbActions.Controls.Add(this.btBoire);
+            this.gbActions.Controls.Add(this.btManger);
+            this.gbActions.Location = new System.Drawing.Point(12, 38);
+            this.gbActions.Name = "gbActions";
+            this.gbActions.Size = new System.Drawing.Size(200, 288);
+            this.gbActions.TabIndex = 4;
+            this.gbActions.TabStop = false;
+            this.gbActions.Text = "Actions";
             // 
-            // groupBox3
+            // btJouerBrasFer
             // 
-            this.groupBox3.Location = new System.Drawing.Point(12, 38);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 411);
-            this.groupBox3.TabIndex = 5;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.btJouerBrasFer.Location = new System.Drawing.Point(9, 145);
+            this.btJouerBrasFer.Name = "btJouerBrasFer";
+            this.btJouerBrasFer.Size = new System.Drawing.Size(182, 23);
+            this.btJouerBrasFer.TabIndex = 10;
+            this.btJouerBrasFer.Text = "Jouer au bras de fer - Prix : 10min";
+            this.btJouerBrasFer.UseVisualStyleBackColor = true;
+            this.btJouerBrasFer.Click += new System.EventHandler(this.btJouerBrasFer_Click);
+            // 
+            // btJouerPoker
+            // 
+            this.btJouerPoker.Location = new System.Drawing.Point(9, 116);
+            this.btJouerPoker.Name = "btJouerPoker";
+            this.btJouerPoker.Size = new System.Drawing.Size(182, 23);
+            this.btJouerPoker.TabIndex = 9;
+            this.btJouerPoker.Text = "Jouer au poker - Mise : 10min";
+            this.btJouerPoker.UseVisualStyleBackColor = true;
+            this.btJouerPoker.Click += new System.EventHandler(this.btJouerPoker_Click);
+            // 
+            // btVolerTemps
+            // 
+            this.btVolerTemps.Location = new System.Drawing.Point(9, 87);
+            this.btVolerTemps.Name = "btVolerTemps";
+            this.btVolerTemps.Size = new System.Drawing.Size(182, 23);
+            this.btVolerTemps.TabIndex = 8;
+            this.btVolerTemps.Text = "Tenter de voler du temps";
+            this.btVolerTemps.UseVisualStyleBackColor = true;
+            this.btVolerTemps.Click += new System.EventHandler(this.btVolerTemps_Click);
+            // 
+            // btBoire
+            // 
+            this.btBoire.Location = new System.Drawing.Point(9, 58);
+            this.btBoire.Name = "btBoire";
+            this.btBoire.Size = new System.Drawing.Size(182, 23);
+            this.btBoire.TabIndex = 7;
+            this.btBoire.Text = "Acheter à boire - Prix : 1min";
+            this.btBoire.UseVisualStyleBackColor = true;
+            this.btBoire.Click += new System.EventHandler(this.btBoire_Click);
+            // 
+            // btManger
+            // 
+            this.btManger.Location = new System.Drawing.Point(9, 29);
+            this.btManger.Name = "btManger";
+            this.btManger.Size = new System.Drawing.Size(182, 23);
+            this.btManger.TabIndex = 6;
+            this.btManger.Text = "Acheter à manger - Prix : 2min";
+            this.btManger.UseVisualStyleBackColor = true;
+            this.btManger.Click += new System.EventHandler(this.btManger_Click);
+            // 
+            // timer
+            // 
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // lbTempsRestant
+            // 
+            this.lbTempsRestant.AutoSize = true;
+            this.lbTempsRestant.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTempsRestant.Location = new System.Drawing.Point(218, 60);
+            this.lbTempsRestant.Name = "lbTempsRestant";
+            this.lbTempsRestant.Size = new System.Drawing.Size(235, 37);
+            this.lbTempsRestant.TabIndex = 6;
+            this.lbTempsRestant.Text = "Temps restant";
+            // 
+            // timerAge
+            // 
+            this.timerAge.Interval = 60000;
+            this.timerAge.Tick += new System.EventHandler(this.timerAge_Tick);
             // 
             // Timeagotchi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 461);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(684, 361);
+            this.Controls.Add(this.lbTempsRestant);
+            this.Controls.Add(this.gbActions);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gbStatus);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Timeagotchi";
             this.Text = "Time-Agotchi";
+            this.Load += new System.EventHandler(this.Timeagotchi_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbStatus.ResumeLayout(false);
             this.gbStatus.PerformLayout();
+            this.gbActions.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,8 +313,16 @@
         private System.Windows.Forms.Label lbAgePerso;
         private System.Windows.Forms.ProgressBar pbSoifPerso;
         private System.Windows.Forms.ProgressBar pbFaimPerso;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbActions;
+        private System.Windows.Forms.ToolStripMenuItem seSuiciderToolStripMenuItem;
+        private System.Windows.Forms.Button btJouerBrasFer;
+        private System.Windows.Forms.Button btJouerPoker;
+        private System.Windows.Forms.Button btVolerTemps;
+        private System.Windows.Forms.Button btBoire;
+        private System.Windows.Forms.Button btManger;
+        private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Label lbTempsRestant;
+        private System.Windows.Forms.Timer timerAge;
     }
 }
 

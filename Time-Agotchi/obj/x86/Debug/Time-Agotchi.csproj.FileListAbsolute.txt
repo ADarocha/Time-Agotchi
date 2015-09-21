@@ -1,0 +1,9 @@
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\bin\Debug\Time-Agotchi.exe
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\bin\Debug\Time-Agotchi.pdb
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.csprojResolveAssemblyReference.cache
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Timeagotchi.resources
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Properties.Resources.resources
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.csproj.GenerateResource.Cache
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.exe
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.pdb
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Introduction.resources
