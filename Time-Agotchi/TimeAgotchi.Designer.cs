@@ -92,7 +92,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(248, 169);
+            this.pictureBox1.Location = new System.Drawing.Point(248, 154);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(166, 160);
             this.pictureBox1.TabIndex = 1;
@@ -262,11 +262,11 @@
             // 
             this.lbTempsRestant.AutoSize = true;
             this.lbTempsRestant.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTempsRestant.Location = new System.Drawing.Point(218, 60);
+            this.lbTempsRestant.Location = new System.Drawing.Point(265, 60);
             this.lbTempsRestant.Name = "lbTempsRestant";
-            this.lbTempsRestant.Size = new System.Drawing.Size(235, 37);
+            this.lbTempsRestant.Size = new System.Drawing.Size(149, 37);
             this.lbTempsRestant.TabIndex = 6;
-            this.lbTempsRestant.Text = "Temps restant";
+            this.lbTempsRestant.Text = "00:10:00";
             // 
             // timerAge
             // 

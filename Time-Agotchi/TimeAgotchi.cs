@@ -23,6 +23,9 @@ namespace Time_Agotchi
         int minute;
         int seconde;
         int age;
+        string txtHeure;
+        string txtMinute;
+        string txtSeconde;
 
 
         // LOAD
@@ -129,7 +132,24 @@ namespace Time_Agotchi
 
             //Timer qui check à chaque seconde
 
-            lbTempsRestant.Text = heure.ToString() + ":" + minute.ToString() + ":" + seconde.ToString(); //affiche le temps restant 
+            if (heure < 10)
+                txtHeure = "0" + heure.ToString();
+            else
+                txtHeure = heure.ToString();
+
+            if (minute < 10)
+                txtMinute = "0" + minute.ToString();
+            else
+                txtMinute = minute.ToString();
+
+            if (seconde < 10)
+                txtSeconde = "0" + seconde.ToString();
+            else
+                txtSeconde = seconde.ToString();
+
+
+
+            lbTempsRestant.Text = txtHeure + ":" + txtMinute + ":" + txtSeconde; //affiche le temps restant 
 
             //la suite permet le décompte du temps
             if (seconde == 0)
@@ -164,7 +184,7 @@ namespace Time_Agotchi
         {
 
             //timer qui check toutes les 1 minute
-
+            
 
             age++; //ajoute 1 minute à l'age du personnage
             lbAgePerso.Text = age.ToString() + " minutes"; //rafraichît l'affichage de l'age
