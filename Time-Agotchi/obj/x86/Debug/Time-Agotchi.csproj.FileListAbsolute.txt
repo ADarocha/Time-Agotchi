@@ -7,3 +7,4 @@ C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Ago
 C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.exe
 C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.pdb
 C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Introduction.resources
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.APropos.resources

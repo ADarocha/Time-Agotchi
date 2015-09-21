@@ -63,6 +63,16 @@ namespace Time_Agotchi.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ezgif_3077835043 {
+            get {
+                object obj = ResourceManager.GetObject("ezgif-3077835043", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Time_Out {
             get {
                 object obj = ResourceManager.GetObject("Time_Out", resourceCulture);

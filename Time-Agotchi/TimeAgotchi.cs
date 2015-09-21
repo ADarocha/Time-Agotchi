@@ -201,5 +201,11 @@ namespace Time_Agotchi
             }
         }
 
+        private void aProposToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            APropos apropos = new APropos();
+            apropos.ShowDialog();
+        }
+
     }
 }

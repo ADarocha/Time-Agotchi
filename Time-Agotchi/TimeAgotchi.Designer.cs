@@ -33,7 +33,6 @@
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seSuiciderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aProposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbNomPerso = new System.Windows.Forms.Label();
             this.gbStatus = new System.Windows.Forms.GroupBox();
             this.lbSoif = new System.Windows.Forms.Label();
@@ -52,10 +51,11 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.lbTempsRestant = new System.Windows.Forms.Label();
             this.timerAge = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbStatus.SuspendLayout();
             this.gbActions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -89,14 +89,7 @@
             this.aProposToolStripMenuItem.Name = "aProposToolStripMenuItem";
             this.aProposToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.aProposToolStripMenuItem.Text = "A propos";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(248, 154);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 160);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.aProposToolStripMenuItem.Click += new System.EventHandler(this.aProposToolStripMenuItem_Click);
             // 
             // lbNomPerso
             // 
@@ -273,6 +266,14 @@
             this.timerAge.Interval = 60000;
             this.timerAge.Tick += new System.EventHandler(this.timerAge_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(248, 154);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(166, 160);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Timeagotchi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -289,10 +290,10 @@
             this.Load += new System.EventHandler(this.Timeagotchi_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbStatus.ResumeLayout(false);
             this.gbStatus.PerformLayout();
             this.gbActions.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

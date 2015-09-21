@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="APropos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APropos.Designer.cs">
+      <DependentUpon>APropos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Introduction.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Personnage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="APropos.resx">
+      <DependentUpon>APropos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Introduction.resx">
       <DependentUpon>Introduction.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +98,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Time_Out.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif-3077835043.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
