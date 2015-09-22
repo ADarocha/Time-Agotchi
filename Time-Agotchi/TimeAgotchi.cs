@@ -18,10 +18,6 @@ namespace Time_Agotchi
 
         // VARIABLES
 
-
-        int heure;
-        int minute;
-        int seconde;
         int age;
         string txtHeure;
         string txtMinute;
@@ -50,9 +46,9 @@ namespace Time_Agotchi
 
             age = 0; //age du personnage en minute
             lbNomPerso.Text = Personnage.GetNom(); //affichage du nom du personnage
-            heure = 0; //nombre d'heure au départ
-            minute = 10; //nombre dem inutes au départ
-            seconde = 0; //nombre de secondes au départ
+            Temps.SetHeure(0); //nombre d'heure au départ
+            Temps.SetMinute(10); //nombre dem inutes au départ
+            Temps.SetSeconde(0); //nombre de secondes au départ
             lbAgePerso.Text = age.ToString() + " minutes"; //affichage de l'âge du personnage au départ
 
 
@@ -64,17 +60,17 @@ namespace Time_Agotchi
 
         private void seSuiciderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            heure = 0; minute = 0; seconde = 3; //en cas de suicide, le temps restant passe à 3 secondes.
+            Temps.SetHeure(0); Temps.SetMinute(0); Temps.SetSeconde(3); //en cas de suicide, le temps restant passe à 3 secondes.
         }
 
         private void btManger_Click(object sender, EventArgs e)
         {
-            if (minute <= 1)
+            if (Temps.GetMinute() <= 1)
                 mort();
             else
             {
-                minute--;
-                minute--;
+                Temps.retirerMinute();
+                Temps.retirerMinute();
                 Personnage.AjouterRetirerFaim(true);
             }
 
@@ -82,11 +78,11 @@ namespace Time_Agotchi
 
         private void btBoire_Click(object sender, EventArgs e)
         {
-            if (minute == 0)
+            if (Temps.GetMinute() == 0)
                 mort();
             else
             {
-                minute--;
+                Temps.retirerMinute();
                 Personnage.AjouterRetirerFaim(true);
             }
         }
@@ -106,8 +102,21 @@ namespace Time_Agotchi
             //Ouvre un nouveau Form avec un mini jeu où il faut spammer un bouton pour gagner
         }
 
+        private void btMachineASous_Click(object sender, EventArgs e)
+        {
+            //jeu de machine à sous
+        }
 
+        private void btPlacerTemps_Click(object sender, EventArgs e)
+        {
+            //placer du temps
+        }
 
+        private void aProposToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            APropos apropos = new APropos();
+            apropos.ShowDialog();
+        }
 
 
         // METHODES
@@ -132,49 +141,49 @@ namespace Time_Agotchi
 
             //Timer qui check à chaque seconde
 
-            if (heure < 10)
-                txtHeure = "0" + heure.ToString();
+            if (Temps.GetHeure() < 10)
+                txtHeure = "0" + Temps.GetHeure().ToString();
             else
-                txtHeure = heure.ToString();
+                txtHeure = Temps.GetHeure().ToString();
 
-            if (minute < 10)
-                txtMinute = "0" + minute.ToString();
+            if (Temps.GetMinute() < 10)
+                txtMinute = "0" + Temps.GetMinute().ToString();
             else
-                txtMinute = minute.ToString();
+                txtMinute = Temps.GetMinute().ToString();
 
-            if (seconde < 10)
-                txtSeconde = "0" + seconde.ToString();
+            if (Temps.GetSeconde() < 10)
+                txtSeconde = "0" + Temps.GetSeconde().ToString();
             else
-                txtSeconde = seconde.ToString();
+                txtSeconde = Temps.GetSeconde().ToString();
 
 
 
             lbTempsRestant.Text = txtHeure + ":" + txtMinute + ":" + txtSeconde; //affiche le temps restant 
 
             //la suite permet le décompte du temps
-            if (seconde == 0)
+            if (Temps.GetSeconde() == 0)
             {
-                seconde = 59;
-                if (minute == 0)
+                Temps.SetSeconde(59);
+                if (Temps.GetMinute() == 0)
                 {
-                    if (heure == 0)
+                    if (Temps.GetSeconde() == 0)
                     {
                         mort();
                     }
                     else
                     {
-                        heure--;
-                        minute = 59;
+                        Temps.retirerHeure();
+                        Temps.SetMinute(59);
                     }
                 }
                 else
                 {
-                    minute--;
+                    Temps.retirerMinute();
                 }
             }
             else
             {
-                seconde--;
+                Temps.retirerSeconde();
             }
         }
 
@@ -203,21 +212,10 @@ namespace Time_Agotchi
             }
         }
 
-        private void aProposToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            APropos apropos = new APropos();
-            apropos.ShowDialog();
-        }
 
-        private void btMachineASous_Click(object sender, EventArgs e)
-        {
-            timer.Enabled = false;
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            timer.Enabled = true;
-        }
+
+
 
     }
 }

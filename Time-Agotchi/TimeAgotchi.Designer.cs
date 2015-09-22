@@ -43,6 +43,7 @@
             this.pbSoifPerso = new System.Windows.Forms.ProgressBar();
             this.pbFaimPerso = new System.Windows.Forms.ProgressBar();
             this.gbActions = new System.Windows.Forms.GroupBox();
+            this.btPlacerTemps = new System.Windows.Forms.Button();
             this.btMachineASous = new System.Windows.Forms.Button();
             this.btJouerBrasFer = new System.Windows.Forms.Button();
             this.btJouerPoker = new System.Windows.Forms.Button();
@@ -53,7 +54,6 @@
             this.lbTempsRestant = new System.Windows.Forms.Label();
             this.timerAge = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.gbStatus.SuspendLayout();
             this.gbActions.SuspendLayout();
@@ -186,7 +186,7 @@
             // 
             // gbActions
             // 
-            this.gbActions.Controls.Add(this.button1);
+            this.gbActions.Controls.Add(this.btPlacerTemps);
             this.gbActions.Controls.Add(this.btMachineASous);
             this.gbActions.Controls.Add(this.btJouerBrasFer);
             this.gbActions.Controls.Add(this.btJouerPoker);
@@ -199,6 +199,16 @@
             this.gbActions.TabIndex = 4;
             this.gbActions.TabStop = false;
             this.gbActions.Text = "Actions";
+            // 
+            // btPlacerTemps
+            // 
+            this.btPlacerTemps.Location = new System.Drawing.Point(9, 203);
+            this.btPlacerTemps.Name = "btPlacerTemps";
+            this.btPlacerTemps.Size = new System.Drawing.Size(182, 23);
+            this.btPlacerTemps.TabIndex = 12;
+            this.btPlacerTemps.Text = "Placer du temps";
+            this.btPlacerTemps.UseVisualStyleBackColor = true;
+            this.btPlacerTemps.Click += new System.EventHandler(this.btPlacerTemps_Click);
             // 
             // btMachineASous
             // 
@@ -288,16 +298,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(9, 203);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Placer du temps";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Timeagotchi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,7 +349,7 @@
         private System.Windows.Forms.Label lbTempsRestant;
         private System.Windows.Forms.Timer timerAge;
         private System.Windows.Forms.Button btMachineASous;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btPlacerTemps;
     }
 }
 

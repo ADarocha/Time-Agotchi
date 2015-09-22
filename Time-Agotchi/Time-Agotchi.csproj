@@ -58,6 +58,7 @@
     <Compile Include="Introduction.Designer.cs">
       <DependentUpon>Introduction.cs</DependentUpon>
     </Compile>
+    <Compile Include="Temps.cs" />
     <Compile Include="TimeAgotchi.cs">
       <SubType>Form</SubType>
     </Compile>
