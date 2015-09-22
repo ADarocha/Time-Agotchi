@@ -8,3 +8,13 @@ C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Ago
 C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.pdb
 C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Introduction.resources
 C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.APropos.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.exe
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.pdb
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\bin\Debug\Time-Agotchi.exe
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\bin\Debug\Time-Agotchi.pdb
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.APropos.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Introduction.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Timeagotchi.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Properties.Resources.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.csproj.GenerateResource.Cache

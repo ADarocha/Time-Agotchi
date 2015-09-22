@@ -43,6 +43,7 @@
             this.pbSoifPerso = new System.Windows.Forms.ProgressBar();
             this.pbFaimPerso = new System.Windows.Forms.ProgressBar();
             this.gbActions = new System.Windows.Forms.GroupBox();
+            this.btMachineASous = new System.Windows.Forms.Button();
             this.btJouerBrasFer = new System.Windows.Forms.Button();
             this.btJouerPoker = new System.Windows.Forms.Button();
             this.btVolerTemps = new System.Windows.Forms.Button();
@@ -52,6 +53,7 @@
             this.lbTempsRestant = new System.Windows.Forms.Label();
             this.timerAge = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.gbStatus.SuspendLayout();
             this.gbActions.SuspendLayout();
@@ -184,6 +186,8 @@
             // 
             // gbActions
             // 
+            this.gbActions.Controls.Add(this.button1);
+            this.gbActions.Controls.Add(this.btMachineASous);
             this.gbActions.Controls.Add(this.btJouerBrasFer);
             this.gbActions.Controls.Add(this.btJouerPoker);
             this.gbActions.Controls.Add(this.btVolerTemps);
@@ -195,6 +199,16 @@
             this.gbActions.TabIndex = 4;
             this.gbActions.TabStop = false;
             this.gbActions.Text = "Actions";
+            // 
+            // btMachineASous
+            // 
+            this.btMachineASous.Location = new System.Drawing.Point(9, 174);
+            this.btMachineASous.Name = "btMachineASous";
+            this.btMachineASous.Size = new System.Drawing.Size(182, 23);
+            this.btMachineASous.TabIndex = 11;
+            this.btMachineASous.Text = "Machine à sous - Prix :  1min";
+            this.btMachineASous.UseVisualStyleBackColor = true;
+            this.btMachineASous.Click += new System.EventHandler(this.btMachineASous_Click);
             // 
             // btJouerBrasFer
             // 
@@ -268,11 +282,21 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(248, 154);
+            this.pictureBox1.Location = new System.Drawing.Point(234, 125);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 160);
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(9, 203);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(182, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Placer du temps";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Timeagotchi
             // 
@@ -324,6 +348,8 @@
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label lbTempsRestant;
         private System.Windows.Forms.Timer timerAge;
+        private System.Windows.Forms.Button btMachineASous;
+        private System.Windows.Forms.Button button1;
     }
 }
 

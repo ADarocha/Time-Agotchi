@@ -192,6 +192,8 @@ namespace Time_Agotchi
 
             Personnage.AjouterRetirerFaim(false);//retire 1 de faim
             Personnage.AjouterRetirerSoif(false);//retire 1 de soif
+            pbFaimPerso.Step = Personnage.GetFaim();
+            pbSoifPerso.Step = Personnage.GetSoif();
             pbFaimPerso.PerformStep(); //rafraichit
             pbSoifPerso.PerformStep(); //rafrachit
 
@@ -205,6 +207,16 @@ namespace Time_Agotchi
         {
             APropos apropos = new APropos();
             apropos.ShowDialog();
+        }
+
+        private void btMachineASous_Click(object sender, EventArgs e)
+        {
+            timer.Enabled = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timer.Enabled = true;
         }
 
     }
