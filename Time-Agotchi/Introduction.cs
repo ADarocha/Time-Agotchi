@@ -18,9 +18,7 @@ namespace Time_Agotchi
 
         private void btValider_Click(object sender, EventArgs e)
         {
-            Personnage.SetNom(tbNom.Text); //enregistre le nom
-            Personnage.SetFaim(10); //initialise la barre de faim à 10 (le max)
-            Personnage.SetSoif(10); //initialise la barre de soif à 10 (le max)
+            Donnees.SetNom(tbNom.Text); //enregistre le nom
             this.Close(); //ferme le form
         }
     }

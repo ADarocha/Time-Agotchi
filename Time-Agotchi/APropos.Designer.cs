@@ -38,10 +38,10 @@
             this.lbApropos.AutoSize = true;
             this.lbApropos.Location = new System.Drawing.Point(12, 211);
             this.lbApropos.Name = "lbApropos";
-            this.lbApropos.Size = new System.Drawing.Size(160, 104);
+            this.lbApropos.Size = new System.Drawing.Size(164, 130);
             this.lbApropos.TabIndex = 0;
-            this.lbApropos.Text = "Projet inspiré par le film Time Out\r\n\r\nRéalisé par : \r\n\r\nAnthony Da Rocha\r\nJuan C" +
-                "arlos Coyla\r\nAxel Evrard\r\nMeriem Djouama\r\n";
+            this.lbApropos.Text = "Time-Agotchi V.Pré-pré-pré-Alpha\r\n\r\nProjet inspiré par le film Time Out\r\n\r\nRéalis" +
+    "é par : \r\n\r\nAnthony Da Rocha\r\nJuan Carlos Coyla\r\nAxel Evrard\r\nMeriem Djouama\r\n";
             // 
             // pbImgAPropos
             // 

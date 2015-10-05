@@ -8,37 +8,47 @@ namespace Time_Agotchi
     class Temps
     {
 
-        private static int heure;
-        private static int minute;
-        private static int seconde;
+        private int heure;
+        private int minute;
+        private int seconde;
 
+
+
+
+        public Temps(int uneHeure, int uneMinute, int uneSeconde)
+        {
+            heure = uneHeure;
+            minute = uneMinute;
+            seconde = uneSeconde;
+        }
 
         //accesseurs 
 
-        public static int GetHeure()
+        public int GetHeure()
         {
             return heure;
         }
-        public static int GetMinute()
+        public int GetMinute()
         {
             return minute;
         }
-        public static int GetSeconde()
+        public int GetSeconde()
         {
             return seconde;
         }
 
+
         //mutateurs
 
-        public static void SetHeure(int h)
+        public void SetHeure(int h)
         {
             heure = h;
         }
-        public static void SetMinute(int m)
+        public void SetMinute(int m)
         {
             minute = m;
         }
-        public static void SetSeconde(int s)
+        public void SetSeconde(int s)
         {
             seconde = s;
         }
@@ -46,71 +56,82 @@ namespace Time_Agotchi
 
         // ces méthodes permettent d'ajouter 1 unité 
 
-        public static void ajouterHeure()
+        public void ajouterHeure()
         {
             heure++;
         }
-        public static void ajouterMinute()
+        public void ajouterMinute()
         {
             minute++;
         }
 
-        public static void ajouterSeconde()
+        public void ajouterSeconde()
         {
             seconde++;
         }
 
         //surchargent qui permettent de rajouter un nombre défini
-
-        public static void ajouterHeure(int h)
+        public void ajouterHeure(int h)
         {
             heure = heure + h;
         }
-        public static void ajouterMinute(int m)
+        public void ajouterMinute(int m)
         {
             minute = minute + m;
+            int ajoutheure = minute / 60;
+            minute = minute % 60;
+            heure = heure + ajoutheure;
         }
 
-        public static void ajouterSeconde(int s)
+
+        public void ajouterSeconde(int s)
         {
             seconde = seconde + s;
+            int ajoutminute = seconde / 60;
+            seconde = seconde % 60;
+            minute = minute + ajoutminute;
         }
 
 
 
         // ces trois méthodes retirent 1 unité 
-
-        public static void retirerHeure()
+        public void retirerHeure()
         {
             heure--;
         }
 
-        public static void retirerMinute()
+        public void retirerMinute()
         {
             minute--;
         }
 
-        public static void retirerSeconde()
+        public void retirerSeconde()
         {
             seconde--;
         }
 
 
         //surcharges qui permettent de retirer un nombre défini
-
-        public static void retirerHeure(int h)
+        public void retirerHeure(int h)
         {
             heure = heure - h;
         }
 
-        public static void retirerMinute(int m)
+        public void retirerMinute(int m)
         {
-            minute = minute - m;
+            int heure = m / 60;
+            if (heure > 0)
+                retirerHeure(heure);
+            minute = minute - (m%60);
+            
         }
 
-        public static void retirerSeconde(int s)
+        public void retirerSeconde(int s)
         {
-            seconde = seconde - s;
+            int min = s / 60;
+            if(min > 0)
+                retirerMinute(min);
+            seconde = seconde - (s % 60);
         }
 
 

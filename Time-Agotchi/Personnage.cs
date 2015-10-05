@@ -5,38 +5,60 @@ using System.Text;
 
 namespace Time_Agotchi
 {
-    static class Personnage
+    class Personnage
     {
-        private static string nom;
-        private static int faim;
-        private static int soif;
+
+
+        private string nom;
+        private int faim;
+        private int soif;
+        private int minutesPlacees;
+        private int secondesPlacees;
+        private Temps temps;
+
+
+        public Personnage(string leNom, Temps letemps)
+        {
+            nom = leNom;
+            faim = 10;
+            soif = 10;
+            minutesPlacees = 0;
+            secondesPlacees = 0;
+            temps = letemps;
+        }
+
+
+        public Temps GetTemps()
+        {
+            return temps;
+        }
 
         //retourne le nom du perso
-        public static string GetNom()
+        public string GetNom()
         {
             return nom;
         }
 
         //modifie le nom du perso
-        public static void SetNom(string leNom)
+        public void SetNom(string leNom)
         {
             nom = leNom;
         }
 
         //retourne le niveau de faim sur 10 du perso (0 = mort)
-        public static int GetFaim()
+        public int GetFaim()
         {
             return faim;
         }
 
         //Modifie la faim du perso
-        public static void SetFaim(int laFaim)
+        public void SetFaim(int laFaim)
         {
             faim = laFaim;
         }
 
         //retire ou ajoute 1 point de faim
-        public static void AjouterRetirerFaim(bool ajouter)
+        public void AjouterRetirerFaim(bool ajouter)
         {
             if (ajouter && faim < 10)
                 faim++;
@@ -45,25 +67,50 @@ namespace Time_Agotchi
         }
 
         //retourne le niveau de soif sur 10 du perso (0=mort)
-        public static int GetSoif()
+        public int GetSoif()
         {
             return soif;
         }
 
         //modifie le niveau de soif
-        public static void SetSoif(int laSoif)
+        public void SetSoif(int laSoif)
         {
             soif = laSoif;
         }
 
 
         //ajoute ou retire un point de soif
-        public static void AjouterRetirerSoif(bool ajouter)
+        public void AjouterRetirerSoif(bool ajouter)
         {
             if (ajouter && soif < 10)
                 soif++;
             else if (ajouter == false && soif > 0)
                 soif--;
         }
+
+        //retourne le nombre de minutes placées
+        public int GetMinutesPlacees()
+        {
+            return minutesPlacees;
+        }
+
+        //permet de modifier le nombre de minutes placées
+        public void SetMinutesPlacees(int minutes)
+        {
+            minutesPlacees = minutes;
+        }
+
+        //retourne le nombre de secondes placées
+        public int GetSecondesPlacees()
+        {
+            return secondesPlacees;
+        }
+
+        //permet de modifier le nombre de secondes placées
+        public void SetSecondesPlacees(int secondes)
+        {
+            secondesPlacees = secondes;
+        }
+        
     }
 }

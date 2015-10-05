@@ -23,6 +23,17 @@ namespace Time_Agotchi
         string txtMinute;
         string txtSeconde;
 
+        bool instancie;
+
+        Banque banque;
+
+        Personnage joueur;
+        Personnage tama;
+        Personnage got;
+        Personnage chi;
+        Personnage axel;
+
+        
 
         // LOAD
 
@@ -31,8 +42,35 @@ namespace Time_Agotchi
         {
 
             Introduction intro = new Introduction();
+            
             intro.ShowDialog();
 
+
+            //Création des personnages
+            Temps tempsJoueur = new Temps(0,10,0);
+            joueur = new Personnage(Donnees.GetNom(), tempsJoueur);
+            Donnees.AjouterPerso(joueur);
+
+            Temps tempsTama = new Temps(0,10,0);
+            tama = new Personnage("tama", tempsTama);
+            Donnees.AjouterPerso(tama);
+
+            Temps tempsGot = new Temps(0, 10, 0);
+            got = new Personnage("got", tempsGot);
+            Donnees.AjouterPerso(got);
+
+            Temps tempsChi = new Temps(0, 10, 0);
+            chi = new Personnage("chi", tempsChi);
+            Donnees.AjouterPerso(tama);
+
+            Temps tempsAxel = new Temps(0, 10, 0);
+            axel = new Personnage("axel", tempsAxel);
+            Donnees.AjouterPerso(axel);
+
+
+
+            Donnees.GetPersos()[0].SetFaim(10);
+            Donnees.GetPersos()[0].SetSoif(10);
             timer.Enabled = true;
             timerAge.Enabled = true;
             pbFaimPerso.Maximum = 10; //maximum de la barre
@@ -45,10 +83,10 @@ namespace Time_Agotchi
             pbSoifPerso.PerformStep();
 
             age = 0; //age du personnage en minute
-            lbNomPerso.Text = Personnage.GetNom(); //affichage du nom du personnage
-            Temps.SetHeure(0); //nombre d'heure au départ
-            Temps.SetMinute(10); //nombre dem inutes au départ
-            Temps.SetSeconde(0); //nombre de secondes au départ
+            lbNomPerso.Text =  Donnees.GetPersos()[0].GetNom(); //affichage du nom du personnage
+            Donnees.GetPersos()[0].GetTemps().SetHeure(0); //nombre d'heure au départ
+            Donnees.GetPersos()[0].GetTemps().SetMinute(10); //nombre dem inutes au départ
+            Donnees.GetPersos()[0].GetTemps().SetSeconde(0); //nombre de secondes au départ
             lbAgePerso.Text = age.ToString() + " minutes"; //affichage de l'âge du personnage au départ
 
 
@@ -60,30 +98,30 @@ namespace Time_Agotchi
 
         private void seSuiciderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Temps.SetHeure(0); Temps.SetMinute(0); Temps.SetSeconde(3); //en cas de suicide, le temps restant passe à 3 secondes.
+            Donnees.GetPersos()[0].GetTemps().SetHeure(0); Donnees.GetPersos()[0].GetTemps().SetMinute(0); Donnees.GetPersos()[0].GetTemps().SetSeconde(3); //en cas de suicide, le temps restant passe à 3 secondes.
         }
 
         private void btManger_Click(object sender, EventArgs e)
         {
-            if (Temps.GetMinute() <= 1)
+            if (Donnees.GetPersos()[0].GetTemps().GetMinute() <= 1)
                 mort();
             else
             {
-                Temps.retirerMinute();
-                Temps.retirerMinute();
-                Personnage.AjouterRetirerFaim(true);
+                Donnees.GetPersos()[0].GetTemps().retirerMinute();
+                Donnees.GetPersos()[0].GetTemps().retirerMinute();
+                 Donnees.GetPersos()[0].AjouterRetirerFaim(true);
             }
 
         }
 
         private void btBoire_Click(object sender, EventArgs e)
         {
-            if (Temps.GetMinute() == 0)
+            if (Donnees.GetPersos()[0].GetTemps().GetMinute() == 0)
                 mort();
             else
             {
-                Temps.retirerMinute();
-                Personnage.AjouterRetirerFaim(true);
+                Donnees.GetPersos()[0].GetTemps().retirerMinute();
+                Donnees.GetPersos()[0].AjouterRetirerFaim(true);
             }
         }
 
@@ -109,7 +147,18 @@ namespace Time_Agotchi
 
         private void btPlacerTemps_Click(object sender, EventArgs e)
         {
-            //placer du temps
+            
+           //placer du temps
+            if (instancie != true)
+            {
+                banque = new Banque();
+                instancie = true;
+                banque.Show();
+            }
+            else if (instancie == true)
+            {
+                banque.Show();
+            }
         }
 
         private void aProposToolStripMenuItem_Click(object sender, EventArgs e)
@@ -141,49 +190,49 @@ namespace Time_Agotchi
 
             //Timer qui check à chaque seconde
 
-            if (Temps.GetHeure() < 10)
-                txtHeure = "0" + Temps.GetHeure().ToString();
+            if (Donnees.GetPersos()[0].GetTemps().GetHeure() < 10)
+                txtHeure = "0" + Donnees.GetPersos()[0].GetTemps().GetHeure().ToString();
             else
-                txtHeure = Temps.GetHeure().ToString();
+                txtHeure = Donnees.GetPersos()[0].GetTemps().GetHeure().ToString();
 
-            if (Temps.GetMinute() < 10)
-                txtMinute = "0" + Temps.GetMinute().ToString();
+            if (Donnees.GetPersos()[0].GetTemps().GetMinute() < 10)
+                txtMinute = "0" + Donnees.GetPersos()[0].GetTemps().GetMinute().ToString();
             else
-                txtMinute = Temps.GetMinute().ToString();
+                txtMinute = Donnees.GetPersos()[0].GetTemps().GetMinute().ToString();
 
-            if (Temps.GetSeconde() < 10)
-                txtSeconde = "0" + Temps.GetSeconde().ToString();
+            if (Donnees.GetPersos()[0].GetTemps().GetSeconde() < 10)
+                txtSeconde = "0" + Donnees.GetPersos()[0].GetTemps().GetSeconde().ToString();
             else
-                txtSeconde = Temps.GetSeconde().ToString();
+                txtSeconde = Donnees.GetPersos()[0].GetTemps().GetSeconde().ToString();
 
 
 
             lbTempsRestant.Text = txtHeure + ":" + txtMinute + ":" + txtSeconde; //affiche le temps restant 
 
             //la suite permet le décompte du temps
-            if (Temps.GetSeconde() == 0)
+            if (Donnees.GetPersos()[0].GetTemps().GetSeconde() == 0)
             {
-                Temps.SetSeconde(59);
-                if (Temps.GetMinute() == 0)
+                Donnees.GetPersos()[0].GetTemps().SetSeconde(59);
+                if (Donnees.GetPersos()[0].GetTemps().GetMinute() <= 0)
                 {
-                    if (Temps.GetSeconde() == 0)
+                    if (Donnees.GetPersos()[0].GetTemps().GetSeconde() <= 0)
                     {
                         mort();
                     }
                     else
                     {
-                        Temps.retirerHeure();
-                        Temps.SetMinute(59);
+                        Donnees.GetPersos()[0].GetTemps().retirerHeure();
+                        Donnees.GetPersos()[0].GetTemps().SetMinute(59);
                     }
                 }
                 else
                 {
-                    Temps.retirerMinute();
+                    Donnees.GetPersos()[0].GetTemps().retirerMinute();
                 }
             }
             else
             {
-                Temps.retirerSeconde();
+                Donnees.GetPersos()[0].GetTemps().retirerSeconde();
             }
         }
 
@@ -199,23 +248,17 @@ namespace Time_Agotchi
             lbAgePerso.Text = age.ToString() + " minutes"; //rafraichît l'affichage de l'age
 
 
-            Personnage.AjouterRetirerFaim(false);//retire 1 de faim
-            Personnage.AjouterRetirerSoif(false);//retire 1 de soif
-            pbFaimPerso.Step = Personnage.GetFaim();
-            pbSoifPerso.Step = Personnage.GetSoif();
+             Donnees.GetPersos()[0].AjouterRetirerFaim(false);//retire 1 de faim
+             Donnees.GetPersos()[0].AjouterRetirerSoif(false);//retire 1 de soif
+             pbFaimPerso.Step = Donnees.GetPersos()[0].GetFaim();
+             pbSoifPerso.Step = Donnees.GetPersos()[0].GetSoif();
             pbFaimPerso.PerformStep(); //rafraichit
             pbSoifPerso.PerformStep(); //rafrachit
 
-            if (Personnage.GetFaim() == 0 || Personnage.GetSoif() == 0) //si le personnage a trop faim ou soif, il meurt
+            if (Donnees.GetPersos()[0].GetFaim() == 0 || Donnees.GetPersos()[0].GetSoif() == 0) //si le personnage a trop faim ou soif, il meurt
             {
                 mort();
             }
         }
-
-
-
-
-
-
     }
 }
