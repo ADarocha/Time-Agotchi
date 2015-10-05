@@ -19,3 +19,5 @@ C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_A
 C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Properties.Resources.resources
 C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.csproj.GenerateResource.Cache
 C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Banque.resources
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.exe
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.pdb

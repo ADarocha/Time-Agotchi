@@ -12,7 +12,7 @@ namespace Time_Agotchi
         private int minute;
         private int seconde;
 
-
+        //test
 
 
         public Temps(int uneHeure, int uneMinute, int uneSeconde)
