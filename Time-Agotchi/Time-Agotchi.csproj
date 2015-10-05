@@ -58,6 +58,12 @@
     <Compile Include="Banque.Designer.cs">
       <DependentUpon>Banque.cs</DependentUpon>
     </Compile>
+    <Compile Include="BrasDeFer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrasDeFer.Designer.cs">
+      <DependentUpon>BrasDeFer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Donnees.cs" />
     <Compile Include="Introduction.cs">
       <SubType>Form</SubType>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Banque.resx">
       <DependentUpon>Banque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrasDeFer.resx">
+      <DependentUpon>BrasDeFer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Introduction.resx">
       <DependentUpon>Introduction.cs</DependentUpon>

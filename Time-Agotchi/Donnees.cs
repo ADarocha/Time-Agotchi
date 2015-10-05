@@ -9,6 +9,7 @@ namespace Time_Agotchi
     {
 
         private static List<Personnage> listePersos = new List<Personnage>();
+        private static List<Personnage> listeDePersoMiniJeux = new List<Personnage>(); //liste de personnages qui vont faire le mini jeu
         private static string nomPerso;
 
         public static void SetNom(string leNom)
