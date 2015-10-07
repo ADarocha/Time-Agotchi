@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrasDeFer));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
@@ -40,6 +41,11 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btTest = new System.Windows.Forms.Button();
+            this.Timer_AttenteKeyPress = new System.Windows.Forms.Timer(this.components);
+            this.lbReponse1 = new System.Windows.Forms.Label();
+            this.lbReponse2 = new System.Windows.Forms.Label();
+            this.lbReponse3 = new System.Windows.Forms.Label();
+            this.lbReponse4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -107,11 +113,40 @@
             resources.ApplyResources(this.btTest, "btTest");
             this.btTest.Name = "btTest";
             this.btTest.UseVisualStyleBackColor = true;
+            this.btTest.Click += new System.EventHandler(this.btTest_Click);
+            // 
+            // Timer_AttenteKeyPress
+            // 
+            this.Timer_AttenteKeyPress.Tick += new System.EventHandler(this.Timer_AttenteKeyPress_Tick);
+            // 
+            // lbReponse1
+            // 
+            resources.ApplyResources(this.lbReponse1, "lbReponse1");
+            this.lbReponse1.Name = "lbReponse1";
+            // 
+            // lbReponse2
+            // 
+            resources.ApplyResources(this.lbReponse2, "lbReponse2");
+            this.lbReponse2.Name = "lbReponse2";
+            // 
+            // lbReponse3
+            // 
+            resources.ApplyResources(this.lbReponse3, "lbReponse3");
+            this.lbReponse3.Name = "lbReponse3";
+            // 
+            // lbReponse4
+            // 
+            resources.ApplyResources(this.lbReponse4, "lbReponse4");
+            this.lbReponse4.Name = "lbReponse4";
             // 
             // BrasDeFer
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lbReponse4);
+            this.Controls.Add(this.lbReponse3);
+            this.Controls.Add(this.lbReponse2);
+            this.Controls.Add(this.lbReponse1);
             this.Controls.Add(this.btTest);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -150,5 +185,10 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btTest;
+        private System.Windows.Forms.Timer Timer_AttenteKeyPress;
+        private System.Windows.Forms.Label lbReponse1;
+        private System.Windows.Forms.Label lbReponse2;
+        private System.Windows.Forms.Label lbReponse3;
+        private System.Windows.Forms.Label lbReponse4;
     }
 }

@@ -65,6 +65,7 @@
       <DependentUpon>BrasDeFer.cs</DependentUpon>
     </Compile>
     <Compile Include="Donnees.cs" />
+    <Compile Include="GestionnaireMiniJeuBrasDeFer.cs" />
     <Compile Include="Introduction.cs">
       <SubType>Form</SubType>
     </Compile>
