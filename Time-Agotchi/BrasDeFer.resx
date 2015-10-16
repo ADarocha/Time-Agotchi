@@ -118,48 +118,48 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="progressBarPersoMain.Location" type="System.Drawing.Point, System.Drawing">
     <value>39, 245</value>
   </data>
-  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="progressBarPersoMain.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 23</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
+  <data name="progressBarPersoMain.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
-    <value>progressBar1</value>
+  <data name="&gt;&gt;progressBarPersoMain.Name" xml:space="preserve">
+    <value>progressBarPersoMain</value>
   </data>
-  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
+  <data name="&gt;&gt;progressBarPersoMain.Type" xml:space="preserve">
     <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;progressBarPersoMain.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="&gt;&gt;progressBarPersoMain.ZOrder" xml:space="preserve">
+    <value>17</value>
   </data>
-  <data name="progressBar2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="progressBarAdversaire.Location" type="System.Drawing.Point, System.Drawing">
     <value>323, 245</value>
   </data>
-  <data name="progressBar2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="progressBarAdversaire.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 23</value>
   </data>
-  <data name="progressBar2.TabIndex" type="System.Int32, mscorlib">
+  <data name="progressBarAdversaire.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;progressBar2.Name" xml:space="preserve">
-    <value>progressBar2</value>
+  <data name="&gt;&gt;progressBarAdversaire.Name" xml:space="preserve">
+    <value>progressBarAdversaire</value>
   </data>
-  <data name="&gt;&gt;progressBar2.Type" xml:space="preserve">
+  <data name="&gt;&gt;progressBarAdversaire.Type" xml:space="preserve">
     <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;progressBar2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;progressBarAdversaire.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;progressBar2.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;progressBarAdversaire.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
   <data name="lbTempsJoueur.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -189,7 +189,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbTempsJoueur.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>15</value>
   </data>
   <data name="lbTempsAdversaire.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -219,7 +219,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbTempsAdversaire.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>14</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 121</value>
@@ -240,7 +240,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -270,7 +270,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>128, 30</value>
@@ -291,7 +291,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>212, 30</value>
@@ -312,7 +312,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>297, 30</value>
@@ -333,7 +333,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>380, 30</value>
@@ -354,7 +354,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="btTest.Location" type="System.Drawing.Point, System.Drawing">
     <value>240, 331</value>
@@ -378,7 +378,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btTest.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <metadata name="Timer_AttenteKeyPress.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -408,7 +408,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbReponse1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="lbReponse2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -439,7 +439,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbReponse2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="lbReponse3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -469,7 +469,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbReponse3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="lbReponse4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -499,6 +499,87 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbReponse4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>184, 17</value>
+  </metadata>
+  <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>267, 17</value>
+  </metadata>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 151</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 196</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbAnnonce.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbAnnonce.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 136</value>
+  </data>
+  <data name="lbAnnonce.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="lbAnnonce.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lbAnnonce.Text" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;lbAnnonce.Name" xml:space="preserve">
+    <value>lbAnnonce</value>
+  </data>
+  <data name="&gt;&gt;lbAnnonce.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbAnnonce.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbAnnonce.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -517,6 +598,18 @@
     <value>Timer_AttenteKeyPress</value>
   </data>
   <data name="&gt;&gt;Timer_AttenteKeyPress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer2.Name" xml:space="preserve">
+    <value>timer2</value>
+  </data>
+  <data name="&gt;&gt;timer2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

@@ -76,20 +76,20 @@
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.seSuiciderToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // seSuiciderToolStripMenuItem
             // 
             this.seSuiciderToolStripMenuItem.Name = "seSuiciderToolStripMenuItem";
-            this.seSuiciderToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.seSuiciderToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.seSuiciderToolStripMenuItem.Text = "Se suicider";
             this.seSuiciderToolStripMenuItem.Click += new System.EventHandler(this.seSuiciderToolStripMenuItem_Click);
             // 
             // aProposToolStripMenuItem
             // 
             this.aProposToolStripMenuItem.Name = "aProposToolStripMenuItem";
-            this.aProposToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.aProposToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.aProposToolStripMenuItem.Text = "A propos";
             this.aProposToolStripMenuItem.Click += new System.EventHandler(this.aProposToolStripMenuItem_Click);
             // 
@@ -284,6 +284,7 @@
             this.lbTempsRestant.Size = new System.Drawing.Size(149, 37);
             this.lbTempsRestant.TabIndex = 6;
             this.lbTempsRestant.Text = "00:10:00";
+    
             // 
             // timerAge
             // 

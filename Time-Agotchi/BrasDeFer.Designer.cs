@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrasDeFer));
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.progressBarPersoMain = new System.Windows.Forms.ProgressBar();
+            this.progressBarAdversaire = new System.Windows.Forms.ProgressBar();
             this.lbTempsJoueur = new System.Windows.Forms.Label();
             this.lbTempsAdversaire = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -46,6 +46,11 @@
             this.lbReponse2 = new System.Windows.Forms.Label();
             this.lbReponse3 = new System.Windows.Forms.Label();
             this.lbReponse4 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.lbAnnonce = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -53,15 +58,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
-            // progressBar1
+            // progressBarPersoMain
             // 
-            resources.ApplyResources(this.progressBar1, "progressBar1");
-            this.progressBar1.Name = "progressBar1";
+            resources.ApplyResources(this.progressBarPersoMain, "progressBarPersoMain");
+            this.progressBarPersoMain.Name = "progressBarPersoMain";
             // 
-            // progressBar2
+            // progressBarAdversaire
             // 
-            resources.ApplyResources(this.progressBar2, "progressBar2");
-            this.progressBar2.Name = "progressBar2";
+            resources.ApplyResources(this.progressBarAdversaire, "progressBarAdversaire");
+            this.progressBarAdversaire.Name = "progressBarAdversaire";
             // 
             // lbTempsJoueur
             // 
@@ -139,10 +144,40 @@
             resources.ApplyResources(this.lbReponse4, "lbReponse4");
             this.lbReponse4.Name = "lbReponse4";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // lbAnnonce
+            // 
+            resources.ApplyResources(this.lbAnnonce, "lbAnnonce");
+            this.lbAnnonce.Name = "lbAnnonce";
+            // 
             // BrasDeFer
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lbAnnonce);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lbReponse4);
             this.Controls.Add(this.lbReponse3);
             this.Controls.Add(this.lbReponse2);
@@ -156,12 +191,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbTempsAdversaire);
             this.Controls.Add(this.lbTempsJoueur);
-            this.Controls.Add(this.progressBar2);
-            this.Controls.Add(this.progressBar1);
-            this.KeyPreview = true;
+            this.Controls.Add(this.progressBarAdversaire);
+            this.Controls.Add(this.progressBarPersoMain);
             this.Name = "BrasDeFer";
             this.Load += new System.EventHandler(this.BrasDeFer_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.BrasDeFer_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -174,8 +207,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.ProgressBar progressBarPersoMain;
+        private System.Windows.Forms.ProgressBar progressBarAdversaire;
         private System.Windows.Forms.Label lbTempsJoueur;
         private System.Windows.Forms.Label lbTempsAdversaire;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -190,5 +223,10 @@
         private System.Windows.Forms.Label lbReponse2;
         private System.Windows.Forms.Label lbReponse3;
         private System.Windows.Forms.Label lbReponse4;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbAnnonce;
     }
 }

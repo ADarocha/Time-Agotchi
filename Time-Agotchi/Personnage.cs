@@ -111,6 +111,32 @@ namespace Time_Agotchi
         {
             secondesPlacees = secondes;
         }
-        
+
+        public override string ToString()
+        {
+            string txtHeure;
+            string txtMinute;
+            string txtSeconde;
+            string temps;
+            if (Donnees.GetPersos()[0].GetTemps().GetHeure() < 10)
+                txtHeure = "0" + Donnees.GetPersos()[0].GetTemps().GetHeure().ToString();
+            else
+                txtHeure = Donnees.GetPersos()[0].GetTemps().GetHeure().ToString();
+
+            if (Donnees.GetPersos()[0].GetTemps().GetMinute() < 10)
+                txtMinute = "0" + Donnees.GetPersos()[0].GetTemps().GetMinute().ToString();
+            else
+                txtMinute = Donnees.GetPersos()[0].GetTemps().GetMinute().ToString();
+
+            if (Donnees.GetPersos()[0].GetTemps().GetSeconde() < 10)
+                txtSeconde = "0" + Donnees.GetPersos()[0].GetTemps().GetSeconde().ToString();
+            else
+                txtSeconde = Donnees.GetPersos()[0].GetTemps().GetSeconde().ToString();
+
+
+
+            temps = txtHeure + ":" + txtMinute + ":" + txtSeconde;
+            return temps;
+        }
     }
 }

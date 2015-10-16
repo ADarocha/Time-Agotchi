@@ -6,20 +6,37 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading;
+using System.Timers;
 
 namespace Time_Agotchi
 {
     public partial class BrasDeFer : Form
     {
+        List<string> entrees = new List<string>();
+        List<bool> reponses = new List<bool>();
+        
         public BrasDeFer()
         {
+            
             InitializeComponent();
+
         }
 
         private void BrasDeFer_Load(object sender, EventArgs e)
         {
-            GestionnaireMiniJeuBrasDeFer.GenererListeDeFleches(4);
-            AfficherImagesFleches(GestionnaireMiniJeuBrasDeFer.GetFleches());
+            //Affichage de Données Des personnages + Affichage de ProgressBar 
+            AffichageDonnesPersonnages();
+            progressBarPersoMain.Value = 50;
+            progressBarAdversaire.Value = 50;
+
+            
+
+            //fin
+
+
+
+            
             
         }
 
@@ -37,36 +54,64 @@ namespace Time_Agotchi
             lbReponse3.Text = listeDeFleches[2];
             lbReponse4.Text = listeDeFleches[3];
         }
+        /// <summary>
+        /// Fin Methodes D'affichage images
+        /// </summary>
+        /// <param name="e"></param>
         
 
-        
+       /// <summary>
+       /// Debut Methodes D'afficahges Donnes Personnages
+       /// </summary>
+        private void AffichageDonnesPersonnages()
+        {
+            lbTempsJoueur.Text = Donnees.GetPersos()[0].ToString();
+            lbTempsAdversaire.Text = Donnees.GetPersos()[1].ToString();
+        }
 
+       ///<summary>
+       ///Fin Methodes d'afficahge Donnes Personnages 
+       ///</summary>
+
+       ///<summary> Methode MAIN Jeu///</summary>
+
+        private void Main_Jeu()
+        {
+            
+            GestionnaireMiniJeuBrasDeFer.GenererListeDeFleches(4);
+            AfficherImagesFleches(GestionnaireMiniJeuBrasDeFer.GetFleches());
+            KeyPreview = true;
+            timer2.Interval = 2000;
+            timer2.Start();
+            
+            
+ 
+            
+         /*
+            while (timer2.Enabled == false)
+            {
+                lbAnnonce.Text = "mes";
+                
+            }*/
+            
+            
+            
+        }
+       
+
+       ///<summary> FIN METHODE MAIN JEU</summary>
         protected override void OnKeyPress(KeyPressEventArgs e)
         {
-            MessageBox.Show(e.KeyChar.ToString());
-        }
-
-        private void BrasDeFer_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Up)
-            {
-                MessageBox.Show("lol");
-            }
+            string entreeDuJoueur = e.KeyChar.ToString();
+            GestionnaireMiniJeuBrasDeFer.GetlisteFlechesEntrees().Add(entreeDuJoueur);
         }
 
 
-        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
-        {
-            if (keyData == Keys.Left)
-            {
-                MessageBox.Show("You pressed Left arrow key");
-                return true;
-            }
-            return base.ProcessCmdKey(ref msg, keyData);
-        }
 
         private void btTest_Click(object sender, EventArgs e)
         {
+            Main_Jeu();
+            
             //bool BonneTouche = false;
             //int seconds = 1;
 
@@ -83,6 +128,36 @@ namespace Time_Agotchi
             
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+           
+            progressBarPersoMain.Increment(-5); //On peut faire une valeur négative pour diminuer le progressBar
+            
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            KeyPreview = false;
+            timer2.Stop();
+            this.reponses = GestionnaireMiniJeuBrasDeFer.GetReponses();
+
+            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(GestionnaireMiniJeuBrasDeFer.GetlisteFlechesEntrees()[0]+":"+GestionnaireMiniJeuBrasDeFer.GetlisteFlechesEntrees().Count);
+            
+        }
+
+        
 
 
 
