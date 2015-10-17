@@ -14,7 +14,7 @@ namespace Time_Agotchi
     public partial class BrasDeFer : Form
     {
         List<string> listeEntrees = new List<string>();
-        List<bool> listDereponses = new List<bool>();
+        
         
         public BrasDeFer()
         {
@@ -33,17 +33,44 @@ namespace Time_Agotchi
             
 
             //fin
-
-
-
-            
             
         }
 
         /// <summary>
         /// Methodes D'affichage images
         /// </summary>
+        private void AfficherImageReponse(PictureBox picture, bool reponse)
+        {
+            if (reponse == true)
+            {
+                picture.BackgroundImage = Properties.Resources.Correct;
+            }
+            else
+                picture.BackgroundImage = Properties.Resources.Faux;
+            
+                
+        }
 
+        private void AffichagerAllReponses()
+        {
+            for (int i = 0; i < GestionnaireMiniJeuBrasDeFer.GetlisteReponses().Count; i++)
+            {
+                if (i == 0)
+                    AfficherImageReponse(pbFirstReponse, GestionnaireMiniJeuBrasDeFer.GetlisteReponses()[i]);
+                else if (i == 1)
+                {
+                    AfficherImageReponse(pbSecondReponse, GestionnaireMiniJeuBrasDeFer.GetlisteReponses()[i]);
+                }
+                else if (i == 2)
+                {
+                    AfficherImageReponse(pbThirdReponse, GestionnaireMiniJeuBrasDeFer.GetlisteReponses()[i]);
+                }
+                else if (i == 3)
+                {
+                    AfficherImageReponse(pbFourthReponse, GestionnaireMiniJeuBrasDeFer.GetlisteReponses()[i]);
+                }
+            }
+        }
         private void AfficherAllFleches()
         {
            
@@ -73,12 +100,13 @@ namespace Time_Agotchi
 
         private void AfficherFleche(PictureBox Picture, string nomfleche)
         {
+            //Methode qui permet de donner aux Picture box sa bonne Fléche. Si le string est haut on affiche une fléche HAut sur le PictureBox
             if (nomfleche == "haut")
                 Picture.BackgroundImage = new Bitmap(Properties.Resources.fleche_haut);
             else if (nomfleche == "bas")
                 Picture.BackgroundImage = new Bitmap(Properties.Resources.fleche_bas);
             else if (nomfleche == "droite")
-                Picture.BackgroundImage = new Bitmap(Properties.Resources.felche_droite);
+                Picture.BackgroundImage = new Bitmap(Properties.Resources.fleche_droite);
             else if (nomfleche == "gauche")
                 Picture.BackgroundImage = new Bitmap(Properties.Resources.fleche_gauche);
 
@@ -107,11 +135,12 @@ namespace Time_Agotchi
         private void Main_Jeu()
         {
             
-            GestionnaireMiniJeuBrasDeFer.GenererListeDeFleches(4);
-            AfficherAllFleches();
-            KeyPreview = true;
-            timer2.Interval = 2000;
-            timer2.Start();
+            GestionnaireMiniJeuBrasDeFer.GenererListeDeFleches(4); //on génére une liste de fléches
+            AfficherAllFleches(); //on affiche les fléches (images)
+            GestionnaireMiniJeuBrasDeFer.GetlisteFlechesEntrees().Clear();//avant de réactiver les entrees pour le joueur on clean la listeDes entrees d'avant
+            KeyPreview = true; //activation des entrees
+            timer2.Interval = 2000; //on attends 2 secondes avant de desactiver
+            timer2.Start(); //on desactive et vérifications (voir le tick)
             
             
             
@@ -174,7 +203,7 @@ namespace Time_Agotchi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach (bool b in listDereponses)
+            foreach (bool b in GestionnaireMiniJeuBrasDeFer.GetlisteReponses())
             {
                 MessageBox.Show(b.ToString());
             }
@@ -183,8 +212,9 @@ namespace Time_Agotchi
         private void timer2_Tick(object sender, EventArgs e)
         {
             KeyPreview = false;
-            timer2.Stop();
-            this.listDereponses = GestionnaireMiniJeuBrasDeFer.GetReponses();
+            timer2.Stop();//desactiver
+            GestionnaireMiniJeuBrasDeFer.GetReponses(); //Recupération des réponses
+            AffichagerAllReponses();
 
             
 
@@ -192,7 +222,7 @@ namespace Time_Agotchi
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(GestionnaireMiniJeuBrasDeFer.GetlisteFlechesEntrees()[0]+":"+GestionnaireMiniJeuBrasDeFer.GetlisteFlechesEntrees().Count);
+            MessageBox.Show(GestionnaireMiniJeuBrasDeFer.GetlisteFlechesEntrees().Count.ToString());
             
         }
 

@@ -42,20 +42,24 @@
             this.pbFourthArrow = new System.Windows.Forms.PictureBox();
             this.btTest = new System.Windows.Forms.Button();
             this.Timer_AttenteKeyPress = new System.Windows.Forms.Timer(this.components);
-            this.lbReponse1 = new System.Windows.Forms.Label();
-            this.lbReponse2 = new System.Windows.Forms.Label();
-            this.lbReponse3 = new System.Windows.Forms.Label();
-            this.lbReponse4 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.lbAnnonce = new System.Windows.Forms.Label();
+            this.pbFirstReponse = new System.Windows.Forms.PictureBox();
+            this.pbSecondReponse = new System.Windows.Forms.PictureBox();
+            this.pbThirdReponse = new System.Windows.Forms.PictureBox();
+            this.pbFourthReponse = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFirstArrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSecondArrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbThridArrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFourthArrow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFirstReponse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSecondReponse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbThirdReponse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFourthReponse)).BeginInit();
             this.SuspendLayout();
             // 
             // progressBarPersoMain
@@ -124,26 +128,6 @@
             // 
             this.Timer_AttenteKeyPress.Tick += new System.EventHandler(this.Timer_AttenteKeyPress_Tick);
             // 
-            // lbReponse1
-            // 
-            resources.ApplyResources(this.lbReponse1, "lbReponse1");
-            this.lbReponse1.Name = "lbReponse1";
-            // 
-            // lbReponse2
-            // 
-            resources.ApplyResources(this.lbReponse2, "lbReponse2");
-            this.lbReponse2.Name = "lbReponse2";
-            // 
-            // lbReponse3
-            // 
-            resources.ApplyResources(this.lbReponse3, "lbReponse3");
-            this.lbReponse3.Name = "lbReponse3";
-            // 
-            // lbReponse4
-            // 
-            resources.ApplyResources(this.lbReponse4, "lbReponse4");
-            this.lbReponse4.Name = "lbReponse4";
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -171,17 +155,41 @@
             resources.ApplyResources(this.lbAnnonce, "lbAnnonce");
             this.lbAnnonce.Name = "lbAnnonce";
             // 
+            // pbFirstReponse
+            // 
+            resources.ApplyResources(this.pbFirstReponse, "pbFirstReponse");
+            this.pbFirstReponse.Name = "pbFirstReponse";
+            this.pbFirstReponse.TabStop = false;
+            // 
+            // pbSecondReponse
+            // 
+            resources.ApplyResources(this.pbSecondReponse, "pbSecondReponse");
+            this.pbSecondReponse.Name = "pbSecondReponse";
+            this.pbSecondReponse.TabStop = false;
+            // 
+            // pbThirdReponse
+            // 
+            resources.ApplyResources(this.pbThirdReponse, "pbThirdReponse");
+            this.pbThirdReponse.Name = "pbThirdReponse";
+            this.pbThirdReponse.TabStop = false;
+            // 
+            // pbFourthReponse
+            // 
+            resources.ApplyResources(this.pbFourthReponse, "pbFourthReponse");
+            this.pbFourthReponse.Name = "pbFourthReponse";
+            this.pbFourthReponse.TabStop = false;
+            // 
             // BrasDeFer
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pbFourthReponse);
+            this.Controls.Add(this.pbThirdReponse);
+            this.Controls.Add(this.pbSecondReponse);
+            this.Controls.Add(this.pbFirstReponse);
             this.Controls.Add(this.lbAnnonce);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.lbReponse4);
-            this.Controls.Add(this.lbReponse3);
-            this.Controls.Add(this.lbReponse2);
-            this.Controls.Add(this.lbReponse1);
             this.Controls.Add(this.btTest);
             this.Controls.Add(this.pbFourthArrow);
             this.Controls.Add(this.pbThridArrow);
@@ -200,6 +208,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbSecondArrow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbThridArrow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFourthArrow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFirstReponse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSecondReponse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbThirdReponse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFourthReponse)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,14 +231,14 @@
         private System.Windows.Forms.PictureBox pbFourthArrow;
         private System.Windows.Forms.Button btTest;
         private System.Windows.Forms.Timer Timer_AttenteKeyPress;
-        private System.Windows.Forms.Label lbReponse1;
-        private System.Windows.Forms.Label lbReponse2;
-        private System.Windows.Forms.Label lbReponse3;
-        private System.Windows.Forms.Label lbReponse4;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lbAnnonce;
+        private System.Windows.Forms.PictureBox pbFirstReponse;
+        private System.Windows.Forms.PictureBox pbSecondReponse;
+        private System.Windows.Forms.PictureBox pbThirdReponse;
+        private System.Windows.Forms.PictureBox pbFourthReponse;
     }
 }

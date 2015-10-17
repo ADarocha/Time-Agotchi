@@ -121,11 +121,14 @@
   <data name="ezgif-3077835043" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ezgif-3077835043.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="felche_droite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\felche_droite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Time_Out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Time_Out.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fleche_bas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fleche_bas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fleche_droite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fleche_droite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fleche_gauche" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fleche_gauche.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,7 +136,10 @@
   <data name="fleche_haut" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fleche_haut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Time_Out" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Time_Out.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Correct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Correct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Faux" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Faux.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -60,6 +60,13 @@ namespace Time_Agotchi.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Correct {
+            get {
+                object obj = ResourceManager.GetObject("Correct", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap ezgif_3077835043 {
             get {
                 object obj = ResourceManager.GetObject("ezgif-3077835043", resourceCulture);
@@ -67,9 +74,9 @@ namespace Time_Agotchi.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap felche_droite {
+        internal static System.Drawing.Bitmap Faux {
             get {
-                object obj = ResourceManager.GetObject("felche_droite", resourceCulture);
+                object obj = ResourceManager.GetObject("Faux", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -77,6 +84,13 @@ namespace Time_Agotchi.Properties {
         internal static System.Drawing.Bitmap fleche_bas {
             get {
                 object obj = ResourceManager.GetObject("fleche_bas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap fleche_droite {
+            get {
+                object obj = ResourceManager.GetObject("fleche_droite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

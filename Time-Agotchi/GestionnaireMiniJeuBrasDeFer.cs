@@ -10,7 +10,7 @@ namespace Time_Agotchi
         private static List<string> nomDeFleches = new List<string> { "haut", "bas", "gauche", "droite" };
         private static List<string> listeFleches = new List<string>(); //liste de fléches généres par l'ordinateur
         private static List<string> listeFlechesEntrees = new List<string>(); //les fléches entrées par le joueur
-        private static List<bool> reponses = new List<bool>(); //bonne ou mauvais réponses du joueur 
+        private static List<bool> listeReponses = new List<bool>(); //bonne ou mauvais réponses du joueur 
 
   
         
@@ -26,7 +26,7 @@ namespace Time_Agotchi
 
         public static List<bool> GetlisteReponses()
         {
-            return reponses;
+            return listeReponses;
         }
 
         public static void GenererListeDeFleches(int nombreDeFleches)
@@ -65,31 +65,54 @@ namespace Time_Agotchi
             //Retourne une liste de booleen true correspond a une bonne reponses false a une mauvaise
             //On procéde par vérifications
             //premiere verification si la liste d'entrees est vide on met false a tout la liste de retour
+            listeReponses.Clear();
+            
             if (VerificationDesEntreesVides()==true)    
             {
                 for (int i = 0; i < 4; i++)
                 {
-                    reponses.Add(false);
+                    listeReponses.Add(false);
                 }
             }
             //deuxieme verification si la liste d'entres a moins d'entrees que la liste affiche (4)
             //on recupere les reponses mauvaises et bonnes et pour le reste d'entrees non sésies on met false
-            else if (listeFlechesEntrees.Count != 4)
+            else if (listeFlechesEntrees.Count < 4)
             {
                 int nbMauvesReponses;
                 for (int i = 0; i < listeFlechesEntrees.Count; i++)
                 {
                     if (listeFlechesEntrees[i] != listeFleches[i])
                     {
-                        reponses.Add(false);
+                        listeReponses.Add(false);
                     }
                     else
-                        reponses.Add(true);
+                        listeReponses.Add(true);
                 }
                 nbMauvesReponses = listeFleches.Count - listeFlechesEntrees.Count;
                 for(int i = 0; i<nbMauvesReponses; i++)
                 {
-                    reponses.Add(false);
+                    listeReponses.Add(false);
+                }
+            }
+
+            //si le nombre d'entrees dépasse la liste demandé on compte juste les 4 premieres réponses
+                //pour ça la boucle for prends en paramètre le nombre de la listeFleches = 4
+            else if (listeFlechesEntrees.Count > 4)
+            {
+                int nbMauvesReponses;
+                for (int i = 0; i <  listeFleches.Count; i++)
+                {
+                    if (listeFlechesEntrees[i] != listeFleches[i])
+                    {
+                        listeReponses.Add(false);
+                    }
+                    else
+                        listeReponses.Add(true);
+                }
+                nbMauvesReponses = listeFleches.Count - listeFlechesEntrees.Count;
+                for(int i = 0; i<nbMauvesReponses; i++)
+                {
+                    listeReponses.Add(false);
                 }
             }
             //si le nombre d'entress est correcte on compare toutes les reponses
@@ -99,15 +122,20 @@ namespace Time_Agotchi
                 {
                     if (listeFlechesEntrees[i] != listeFleches[i])
                     {
-                        reponses.Add(false);
+                        listeReponses.Add(false);
                     }
                     else
-                        reponses.Add(true);
+                        listeReponses.Add(true);
                 }
             }
 
-            return reponses;
+            return listeReponses;
 
+        }
+
+        public static bool GetGagant()
+        {
+            return true;
         }
 
     }
