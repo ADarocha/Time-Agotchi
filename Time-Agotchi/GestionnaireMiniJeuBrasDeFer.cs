@@ -45,11 +45,11 @@ namespace Time_Agotchi
             }
         }
 
-        private static bool VerificationDesEntreesVides(List<string> listeEntrees)
+        private static bool VerificationDesEntreesVides()
         {
             bool verification_valide;
             //methode qui renvoie faut se ile jouer n'a rien entrée ou si taille des entres ne correspond pas a la taille demandé (4) fleches
-            if (listeEntrees.Count == 0)
+            if (listeFlechesEntrees.Count == 0)
             {
                 verification_valide = true;
             }
@@ -65,7 +65,7 @@ namespace Time_Agotchi
             //Retourne une liste de booleen true correspond a une bonne reponses false a une mauvaise
             //On procéde par vérifications
             //premiere verification si la liste d'entrees est vide on met false a tout la liste de retour
-            if (VerificationDesEntreesVides(listeFlechesEntrees)==true)    
+            if (VerificationDesEntreesVides()==true)    
             {
                 for (int i = 0; i < 4; i++)
                 {
@@ -92,7 +92,7 @@ namespace Time_Agotchi
                     reponses.Add(false);
                 }
             }
-            //si le nombre d'entress est correcte on compara tout les reponses
+            //si le nombre d'entress est correcte on compare toutes les reponses
             else if (listeFlechesEntrees.Count == 4)
             {
                 for (int i = 0; i < listeFlechesEntrees.Count; i++)

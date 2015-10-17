@@ -36,10 +36,10 @@
             this.lbTempsAdversaire = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pbFirstArrow = new System.Windows.Forms.PictureBox();
+            this.pbSecondArrow = new System.Windows.Forms.PictureBox();
+            this.pbThridArrow = new System.Windows.Forms.PictureBox();
+            this.pbFourthArrow = new System.Windows.Forms.PictureBox();
             this.btTest = new System.Windows.Forms.Button();
             this.Timer_AttenteKeyPress = new System.Windows.Forms.Timer(this.components);
             this.lbReponse1 = new System.Windows.Forms.Label();
@@ -52,10 +52,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.lbAnnonce = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFirstArrow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSecondArrow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbThridArrow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFourthArrow)).BeginInit();
             this.SuspendLayout();
             // 
             // progressBarPersoMain
@@ -89,29 +89,29 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // pictureBox2
+            // pbFirstArrow
             // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
+            resources.ApplyResources(this.pbFirstArrow, "pbFirstArrow");
+            this.pbFirstArrow.Name = "pbFirstArrow";
+            this.pbFirstArrow.TabStop = false;
             // 
-            // pictureBox3
+            // pbSecondArrow
             // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
+            resources.ApplyResources(this.pbSecondArrow, "pbSecondArrow");
+            this.pbSecondArrow.Name = "pbSecondArrow";
+            this.pbSecondArrow.TabStop = false;
             // 
-            // pictureBox4
+            // pbThridArrow
             // 
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.TabStop = false;
+            resources.ApplyResources(this.pbThridArrow, "pbThridArrow");
+            this.pbThridArrow.Name = "pbThridArrow";
+            this.pbThridArrow.TabStop = false;
             // 
-            // pictureBox5
+            // pbFourthArrow
             // 
-            resources.ApplyResources(this.pictureBox5, "pictureBox5");
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.TabStop = false;
+            resources.ApplyResources(this.pbFourthArrow, "pbFourthArrow");
+            this.pbFourthArrow.Name = "pbFourthArrow";
+            this.pbFourthArrow.TabStop = false;
             // 
             // btTest
             // 
@@ -183,10 +183,10 @@
             this.Controls.Add(this.lbReponse2);
             this.Controls.Add(this.lbReponse1);
             this.Controls.Add(this.btTest);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pbFourthArrow);
+            this.Controls.Add(this.pbThridArrow);
+            this.Controls.Add(this.pbSecondArrow);
+            this.Controls.Add(this.pbFirstArrow);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbTempsAdversaire);
@@ -196,10 +196,10 @@
             this.Name = "BrasDeFer";
             this.Load += new System.EventHandler(this.BrasDeFer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFirstArrow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSecondArrow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbThridArrow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFourthArrow)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,10 +213,10 @@
         private System.Windows.Forms.Label lbTempsAdversaire;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pbFirstArrow;
+        private System.Windows.Forms.PictureBox pbSecondArrow;
+        private System.Windows.Forms.PictureBox pbThridArrow;
+        private System.Windows.Forms.PictureBox pbFourthArrow;
         private System.Windows.Forms.Button btTest;
         private System.Windows.Forms.Timer Timer_AttenteKeyPress;
         private System.Windows.Forms.Label lbReponse1;

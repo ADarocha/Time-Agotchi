@@ -13,8 +13,8 @@ namespace Time_Agotchi
 {
     public partial class BrasDeFer : Form
     {
-        List<string> entrees = new List<string>();
-        List<bool> reponses = new List<bool>();
+        List<string> listeEntrees = new List<string>();
+        List<bool> listDereponses = new List<bool>();
         
         public BrasDeFer()
         {
@@ -44,15 +44,44 @@ namespace Time_Agotchi
         /// Methodes D'affichage images
         /// </summary>
 
-        private void AfficherImagesFleches(List<string> listeDeFleches)
+        private void AfficherAllFleches()
         {
+           
             ///Méthode qui permet d'afficher les images
             ///pour l'instant des test avec des Label
-            
-            lbReponse1.Text = listeDeFleches[0];
-            lbReponse2.Text = listeDeFleches[1];
-            lbReponse3.Text = listeDeFleches[2];
-            lbReponse4.Text = listeDeFleches[3];
+            for (int i = 0; i < GestionnaireMiniJeuBrasDeFer.GetFleches().Count; i++)
+            {
+                if (i == 0)
+                {
+                    AfficherFleche(pbFirstArrow, GestionnaireMiniJeuBrasDeFer.GetFleches()[i]);
+                }
+                else if (i == 1)
+                {
+                    AfficherFleche(pbSecondArrow, GestionnaireMiniJeuBrasDeFer.GetFleches()[i]);
+                }
+                else if (i == 2)
+                {
+                    AfficherFleche(pbThridArrow, GestionnaireMiniJeuBrasDeFer.GetFleches()[i]);
+                }
+                else if (i == 3)
+                {
+                    AfficherFleche(pbFourthArrow, GestionnaireMiniJeuBrasDeFer.GetFleches()[i]);
+                }
+            }
+           
+        }
+
+        private void AfficherFleche(PictureBox Picture, string nomfleche)
+        {
+            if (nomfleche == "haut")
+                Picture.BackgroundImage = new Bitmap(Properties.Resources.fleche_haut);
+            else if (nomfleche == "bas")
+                Picture.BackgroundImage = new Bitmap(Properties.Resources.fleche_bas);
+            else if (nomfleche == "droite")
+                Picture.BackgroundImage = new Bitmap(Properties.Resources.felche_droite);
+            else if (nomfleche == "gauche")
+                Picture.BackgroundImage = new Bitmap(Properties.Resources.fleche_gauche);
+
         }
         /// <summary>
         /// Fin Methodes D'affichage images
@@ -79,20 +108,10 @@ namespace Time_Agotchi
         {
             
             GestionnaireMiniJeuBrasDeFer.GenererListeDeFleches(4);
-            AfficherImagesFleches(GestionnaireMiniJeuBrasDeFer.GetFleches());
+            AfficherAllFleches();
             KeyPreview = true;
             timer2.Interval = 2000;
             timer2.Start();
-            
-            
- 
-            
-         /*
-            while (timer2.Enabled == false)
-            {
-                lbAnnonce.Text = "mes";
-                
-            }*/
             
             
             
@@ -102,8 +121,25 @@ namespace Time_Agotchi
        ///<summary> FIN METHODE MAIN JEU</summary>
         protected override void OnKeyPress(KeyPressEventArgs e)
         {
-            string entreeDuJoueur = e.KeyChar.ToString();
-            GestionnaireMiniJeuBrasDeFer.GetlisteFlechesEntrees().Add(entreeDuJoueur);
+            string entreeDuJoueur = e.KeyChar.ToString(); //la vraie valeur que le joueur entre par exemple a
+            string entreeTransformeeFleche = "null"; //on transforme cette valeur en fléche si on tape z alors on transforme en "haut"
+            switch (entreeDuJoueur)
+            {
+                case "z":
+                    entreeTransformeeFleche = "haut";
+
+                    break;
+                case "s":
+                    entreeTransformeeFleche = "bas";
+                    break;
+                case "d":
+                    entreeTransformeeFleche = "droite";
+                    break;
+                case "q":
+                    entreeTransformeeFleche = "gauche";
+                    break;
+            }
+            GestionnaireMiniJeuBrasDeFer.GetlisteFlechesEntrees().Add(entreeTransformeeFleche);
         }
 
 
@@ -138,14 +174,17 @@ namespace Time_Agotchi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            foreach (bool b in listDereponses)
+            {
+                MessageBox.Show(b.ToString());
+            }
         }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
             KeyPreview = false;
             timer2.Stop();
-            this.reponses = GestionnaireMiniJeuBrasDeFer.GetReponses();
+            this.listDereponses = GestionnaireMiniJeuBrasDeFer.GetReponses();
 
             
 

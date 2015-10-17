@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="progressBarPersoMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>39, 245</value>
+    <value>75, 293</value>
   </data>
   <data name="progressBarPersoMain.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 23</value>
@@ -141,7 +141,7 @@
     <value>17</value>
   </data>
   <data name="progressBarAdversaire.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 245</value>
+    <value>391, 293</value>
   </data>
   <data name="progressBarAdversaire.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 23</value>
@@ -168,7 +168,7 @@
     <value>Microsoft Sans Serif, 24pt, style=Bold</value>
   </data>
   <data name="lbTempsJoueur.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 285</value>
+    <value>115, 333</value>
   </data>
   <data name="lbTempsJoueur.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 37</value>
@@ -198,7 +198,7 @@
     <value>Microsoft Sans Serif, 24pt, style=Bold</value>
   </data>
   <data name="lbTempsAdversaire.Location" type="System.Drawing.Point, System.Drawing">
-    <value>344, 285</value>
+    <value>420, 333</value>
   </data>
   <data name="lbTempsAdversaire.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 37</value>
@@ -222,7 +222,7 @@
     <value>14</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 121</value>
+    <value>270, 168</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 89</value>
@@ -249,7 +249,7 @@
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>256, 245</value>
+    <value>316, 293</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 29</value>
@@ -272,92 +272,105 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 30</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pbFirstArrow.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+  <data name="pbFirstArrow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 30</value>
   </data>
-  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+  <data name="pbFirstArrow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 81</value>
+  </data>
+  <data name="pbFirstArrow.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
-    <value>pictureBox2</value>
+  <data name="&gt;&gt;pbFirstArrow.Name" xml:space="preserve">
+    <value>pbFirstArrow</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;pbFirstArrow.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pbFirstArrow.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pbFirstArrow.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>212, 30</value>
+  <data name="pbSecondArrow.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+  <data name="pbSecondArrow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 30</value>
   </data>
-  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="pbSecondArrow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 81</value>
+  </data>
+  <data name="pbSecondArrow.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
-    <value>pictureBox3</value>
+  <data name="&gt;&gt;pbSecondArrow.Name" xml:space="preserve">
+    <value>pbSecondArrow</value>
   </data>
-  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;pbSecondArrow.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pbSecondArrow.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pbSecondArrow.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 30</value>
+  <data name="pbThridArrow.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+  <data name="pbThridArrow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 30</value>
   </data>
-  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
+  <data name="pbThridArrow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 81</value>
+  </data>
+  <data name="pbThridArrow.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
-    <value>pictureBox4</value>
+  <data name="&gt;&gt;pbThridArrow.Name" xml:space="preserve">
+    <value>pbThridArrow</value>
   </data>
-  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
+  <data name="&gt;&gt;pbThridArrow.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pbThridArrow.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pbThridArrow.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 30</value>
+  <data name="pbFourthArrow.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 53</value>
+  <data name="pbFourthArrow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>490, 30</value>
   </data>
-  <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
+  <data name="pbFourthArrow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 81</value>
+  </data>
+  <data name="pbFourthArrow.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="&gt;&gt;pictureBox5.Name" xml:space="preserve">
-    <value>pictureBox5</value>
+  <data name="&gt;&gt;pbFourthArrow.Name" xml:space="preserve">
+    <value>pbFourthArrow</value>
   </data>
-  <data name="&gt;&gt;pictureBox5.Type" xml:space="preserve">
+  <data name="&gt;&gt;pbFourthArrow.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pbFourthArrow.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pbFourthArrow.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="btTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>240, 331</value>
+    <value>292, 379</value>
   </data>
   <data name="btTest.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -387,7 +400,7 @@
     <value>True</value>
   </data>
   <data name="lbReponse1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 86</value>
+    <value>119, 124</value>
   </data>
   <data name="lbReponse1.Size" type="System.Drawing.Size, System.Drawing">
     <value>14, 13</value>
@@ -413,12 +426,11 @@
   <data name="lbReponse2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lbReponse2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lbReponse2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>219, 86</value>
+    <value>261, 124</value>
   </data>
   <data name="lbReponse2.Size" type="System.Drawing.Size, System.Drawing">
     <value>14, 13</value>
@@ -448,7 +460,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbReponse3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>306, 86</value>
+    <value>397, 124</value>
   </data>
   <data name="lbReponse3.Size" type="System.Drawing.Size, System.Drawing">
     <value>14, 13</value>
@@ -478,7 +490,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbReponse4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 86</value>
+    <value>535, 124</value>
   </data>
   <data name="lbReponse4.Size" type="System.Drawing.Size, System.Drawing">
     <value>14, 13</value>
@@ -508,7 +520,7 @@
     <value>267, 17</value>
   </metadata>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 151</value>
+    <value>550, 187</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -532,7 +544,7 @@
     <value>2</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 196</value>
+    <value>550, 232</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -559,7 +571,7 @@
     <value>True</value>
   </data>
   <data name="lbAnnonce.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 136</value>
+    <value>51, 192</value>
   </data>
   <data name="lbAnnonce.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 13</value>
@@ -589,7 +601,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>563, 366</value>
+    <value>667, 461</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>BrasDeFer</value>
