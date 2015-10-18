@@ -190,21 +190,6 @@ namespace Time_Agotchi
             //}
         }
 
-    
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(GestionnaireMiniJeuBrasDeFer.GetGagnant().ToString());
-        }
-
-   
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(GestionnaireMiniJeuBrasDeFer.GetAdversaire().ToString());
-            
-        }
 
         private void timerMainJeu_Tick(object sender, EventArgs e)
         {

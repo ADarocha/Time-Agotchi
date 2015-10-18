@@ -190,7 +190,7 @@ namespace Time_Agotchi
                     estGagnat = true;
                     perdant = adversaire;
                     gagnant = personnageMain;
-                    break;
+                   
                 }
             }
             return estGagnat;
@@ -226,6 +226,23 @@ namespace Time_Agotchi
             }
             gagnant.GetTemps().ajouterSeconde(pointsCalcul);
             perdant.GetTemps().retirerSeconde(pointsCalcul);
+
+            if (gagnant.GetTemps().GetSeconde() == 1)
+            {
+                gagnant.GetTemps().SetSeconde(0);
+            }
+            if (perdant.GetTemps().GetSeconde() == 1)
+            {
+                perdant.GetTemps().SetSeconde(0);
+            }
+            if (gagnant.GetTemps().GetMinute() == 1)
+            {
+                gagnant.GetTemps().SetMinute(0);
+            }
+            if (perdant.GetTemps().GetMinute() == 1)
+            {
+                perdant.GetTemps().SetMinute(0);
+            }
         }
     }
 }

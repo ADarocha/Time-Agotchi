@@ -140,6 +140,7 @@ namespace Time_Agotchi
             timer.Stop();
             BrasDeFer brasDeFer = new BrasDeFer();
             brasDeFer.ShowDialog();
+            timer.Start();
             //Ouvre un nouveau Form avec un mini jeu où il faut spammer un bouton pour gagner
         }
 

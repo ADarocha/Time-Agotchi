@@ -123,6 +123,10 @@ namespace Time_Agotchi
             if (heure > 0)
                 retirerHeure(heure);
             minute = minute - (m%60);
+            if (minute < 0)
+            {
+                minute = 0;
+            }
             
         }
 
@@ -132,6 +136,10 @@ namespace Time_Agotchi
             if(min > 0)
                 retirerMinute(min);
             seconde = seconde - (s % 60);
+            if (seconde < 0)
+            {
+                seconde = 0;
+            }
         }
 
         public int GetTimeEnSecondes()

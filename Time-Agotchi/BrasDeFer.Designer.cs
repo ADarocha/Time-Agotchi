@@ -34,7 +34,6 @@
             this.progressBarAdversaire = new System.Windows.Forms.ProgressBar();
             this.lbTempsJoueur = new System.Windows.Forms.Label();
             this.lbTempsAdversaire = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pbFirstArrow = new System.Windows.Forms.PictureBox();
             this.pbSecondArrow = new System.Windows.Forms.PictureBox();
@@ -43,8 +42,6 @@
             this.btGo = new System.Windows.Forms.Button();
             this.timerpre = new System.Windows.Forms.Timer(this.components);
             this.timersec = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.lbAnnonce = new System.Windows.Forms.Label();
             this.pbFirstReponse = new System.Windows.Forms.PictureBox();
             this.pbSecondReponse = new System.Windows.Forms.PictureBox();
@@ -52,7 +49,7 @@
             this.pbFourthReponse = new System.Windows.Forms.PictureBox();
             this.timerMainJeu = new System.Windows.Forms.Timer(this.components);
             this.timerGestionnaireJeu = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbFirstArrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSecondArrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbThridArrow)).BeginInit();
@@ -61,42 +58,39 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbSecondReponse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbThirdReponse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFourthReponse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // progressBarPersoMain
             // 
-            this.progressBarPersoMain.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.progressBarPersoMain.ForeColor = System.Drawing.Color.SpringGreen;
             resources.ApplyResources(this.progressBarPersoMain, "progressBarPersoMain");
+            this.progressBarPersoMain.Maximum = 50;
             this.progressBarPersoMain.Name = "progressBarPersoMain";
             // 
             // progressBarAdversaire
             // 
-            this.progressBarAdversaire.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.progressBarAdversaire.ForeColor = System.Drawing.Color.SpringGreen;
             resources.ApplyResources(this.progressBarAdversaire, "progressBarAdversaire");
+            this.progressBarAdversaire.Maximum = 50;
             this.progressBarAdversaire.Name = "progressBarAdversaire";
             // 
             // lbTempsJoueur
             // 
             resources.ApplyResources(this.lbTempsJoueur, "lbTempsJoueur");
-            this.lbTempsJoueur.ForeColor = System.Drawing.Color.Lime;
+            this.lbTempsJoueur.ForeColor = System.Drawing.Color.SpringGreen;
             this.lbTempsJoueur.Name = "lbTempsJoueur";
             // 
             // lbTempsAdversaire
             // 
             resources.ApplyResources(this.lbTempsAdversaire, "lbTempsAdversaire");
-            this.lbTempsAdversaire.ForeColor = System.Drawing.Color.Lime;
+            this.lbTempsAdversaire.ForeColor = System.Drawing.Color.SpringGreen;
             this.lbTempsAdversaire.Name = "lbTempsAdversaire";
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.label1.ForeColor = System.Drawing.Color.SpringGreen;
             this.label1.Name = "label1";
             // 
             // pbFirstArrow
@@ -125,25 +119,12 @@
             // 
             // btGo
             // 
-            this.btGo.ForeColor = System.Drawing.Color.Honeydew;
+            this.btGo.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.btGo, "btGo");
+            this.btGo.ForeColor = System.Drawing.Color.SpringGreen;
             this.btGo.Name = "btGo";
-            this.btGo.UseVisualStyleBackColor = true;
+            this.btGo.UseVisualStyleBackColor = false;
             this.btGo.Click += new System.EventHandler(this.btGo_Click);
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // lbAnnonce
             // 
@@ -182,32 +163,36 @@
             // 
             this.timerGestionnaireJeu.Tick += new System.EventHandler(this.timerGestionnaireJeu_Tick);
             // 
+            // pbLogo
+            // 
+            resources.ApplyResources(this.pbLogo, "pbLogo");
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.TabStop = false;
+            // 
             // BrasDeFer
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.SystemColors.ControlText;
             this.Controls.Add(this.pbFourthReponse);
             this.Controls.Add(this.pbThirdReponse);
             this.Controls.Add(this.pbSecondReponse);
             this.Controls.Add(this.pbFirstReponse);
             this.Controls.Add(this.lbAnnonce);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btGo);
             this.Controls.Add(this.pbFourthArrow);
             this.Controls.Add(this.pbThridArrow);
             this.Controls.Add(this.pbSecondArrow);
             this.Controls.Add(this.pbFirstArrow);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.lbTempsAdversaire);
             this.Controls.Add(this.lbTempsJoueur);
             this.Controls.Add(this.progressBarAdversaire);
             this.Controls.Add(this.progressBarPersoMain);
+            this.DoubleBuffered = true;
             this.Name = "BrasDeFer";
             this.Load += new System.EventHandler(this.BrasDeFer_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFirstArrow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSecondArrow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbThridArrow)).EndInit();
@@ -216,6 +201,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbSecondReponse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbThirdReponse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFourthReponse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,7 +213,6 @@
         private System.Windows.Forms.ProgressBar progressBarAdversaire;
         private System.Windows.Forms.Label lbTempsJoueur;
         private System.Windows.Forms.Label lbTempsAdversaire;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pbFirstArrow;
         private System.Windows.Forms.PictureBox pbSecondArrow;
@@ -236,8 +221,6 @@
         private System.Windows.Forms.Button btGo;
         private System.Windows.Forms.Timer timerpre;
         private System.Windows.Forms.Timer timersec;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lbAnnonce;
         private System.Windows.Forms.PictureBox pbFirstReponse;
         private System.Windows.Forms.PictureBox pbSecondReponse;
@@ -245,5 +228,6 @@
         private System.Windows.Forms.PictureBox pbFourthReponse;
         private System.Windows.Forms.Timer timerMainJeu;
         private System.Windows.Forms.Timer timerGestionnaireJeu;
+        private System.Windows.Forms.PictureBox pbLogo;
     }
 }
