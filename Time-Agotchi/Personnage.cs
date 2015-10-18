@@ -118,22 +118,20 @@ namespace Time_Agotchi
             string txtMinute;
             string txtSeconde;
             string temps;
-            if (Donnees.GetPersos()[0].GetTemps().GetHeure() < 10)
-                txtHeure = "0" + Donnees.GetPersos()[0].GetTemps().GetHeure().ToString();
+            if (this.GetTemps().GetHeure() < 10)
+                txtHeure = "0" + this.GetTemps().GetHeure().ToString();
             else
-                txtHeure = Donnees.GetPersos()[0].GetTemps().GetHeure().ToString();
+                txtHeure =this.GetTemps().GetHeure().ToString();
 
-            if (Donnees.GetPersos()[0].GetTemps().GetMinute() < 10)
-                txtMinute = "0" + Donnees.GetPersos()[0].GetTemps().GetMinute().ToString();
+            if (this.GetTemps().GetMinute() < 10)
+                txtMinute = "0" + this.GetTemps().GetMinute().ToString();
             else
-                txtMinute = Donnees.GetPersos()[0].GetTemps().GetMinute().ToString();
+                txtMinute = this.GetTemps().GetMinute().ToString();
 
-            if (Donnees.GetPersos()[0].GetTemps().GetSeconde() < 10)
-                txtSeconde = "0" + Donnees.GetPersos()[0].GetTemps().GetSeconde().ToString();
+            if (this.GetTemps().GetSeconde() < 10)
+                txtSeconde = "0" +this.GetTemps().GetSeconde().ToString();
             else
-                txtSeconde = Donnees.GetPersos()[0].GetTemps().GetSeconde().ToString();
-
-
+                txtSeconde = this.GetTemps().GetSeconde().ToString();
 
             temps = txtHeure + ":" + txtMinute + ":" + txtSeconde;
             return temps;

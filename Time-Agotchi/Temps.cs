@@ -89,7 +89,7 @@ namespace Time_Agotchi
             seconde = seconde + s;
             int ajoutminute = seconde / 60;
             seconde = seconde % 60;
-            minute = minute + ajoutminute;
+            minute = minute + ajoutminute;  
         }
 
 
@@ -134,6 +134,13 @@ namespace Time_Agotchi
             seconde = seconde - (s % 60);
         }
 
+        public int GetTimeEnSecondes()
+        {
+            int temps = (heure * 3600) + (minute * 60) + (seconde);
+            return temps;
+        }
+
+       
 
 
     }

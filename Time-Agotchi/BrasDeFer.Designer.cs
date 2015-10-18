@@ -40,10 +40,9 @@
             this.pbSecondArrow = new System.Windows.Forms.PictureBox();
             this.pbThridArrow = new System.Windows.Forms.PictureBox();
             this.pbFourthArrow = new System.Windows.Forms.PictureBox();
-            this.btTest = new System.Windows.Forms.Button();
-            this.Timer_AttenteKeyPress = new System.Windows.Forms.Timer(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.btGo = new System.Windows.Forms.Button();
+            this.timerpre = new System.Windows.Forms.Timer(this.components);
+            this.timersec = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.lbAnnonce = new System.Windows.Forms.Label();
@@ -51,6 +50,8 @@
             this.pbSecondReponse = new System.Windows.Forms.PictureBox();
             this.pbThirdReponse = new System.Windows.Forms.PictureBox();
             this.pbFourthReponse = new System.Windows.Forms.PictureBox();
+            this.timerMainJeu = new System.Windows.Forms.Timer(this.components);
+            this.timerGestionnaireJeu = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFirstArrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSecondArrow)).BeginInit();
@@ -64,22 +65,26 @@
             // 
             // progressBarPersoMain
             // 
+            this.progressBarPersoMain.ForeColor = System.Drawing.Color.MediumSeaGreen;
             resources.ApplyResources(this.progressBarPersoMain, "progressBarPersoMain");
             this.progressBarPersoMain.Name = "progressBarPersoMain";
             // 
             // progressBarAdversaire
             // 
+            this.progressBarAdversaire.ForeColor = System.Drawing.Color.MediumSeaGreen;
             resources.ApplyResources(this.progressBarAdversaire, "progressBarAdversaire");
             this.progressBarAdversaire.Name = "progressBarAdversaire";
             // 
             // lbTempsJoueur
             // 
             resources.ApplyResources(this.lbTempsJoueur, "lbTempsJoueur");
+            this.lbTempsJoueur.ForeColor = System.Drawing.Color.Lime;
             this.lbTempsJoueur.Name = "lbTempsJoueur";
             // 
             // lbTempsAdversaire
             // 
             resources.ApplyResources(this.lbTempsAdversaire, "lbTempsAdversaire");
+            this.lbTempsAdversaire.ForeColor = System.Drawing.Color.Lime;
             this.lbTempsAdversaire.Name = "lbTempsAdversaire";
             // 
             // pictureBox1
@@ -91,6 +96,7 @@
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.label1.Name = "label1";
             // 
             // pbFirstArrow
@@ -117,24 +123,13 @@
             this.pbFourthArrow.Name = "pbFourthArrow";
             this.pbFourthArrow.TabStop = false;
             // 
-            // btTest
+            // btGo
             // 
-            resources.ApplyResources(this.btTest, "btTest");
-            this.btTest.Name = "btTest";
-            this.btTest.UseVisualStyleBackColor = true;
-            this.btTest.Click += new System.EventHandler(this.btTest_Click);
-            // 
-            // Timer_AttenteKeyPress
-            // 
-            this.Timer_AttenteKeyPress.Tick += new System.EventHandler(this.Timer_AttenteKeyPress_Tick);
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // timer2
-            // 
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            this.btGo.ForeColor = System.Drawing.Color.Honeydew;
+            resources.ApplyResources(this.btGo, "btGo");
+            this.btGo.Name = "btGo";
+            this.btGo.UseVisualStyleBackColor = true;
+            this.btGo.Click += new System.EventHandler(this.btGo_Click);
             // 
             // button1
             // 
@@ -179,10 +174,19 @@
             this.pbFourthReponse.Name = "pbFourthReponse";
             this.pbFourthReponse.TabStop = false;
             // 
+            // timerMainJeu
+            // 
+            this.timerMainJeu.Tick += new System.EventHandler(this.timerMainJeu_Tick);
+            // 
+            // timerGestionnaireJeu
+            // 
+            this.timerGestionnaireJeu.Tick += new System.EventHandler(this.timerGestionnaireJeu_Tick);
+            // 
             // BrasDeFer
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Controls.Add(this.pbFourthReponse);
             this.Controls.Add(this.pbThirdReponse);
             this.Controls.Add(this.pbSecondReponse);
@@ -190,7 +194,7 @@
             this.Controls.Add(this.lbAnnonce);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.btTest);
+            this.Controls.Add(this.btGo);
             this.Controls.Add(this.pbFourthArrow);
             this.Controls.Add(this.pbThridArrow);
             this.Controls.Add(this.pbSecondArrow);
@@ -229,10 +233,9 @@
         private System.Windows.Forms.PictureBox pbSecondArrow;
         private System.Windows.Forms.PictureBox pbThridArrow;
         private System.Windows.Forms.PictureBox pbFourthArrow;
-        private System.Windows.Forms.Button btTest;
-        private System.Windows.Forms.Timer Timer_AttenteKeyPress;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button btGo;
+        private System.Windows.Forms.Timer timerpre;
+        private System.Windows.Forms.Timer timersec;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lbAnnonce;
@@ -240,5 +243,7 @@
         private System.Windows.Forms.PictureBox pbSecondReponse;
         private System.Windows.Forms.PictureBox pbThirdReponse;
         private System.Windows.Forms.PictureBox pbFourthReponse;
+        private System.Windows.Forms.Timer timerMainJeu;
+        private System.Windows.Forms.Timer timerGestionnaireJeu;
     }
 }

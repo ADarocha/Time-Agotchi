@@ -171,13 +171,10 @@
     <value>115, 393</value>
   </data>
   <data name="lbTempsJoueur.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 37</value>
+    <value>0, 37</value>
   </data>
   <data name="lbTempsJoueur.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
-  </data>
-  <data name="lbTempsJoueur.Text" xml:space="preserve">
-    <value>00:10:00</value>
   </data>
   <data name="&gt;&gt;lbTempsJoueur.Name" xml:space="preserve">
     <value>lbTempsJoueur</value>
@@ -201,13 +198,10 @@
     <value>420, 393</value>
   </data>
   <data name="lbTempsAdversaire.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 37</value>
+    <value>0, 37</value>
   </data>
   <data name="lbTempsAdversaire.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
-  </data>
-  <data name="lbTempsAdversaire.Text" xml:space="preserve">
-    <value>00:10:00</value>
   </data>
   <data name="&gt;&gt;lbTempsAdversaire.Name" xml:space="preserve">
     <value>lbTempsAdversaire</value>
@@ -369,38 +363,35 @@
   <data name="&gt;&gt;pbFourthArrow.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="btTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 439</value>
+  <data name="btGo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 439</value>
   </data>
-  <data name="btTest.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btGo.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="btTest.TabIndex" type="System.Int32, mscorlib">
+  <data name="btGo.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="btTest.Text" xml:space="preserve">
-    <value>test</value>
+  <data name="btGo.Text" xml:space="preserve">
+    <value>Go !</value>
   </data>
-  <data name="&gt;&gt;btTest.Name" xml:space="preserve">
-    <value>btTest</value>
+  <data name="&gt;&gt;btGo.Name" xml:space="preserve">
+    <value>btGo</value>
   </data>
-  <data name="&gt;&gt;btTest.Type" xml:space="preserve">
+  <data name="&gt;&gt;btGo.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btTest.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btGo.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btTest.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btGo.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <metadata name="Timer_AttenteKeyPress.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="timerpre.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>184, 17</value>
   </metadata>
-  <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>267, 17</value>
+  <metadata name="timersec.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>310, 18</value>
   </metadata>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>550, 247</value>
@@ -582,11 +573,20 @@
   <data name="&gt;&gt;pbFourthReponse.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="timerMainJeu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>403, 18</value>
+  </metadata>
+  <metadata name="timerGestionnaireJeu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>521, 18</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>690, 494</value>
@@ -594,22 +594,28 @@
   <data name="$this.Text" xml:space="preserve">
     <value>BrasDeFer</value>
   </data>
-  <data name="&gt;&gt;Timer_AttenteKeyPress.Name" xml:space="preserve">
-    <value>Timer_AttenteKeyPress</value>
+  <data name="&gt;&gt;timerpre.Name" xml:space="preserve">
+    <value>timerpre</value>
   </data>
-  <data name="&gt;&gt;Timer_AttenteKeyPress.Type" xml:space="preserve">
+  <data name="&gt;&gt;timerpre.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
-    <value>timer1</value>
+  <data name="&gt;&gt;timersec.Name" xml:space="preserve">
+    <value>timersec</value>
   </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+  <data name="&gt;&gt;timersec.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;timer2.Name" xml:space="preserve">
-    <value>timer2</value>
+  <data name="&gt;&gt;timerMainJeu.Name" xml:space="preserve">
+    <value>timerMainJeu</value>
   </data>
-  <data name="&gt;&gt;timer2.Type" xml:space="preserve">
+  <data name="&gt;&gt;timerMainJeu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timerGestionnaireJeu.Name" xml:space="preserve">
+    <value>timerGestionnaireJeu</value>
+  </data>
+  <data name="&gt;&gt;timerGestionnaireJeu.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

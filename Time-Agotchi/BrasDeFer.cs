@@ -122,8 +122,8 @@ namespace Time_Agotchi
        /// </summary>
         private void AffichageDonnesPersonnages()
         {
-            lbTempsJoueur.Text = Donnees.GetPersos()[0].ToString();
-            lbTempsAdversaire.Text = Donnees.GetPersos()[1].ToString();
+            lbTempsJoueur.Text = GestionnaireMiniJeuBrasDeFer.GetMainPerso().ToString();
+            lbTempsAdversaire.Text = GestionnaireMiniJeuBrasDeFer.GetAdversaire().ToString();
         }
 
        ///<summary>
@@ -139,8 +139,8 @@ namespace Time_Agotchi
             AfficherAllFleches(); //on affiche les fléches (images)
             GestionnaireMiniJeuBrasDeFer.GetlisteFlechesEntrees().Clear();//avant de réactiver les entrees pour le joueur on clean la listeDes entrees d'avant
             KeyPreview = true; //activation des entrees
-            timer2.Interval = 2000; //on attends 2 secondes avant de desactiver
-            timer2.Start(); //on desactive et vérifications (voir le tick)
+            timerGestionnaireJeu.Interval = 2500; //on attends 2 secondes avant de desactiver
+            timerGestionnaireJeu.Start(); //on desactive et vérifications (voir le tick)
             
             
             
@@ -173,9 +173,11 @@ namespace Time_Agotchi
 
 
 
-        private void btTest_Click(object sender, EventArgs e)
+        private void btGo_Click(object sender, EventArgs e)
         {
-            Main_Jeu();
+            timerMainJeu.Interval = 3000;
+            timerMainJeu.Start();
+            
             
             //bool BonneTouche = false;
             //int seconds = 1;
@@ -188,48 +190,58 @@ namespace Time_Agotchi
             //}
         }
 
-        private void Timer_AttenteKeyPress_Tick(object sender, EventArgs e)
-        {
-            
-        }
+    
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-           
-            progressBarPersoMain.Increment(-5); //On peut faire une valeur négative pour diminuer le progressBar
-            
-            
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach (bool b in GestionnaireMiniJeuBrasDeFer.GetlisteReponses())
-            {
-                MessageBox.Show(b.ToString());
-            }
+            MessageBox.Show(GestionnaireMiniJeuBrasDeFer.GetGagnant().ToString());
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            KeyPreview = false;
-            timer2.Stop();//desactiver
-            GestionnaireMiniJeuBrasDeFer.GetReponses(); //Recupération des réponses
-            AffichagerAllReponses();
-
-            
-
-        }
+   
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(GestionnaireMiniJeuBrasDeFer.GetlisteFlechesEntrees().Count.ToString());
+            MessageBox.Show(GestionnaireMiniJeuBrasDeFer.GetAdversaire().ToString());
             
         }
 
-        
+        private void timerMainJeu_Tick(object sender, EventArgs e)
+        {
+            if (progressBarAdversaire.Value == 0 || progressBarPersoMain.Value == 0)
+            {
+                timerMainJeu.Stop();
 
+            }
+            //On peut faire une valeur négative pour diminuer le progressBar
+            else
+            {
+                Main_Jeu();
 
+            }
+        }
 
-    
+        private void timerGestionnaireJeu_Tick(object sender, EventArgs e)
+        {
+            int valeur = 25;
+            KeyPreview = false;
+
+            GestionnaireMiniJeuBrasDeFer.GenererReponses(); //Recupération des réponses
+            AffichagerAllReponses();
+            GestionnaireMiniJeuBrasDeFer.SetGagnantPrecedent(GestionnaireMiniJeuBrasDeFer.GetGagnant());
+            if (GestionnaireMiniJeuBrasDeFer.DefinirGagnant() == true)
+            {
+                progressBarAdversaire.Increment(-valeur);
+                progressBarPersoMain.Increment(valeur);
+            }
+            else
+            {
+                progressBarAdversaire.Increment(valeur);
+                progressBarPersoMain.Increment(-valeur);
+            }
+            GestionnaireMiniJeuBrasDeFer.CalculTemps();
+            AffichageDonnesPersonnages();
+            timerGestionnaireJeu.Stop();
+        }
     }
 }

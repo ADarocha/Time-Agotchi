@@ -61,7 +61,7 @@ namespace Time_Agotchi
 
             Temps tempsChi = new Temps(0, 10, 0);
             chi = new Personnage("chi", tempsChi);
-            Donnees.AjouterPerso(tama);
+            Donnees.AjouterPerso(chi);
 
             Temps tempsAxel = new Temps(0, 10, 0);
             axel = new Personnage("axel", tempsAxel);
