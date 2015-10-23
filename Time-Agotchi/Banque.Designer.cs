@@ -40,7 +40,7 @@
             // 
             // btPlacer
             // 
-            this.btPlacer.Location = new System.Drawing.Point(276, 121);
+            this.btPlacer.Location = new System.Drawing.Point(512, 4);
             this.btPlacer.Name = "btPlacer";
             this.btPlacer.Size = new System.Drawing.Size(75, 23);
             this.btPlacer.TabIndex = 0;
@@ -51,7 +51,7 @@
             // lbTempsPlace
             // 
             this.lbTempsPlace.AutoSize = true;
-            this.lbTempsPlace.Location = new System.Drawing.Point(65, 50);
+            this.lbTempsPlace.Location = new System.Drawing.Point(206, 345);
             this.lbTempsPlace.Name = "lbTempsPlace";
             this.lbTempsPlace.Size = new System.Drawing.Size(64, 13);
             this.lbTempsPlace.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             // tbSecPlacement
             // 
-            this.tbSecPlacement.Location = new System.Drawing.Point(196, 123);
+            this.tbSecPlacement.Location = new System.Drawing.Point(432, 6);
             this.tbSecPlacement.Name = "tbSecPlacement";
             this.tbSecPlacement.Size = new System.Drawing.Size(62, 20);
             this.tbSecPlacement.TabIndex = 3;
@@ -83,7 +83,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 126);
+            this.label1.Location = new System.Drawing.Point(257, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(156, 13);
             this.label1.TabIndex = 5;
@@ -92,7 +92,7 @@
             // 
             // btFermer
             // 
-            this.btFermer.Location = new System.Drawing.Point(603, 363);
+            this.btFermer.Location = new System.Drawing.Point(520, 363);
             this.btFermer.Name = "btFermer";
             this.btFermer.Size = new System.Drawing.Size(71, 25);
             this.btFermer.TabIndex = 6;
@@ -104,7 +104,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 400);
+            this.BackgroundImage = global::Time_Agotchi.Properties.Resources.bank;
+            this.ClientSize = new System.Drawing.Size(591, 400);
             this.Controls.Add(this.btFermer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btRecup);

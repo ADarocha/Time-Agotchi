@@ -20,6 +20,11 @@ namespace Time_Agotchi
         int secondes = 0; //secondes pour l'affichage
         int secondesgagnees = 0; //nombre de secondes gagnées grâce au placement
 
+        //references
+        Personnage leJoueur = Donnees.GetPersos()[0];
+        Temps tempsPerso = Donnees.GetPersos()[0].GetTemps();
+
+
         private void Banque_Load(object sender, EventArgs e)
         {
         }
@@ -28,13 +33,13 @@ namespace Time_Agotchi
         {
             timerPlacement.Enabled = true;
 
-            Donnees.GetPersos()[0].SetSecondesPlacees(Convert.ToInt32(tbSecPlacement.Text)); //on place le temps
+            leJoueur.SetSecondesPlacees(Convert.ToInt32(tbSecPlacement.Text)); //on place le temps
 
-            minutes = Donnees.GetPersos()[0].GetSecondesPlacees() / 60; //on converti en minutes et en secondes
-            secondes = Donnees.GetPersos()[0].GetSecondesPlacees() % 60;
+            minutes = leJoueur.GetSecondesPlacees() / 60; //on converti en minutes et en secondes
+            secondes = leJoueur.GetSecondesPlacees() % 60;
 
-            Donnees.GetPersos()[0].GetTemps().retirerSeconde(secondes); //on retire le temps placé au temps du joueur
-            Donnees.GetPersos()[0].GetTemps().retirerMinute(minutes);
+            tempsPerso.retirerSeconde(secondes); //on retire le temps placé au temps du joueur
+            tempsPerso.retirerMinute(minutes);
 
             lbTempsPlace.Visible = true; //on fait apparaitre l'affichage du temps placé
             lbTempsPlace.Text = minutes + " minutes et " + secondes + " secondes."; //actualisation de l'affichage
@@ -45,18 +50,18 @@ namespace Time_Agotchi
 
         private void timerPlacement_Tick(object sender, EventArgs e)
         {
-            secondesgagnees = Donnees.GetPersos()[0].GetSecondesPlacees() / 10 ; //10% du temps placé est gagné
-            Donnees.GetPersos()[0].SetSecondesPlacees( Donnees.GetPersos()[0].GetSecondesPlacees() + secondesgagnees); //on ajoute ce temps au temps placé
+            secondesgagnees = leJoueur.GetSecondesPlacees() / 10; //10% du temps placé est gagné
+            leJoueur.SetSecondesPlacees(leJoueur.GetSecondesPlacees() + secondesgagnees); //on ajoute ce temps au temps placé
             secondesgagnees = 0; //reinitialisation
-            minutes = Donnees.GetPersos()[0].GetSecondesPlacees() / 60; //on converti en minutes et en secondes
-            secondes = Donnees.GetPersos()[0].GetSecondesPlacees() % 60;
+            minutes = leJoueur.GetSecondesPlacees() / 60; //on converti en minutes et en secondes
+            secondes = leJoueur.GetSecondesPlacees() % 60;
             lbTempsPlace.Text = minutes + " minutes et " + secondes + " secondes."; //actualisation de l'affichage
         }
 
         private void btRecup_Click(object sender, EventArgs e)
         {
-            Donnees.GetPersos()[0].GetTemps().ajouterSeconde(Donnees.GetPersos()[0].GetSecondesPlacees()); //on récupere le temps
-            Donnees.GetPersos()[0].SetSecondesPlacees(0); // on le supprime du placement
+            tempsPerso.ajouterSeconde(leJoueur.GetSecondesPlacees()); //on récupere le temps
+            leJoueur.SetSecondesPlacees(0); // on le supprime du placement
             secondesgagnees = 0; //reinitialisation
             lbTempsPlace.Visible = false;
             timerPlacement.Enabled = false;
