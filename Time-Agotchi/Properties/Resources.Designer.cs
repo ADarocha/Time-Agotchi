@@ -103,6 +103,26 @@ namespace Time_Agotchi.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fille1 {
+            get {
+                object obj = ResourceManager.GetObject("Fille1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fille2 {
+            get {
+                object obj = ResourceManager.GetObject("Fille2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fleche_bas {
             get {
                 object obj = ResourceManager.GetObject("fleche_bas", resourceCulture);
@@ -136,6 +156,86 @@ namespace Time_Agotchi.Properties {
         internal static System.Drawing.Bitmap fleche_haut {
             get {
                 object obj = ResourceManager.GetObject("fleche_haut", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gentil1 {
+            get {
+                object obj = ResourceManager.GetObject("Gentil1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gentil2 {
+            get {
+                object obj = ResourceManager.GetObject("Gentil2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Méchant1 {
+            get {
+                object obj = ResourceManager.GetObject("Méchant1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Méchant2 {
+            get {
+                object obj = ResourceManager.GetObject("Méchant2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Moi1 {
+            get {
+                object obj = ResourceManager.GetObject("Moi1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Moi2 {
+            get {
+                object obj = ResourceManager.GetObject("Moi2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Policier1 {
+            get {
+                object obj = ResourceManager.GetObject("Policier1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Policier2 {
+            get {
+                object obj = ResourceManager.GetObject("Policier2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

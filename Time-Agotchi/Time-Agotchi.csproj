@@ -72,6 +72,18 @@
     <Compile Include="Introduction.Designer.cs">
       <DependentUpon>Introduction.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mort.Designer.cs">
+      <DependentUpon>Mort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resume.Designer.cs">
+      <DependentUpon>Resume.cs</DependentUpon>
+    </Compile>
     <Compile Include="Temps.cs" />
     <Compile Include="TimeAgotchi.cs">
       <SubType>Form</SubType>
@@ -82,6 +94,12 @@
     <Compile Include="Personnage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VolDuTemps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VolDuTemps.Designer.cs">
+      <DependentUpon>VolDuTemps.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="APropos.resx">
       <DependentUpon>APropos.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Introduction.resx">
       <DependentUpon>Introduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mort.resx">
+      <DependentUpon>Mort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resume.resx">
+      <DependentUpon>Resume.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TimeAgotchi.resx">
       <DependentUpon>TimeAgotchi.cs</DependentUpon>
@@ -107,6 +131,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="VolDuTemps.resx">
+      <DependentUpon>VolDuTemps.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -135,6 +162,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bank.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fille1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fille2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gentil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gentil2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Méchant1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Méchant2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Moi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Moi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Policier1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Policier2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

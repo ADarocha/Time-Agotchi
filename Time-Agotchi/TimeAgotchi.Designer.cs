@@ -46,7 +46,6 @@
             this.btPlacerTemps = new System.Windows.Forms.Button();
             this.btMachineASous = new System.Windows.Forms.Button();
             this.btJouerBrasFer = new System.Windows.Forms.Button();
-            this.btJouerPoker = new System.Windows.Forms.Button();
             this.btVolerTemps = new System.Windows.Forms.Button();
             this.btBoire = new System.Windows.Forms.Button();
             this.btManger = new System.Windows.Forms.Button();
@@ -54,6 +53,7 @@
             this.lbTempsRestant = new System.Windows.Forms.Label();
             this.timerAge = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btPersonnages = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.gbStatus.SuspendLayout();
             this.gbActions.SuspendLayout();
@@ -76,20 +76,20 @@
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.seSuiciderToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // seSuiciderToolStripMenuItem
             // 
             this.seSuiciderToolStripMenuItem.Name = "seSuiciderToolStripMenuItem";
-            this.seSuiciderToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.seSuiciderToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.seSuiciderToolStripMenuItem.Text = "Se suicider";
             this.seSuiciderToolStripMenuItem.Click += new System.EventHandler(this.seSuiciderToolStripMenuItem_Click);
             // 
             // aProposToolStripMenuItem
             // 
             this.aProposToolStripMenuItem.Name = "aProposToolStripMenuItem";
-            this.aProposToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.aProposToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.aProposToolStripMenuItem.Text = "A propos";
             this.aProposToolStripMenuItem.Click += new System.EventHandler(this.aProposToolStripMenuItem_Click);
             // 
@@ -189,20 +189,19 @@
             this.gbActions.Controls.Add(this.btPlacerTemps);
             this.gbActions.Controls.Add(this.btMachineASous);
             this.gbActions.Controls.Add(this.btJouerBrasFer);
-            this.gbActions.Controls.Add(this.btJouerPoker);
             this.gbActions.Controls.Add(this.btVolerTemps);
             this.gbActions.Controls.Add(this.btBoire);
             this.gbActions.Controls.Add(this.btManger);
             this.gbActions.Location = new System.Drawing.Point(12, 38);
             this.gbActions.Name = "gbActions";
-            this.gbActions.Size = new System.Drawing.Size(200, 288);
+            this.gbActions.Size = new System.Drawing.Size(200, 218);
             this.gbActions.TabIndex = 4;
             this.gbActions.TabStop = false;
             this.gbActions.Text = "Actions";
             // 
             // btPlacerTemps
             // 
-            this.btPlacerTemps.Location = new System.Drawing.Point(9, 203);
+            this.btPlacerTemps.Location = new System.Drawing.Point(9, 174);
             this.btPlacerTemps.Name = "btPlacerTemps";
             this.btPlacerTemps.Size = new System.Drawing.Size(182, 23);
             this.btPlacerTemps.TabIndex = 12;
@@ -212,33 +211,23 @@
             // 
             // btMachineASous
             // 
-            this.btMachineASous.Location = new System.Drawing.Point(9, 174);
+            this.btMachineASous.Location = new System.Drawing.Point(9, 145);
             this.btMachineASous.Name = "btMachineASous";
             this.btMachineASous.Size = new System.Drawing.Size(182, 23);
             this.btMachineASous.TabIndex = 11;
-            this.btMachineASous.Text = "Machine à sous - Prix :  1min";
+            this.btMachineASous.Text = "Machine à sous";
             this.btMachineASous.UseVisualStyleBackColor = true;
             this.btMachineASous.Click += new System.EventHandler(this.btMachineASous_Click);
             // 
             // btJouerBrasFer
             // 
-            this.btJouerBrasFer.Location = new System.Drawing.Point(9, 145);
+            this.btJouerBrasFer.Location = new System.Drawing.Point(9, 116);
             this.btJouerBrasFer.Name = "btJouerBrasFer";
             this.btJouerBrasFer.Size = new System.Drawing.Size(182, 23);
             this.btJouerBrasFer.TabIndex = 10;
-            this.btJouerBrasFer.Text = "Jouer au bras de fer - Prix : 10min";
+            this.btJouerBrasFer.Text = "Jouer au bras de fer";
             this.btJouerBrasFer.UseVisualStyleBackColor = true;
             this.btJouerBrasFer.Click += new System.EventHandler(this.btJouerBrasFer_Click);
-            // 
-            // btJouerPoker
-            // 
-            this.btJouerPoker.Location = new System.Drawing.Point(9, 116);
-            this.btJouerPoker.Name = "btJouerPoker";
-            this.btJouerPoker.Size = new System.Drawing.Size(182, 23);
-            this.btJouerPoker.TabIndex = 9;
-            this.btJouerPoker.Text = "Jouer au poker - Mise : 10min";
-            this.btJouerPoker.UseVisualStyleBackColor = true;
-            this.btJouerPoker.Click += new System.EventHandler(this.btJouerPoker_Click);
             // 
             // btVolerTemps
             // 
@@ -284,7 +273,6 @@
             this.lbTempsRestant.Size = new System.Drawing.Size(149, 37);
             this.lbTempsRestant.TabIndex = 6;
             this.lbTempsRestant.Text = "00:10:00";
-    
             // 
             // timerAge
             // 
@@ -299,11 +287,22 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // btPersonnages
+            // 
+            this.btPersonnages.Location = new System.Drawing.Point(536, 326);
+            this.btPersonnages.Name = "btPersonnages";
+            this.btPersonnages.Size = new System.Drawing.Size(130, 23);
+            this.btPersonnages.TabIndex = 13;
+            this.btPersonnages.Text = "Voir personnages";
+            this.btPersonnages.UseVisualStyleBackColor = true;
+            this.btPersonnages.Click += new System.EventHandler(this.btPersonnages_Click);
+            // 
             // Timeagotchi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 361);
+            this.Controls.Add(this.btPersonnages);
             this.Controls.Add(this.lbTempsRestant);
             this.Controls.Add(this.gbActions);
             this.Controls.Add(this.pictureBox1);
@@ -342,7 +341,6 @@
         private System.Windows.Forms.GroupBox gbActions;
         private System.Windows.Forms.ToolStripMenuItem seSuiciderToolStripMenuItem;
         private System.Windows.Forms.Button btJouerBrasFer;
-        private System.Windows.Forms.Button btJouerPoker;
         private System.Windows.Forms.Button btVolerTemps;
         private System.Windows.Forms.Button btBoire;
         private System.Windows.Forms.Button btManger;
@@ -351,6 +349,7 @@
         private System.Windows.Forms.Timer timerAge;
         private System.Windows.Forms.Button btMachineASous;
         private System.Windows.Forms.Button btPlacerTemps;
+        private System.Windows.Forms.Button btPersonnages;
     }
 }
 

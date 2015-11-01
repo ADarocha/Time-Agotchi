@@ -34,6 +34,10 @@ namespace Time_Agotchi
         Personnage axel;
 
         Temps tempsPerso;
+        Temps tempsDeTama;
+        Temps tempsDeGot;
+        Temps tempsDeChi;
+        Temps tempsDeAxel;
         Personnage leJoueur;
 
 
@@ -65,7 +69,7 @@ namespace Time_Agotchi
 
             Temps tempsChi = new Temps(0, 10, 0);
             chi = new Personnage("chi", tempsChi);
-            Donnees.AjouterPerso(tama);
+            Donnees.AjouterPerso(chi);
 
             Temps tempsAxel = new Temps(0, 10, 0);
             axel = new Personnage("axel", tempsAxel);
@@ -73,6 +77,10 @@ namespace Time_Agotchi
 
             //references
             tempsPerso = Donnees.GetPersos()[0].GetTemps();
+            tempsDeTama = Donnees.GetPersos()[1].GetTemps();
+            tempsDeGot = Donnees.GetPersos()[2].GetTemps();
+            tempsDeChi = Donnees.GetPersos()[3].GetTemps();
+            tempsDeAxel = Donnees.GetPersos()[4].GetTemps();
             leJoueur = Donnees.GetPersos()[0];
 
 
@@ -84,12 +92,12 @@ namespace Time_Agotchi
             timerAge.Enabled = true;
             pbFaimPerso.Maximum = 10; //maximum de la barre
             pbFaimPerso.Minimum = 0;// minimum de la barre
-            pbFaimPerso.Step = 10; //status de la barre
-            pbFaimPerso.PerformStep(); //actualise la barre
+            pbFaimPerso.Step = 1; //status de la barre
+            pbFaimPerso.Value = 10;
             pbSoifPerso.Maximum = 10;
             pbSoifPerso.Minimum = 0;
-            pbSoifPerso.Step = 10;
-            pbSoifPerso.PerformStep();
+            pbSoifPerso.Step = 1;
+            pbSoifPerso.Value = 10;
 
 
 
@@ -120,9 +128,10 @@ namespace Time_Agotchi
                 mort();
             else
             {
-                tempsPerso.retirerMinute();
-                tempsPerso.retirerMinute();
+                tempsPerso.retirerMinute(2);
                 leJoueur.AjouterRetirerFaim(true);
+                if(leJoueur.GetFaim() < 10)
+                    pbFaimPerso.Value = leJoueur.GetFaim(); //status de la barre
             }
 
         }
@@ -135,14 +144,19 @@ namespace Time_Agotchi
                 mort();
             else
             {
-                tempsPerso.retirerMinute();
-                leJoueur.AjouterRetirerFaim(true);
+                tempsPerso.retirerMinute(1);
+                leJoueur.AjouterRetirerSoif(true);
+                if (leJoueur.GetSoif() < 10)
+                    pbSoifPerso.Value = leJoueur.GetSoif(); //status de la barre
             }
         }
 
         private void btVolerTemps_Click(object sender, EventArgs e)
         {
-            //Ouvre un nouveau Form avec un mini jeu où on tente de voler du temps (la réussite ainsi que le nombre de temps voler se décidera au hasard)
+            //Ouvre un nouveau Form avec un mini jeu où on tente de voler du temps.
+            VolDuTemps vol = new VolDuTemps();
+            vol.Show();
+            
         }
 
         private void btJouerPoker_Click(object sender, EventArgs e)
@@ -197,7 +211,8 @@ namespace Time_Agotchi
             tempsPerso.SetSeconde(0);
             timer.Enabled = false;
             lbTempsRestant.Text = "00:00:00";
-            MessageBox.Show("Vous êtes mort!");
+            Mort mort = new Mort();
+            mort.ShowDialog();
             //ensuite, ajouter l'ouverte d'un Form pour informer le joueur de sa mort. (prévoir une image et un texte, création, instanciation et ouverture d'un Form, puis fermeture du programme après validation)
 
         }
@@ -205,31 +220,31 @@ namespace Time_Agotchi
 
 
         //découlement du temps.
-        private void decouleTempsJoueur()
+        private void decouleTemps(Temps leTemps)
         {
-            if (tempsPerso.GetSeconde() == 0)
+            if (leTemps.GetSeconde() == 0)
             {
-                tempsPerso.SetSeconde(59);
-                if (tempsPerso.GetMinute() <= 0)
+                leTemps.SetSeconde(59);
+                if (leTemps.GetMinute() <= 0)
                 {
-                    if (tempsPerso.GetSeconde() <= 0)
+                    if (leTemps.GetSeconde() <= 0)
                     {
                         mort();
                     }
                     else
                     {
-                        tempsPerso.retirerHeure();
-                        tempsPerso.SetMinute(59);
+                        leTemps.retirerHeure();
+                        leTemps.SetMinute(59);
                     }
                 }
                 else
                 {
-                    tempsPerso.retirerMinute();
+                    leTemps.retirerMinute();
                 }
             }
             else
             {
-                tempsPerso.retirerSeconde();
+                leTemps.retirerSeconde();
             }
         }
 
@@ -242,7 +257,11 @@ namespace Time_Agotchi
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            decouleTempsJoueur(); //permet le décompte du temps
+            decouleTemps(tempsPerso); //permet le décompte du temps
+            decouleTemps(tempsDeTama);
+            decouleTemps(tempsDeGot);
+            decouleTemps(tempsDeChi);
+            decouleTemps(tempsDeAxel);
 
 
             //Timer qui check à chaque seconde
@@ -282,15 +301,19 @@ namespace Time_Agotchi
 
             leJoueur.AjouterRetirerFaim(false);//retire 1 de faim
             leJoueur.AjouterRetirerSoif(false);//retire 1 de soif
-            pbFaimPerso.Step = leJoueur.GetFaim();
-            pbSoifPerso.Step = leJoueur.GetSoif();
-            pbFaimPerso.PerformStep(); //rafraichit
-            pbSoifPerso.PerformStep(); //rafrachit
+            pbFaimPerso.Value = leJoueur.GetFaim();
+            pbSoifPerso.Value = leJoueur.GetSoif();
 
             if (leJoueur.GetFaim() == 0 || leJoueur.GetSoif() == 0) //si le personnage a trop faim ou soif, il meurt
             {
                 mort();
             }
+        }
+
+        private void btPersonnages_Click(object sender, EventArgs e)
+        {
+            Resume resume = new Resume();
+            resume.Show();
         }
     }
 }
