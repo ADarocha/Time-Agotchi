@@ -139,7 +139,7 @@ namespace Time_Agotchi
             AfficherAllFleches(); //on affiche les fléches (images)
             GestionnaireMiniJeuBrasDeFer.GetlisteFlechesEntrees().Clear();//avant de réactiver les entrees pour le joueur on clean la listeDes entrees d'avant
             KeyPreview = true; //activation des entrees
-            timerGestionnaireJeu.Interval = 2500; //on attends 2 secondes avant de desactiver
+            timerGestionnaireJeu.Interval = 2000; //on attends 2 secondes avant de desactiver
             timerGestionnaireJeu.Start(); //on desactive et vérifications (voir le tick)
             
             
@@ -175,19 +175,10 @@ namespace Time_Agotchi
 
         private void btGo_Click(object sender, EventArgs e)
         {
-            timerMainJeu.Interval = 3000;
+            //lance le timer du main jeu
+            timerMainJeu.Interval = 2500;
             timerMainJeu.Start();
             
-            
-            //bool BonneTouche = false;
-            //int seconds = 1;
-
-            //while (BonneTouche)
-            //{
-            //    this.KeyPreview = true;
-                
-                    
-            //}
         }
 
 

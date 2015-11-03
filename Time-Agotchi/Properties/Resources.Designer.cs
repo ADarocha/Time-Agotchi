@@ -67,6 +67,13 @@ namespace Time_Agotchi.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap brasDeFer {
+            get {
+                object obj = ResourceManager.GetObject("brasDeFer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap Correct {
             get {
                 object obj = ResourceManager.GetObject("Correct", resourceCulture);
@@ -175,6 +182,13 @@ namespace Time_Agotchi.Properties {
         internal static System.Drawing.Bitmap Moi2 {
             get {
                 object obj = ResourceManager.GetObject("Moi2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap personnage {
+            get {
+                object obj = ResourceManager.GetObject("personnage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

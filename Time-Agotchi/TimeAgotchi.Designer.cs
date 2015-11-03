@@ -52,12 +52,12 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.lbTempsRestant = new System.Windows.Forms.Label();
             this.timerAge = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btPersonnages = new System.Windows.Forms.Button();
+            this.pbPersonnage = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.gbStatus.SuspendLayout();
             this.gbActions.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPersonnage)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -76,20 +76,20 @@
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.seSuiciderToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // seSuiciderToolStripMenuItem
             // 
             this.seSuiciderToolStripMenuItem.Name = "seSuiciderToolStripMenuItem";
-            this.seSuiciderToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.seSuiciderToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.seSuiciderToolStripMenuItem.Text = "Se suicider";
             this.seSuiciderToolStripMenuItem.Click += new System.EventHandler(this.seSuiciderToolStripMenuItem_Click);
             // 
             // aProposToolStripMenuItem
             // 
             this.aProposToolStripMenuItem.Name = "aProposToolStripMenuItem";
-            this.aProposToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.aProposToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.aProposToolStripMenuItem.Text = "A propos";
             this.aProposToolStripMenuItem.Click += new System.EventHandler(this.aProposToolStripMenuItem_Click);
             // 
@@ -279,14 +279,6 @@
             this.timerAge.Interval = 60000;
             this.timerAge.Tick += new System.EventHandler(this.timerAge_Tick);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(238, 96);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // btPersonnages
             // 
             this.btPersonnages.Location = new System.Drawing.Point(536, 326);
@@ -297,6 +289,15 @@
             this.btPersonnages.UseVisualStyleBackColor = true;
             this.btPersonnages.Click += new System.EventHandler(this.btPersonnages_Click);
             // 
+            // pbPersonnage
+            // 
+            this.pbPersonnage.Image = global::Time_Agotchi.Properties.Resources.personnage;
+            this.pbPersonnage.Location = new System.Drawing.Point(238, 96);
+            this.pbPersonnage.Name = "pbPersonnage";
+            this.pbPersonnage.Size = new System.Drawing.Size(200, 200);
+            this.pbPersonnage.TabIndex = 1;
+            this.pbPersonnage.TabStop = false;
+            // 
             // Timeagotchi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,7 +306,7 @@
             this.Controls.Add(this.btPersonnages);
             this.Controls.Add(this.lbTempsRestant);
             this.Controls.Add(this.gbActions);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbPersonnage);
             this.Controls.Add(this.gbStatus);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -317,7 +318,7 @@
             this.gbStatus.ResumeLayout(false);
             this.gbStatus.PerformLayout();
             this.gbActions.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPersonnage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,7 +329,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aProposToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbPersonnage;
         private System.Windows.Forms.Label lbNomPerso;
         private System.Windows.Forms.GroupBox gbStatus;
         private System.Windows.Forms.Label lbSoif;

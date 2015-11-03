@@ -166,6 +166,7 @@ namespace Time_Agotchi
 
         private void btJouerBrasFer_Click(object sender, EventArgs e)
         {
+        
             timer.Stop();
             BrasDeFer brasDeFer = new BrasDeFer();
             brasDeFer.ShowDialog();

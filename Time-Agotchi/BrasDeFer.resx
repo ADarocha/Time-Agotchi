@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="progressBarPersoMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>117, 441</value>
+    <value>44, 441</value>
   </data>
   <data name="progressBarPersoMain.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 23</value>
@@ -148,7 +148,7 @@
     <value>NoControl</value>
   </data>
   <data name="progressBarAdversaire.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 441</value>
+    <value>493, 441</value>
   </data>
   <data name="progressBarAdversaire.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 23</value>
@@ -178,13 +178,16 @@
     <value>NoControl</value>
   </data>
   <data name="lbTempsJoueur.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 481</value>
+    <value>48, 488</value>
   </data>
   <data name="lbTempsJoueur.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 38</value>
+    <value>38, 38</value>
   </data>
   <data name="lbTempsJoueur.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
+  </data>
+  <data name="lbTempsJoueur.Text" xml:space="preserve">
+    <value>X</value>
   </data>
   <data name="&gt;&gt;lbTempsJoueur.Name" xml:space="preserve">
     <value>lbTempsJoueur</value>
@@ -208,13 +211,16 @@
     <value>NoControl</value>
   </data>
   <data name="lbTempsAdversaire.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 481</value>
+    <value>504, 488</value>
   </data>
   <data name="lbTempsAdversaire.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 38</value>
+    <value>38, 38</value>
   </data>
   <data name="lbTempsAdversaire.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
+  </data>
+  <data name="lbTempsAdversaire.Text" xml:space="preserve">
+    <value>X</value>
   </data>
   <data name="&gt;&gt;lbTempsAdversaire.Name" xml:space="preserve">
     <value>lbTempsAdversaire</value>
@@ -238,7 +244,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 441</value>
+    <value>348, 488</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 38</value>
@@ -262,16 +268,16 @@
     <value>13</value>
   </data>
   <data name="btGo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 11.25pt, style=Bold</value>
+    <value>Comic Sans MS, 12.25pt, style=Bold</value>
   </data>
   <data name="btGo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btGo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>331, 536</value>
+    <value>331, 529</value>
   </data>
   <data name="btGo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 34</value>
+    <value>89, 48</value>
   </data>
   <data name="btGo.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -370,7 +376,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbHelp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 9</value>
+    <value>12, 12</value>
   </data>
   <data name="lbHelp.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 18</value>
@@ -393,6 +399,47 @@
   <data name="&gt;&gt;lbHelp.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="richTbHelp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="richTbHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 12</value>
+  </data>
+  <data name="richTbHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 267</value>
+  </data>
+  <data name="richTbHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="richTbHelp.Text" xml:space="preserve">
+    <value>Regles : Le but est  mettre K.O. l'adversaire pour gagner son temps, si vous perdez
+vous mourrez.
+
+Afin de gagner la partie, il faut appuyer sur les fleches demandés
+Si vous ne rentrez pas de fleches ou si vous vous trompez vous perdez 
+du temps.
+
+Commandes :
+	Z = flèche haut
+	S = flèche bas
+	Q = flèche gauche
+	D = flèche droite</value>
+  </data>
+  <data name="richTbHelp.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;richTbHelp.Name" xml:space="preserve">
+    <value>richTbHelp</value>
+  </data>
+  <data name="&gt;&gt;richTbHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTbHelp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;richTbHelp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="pbFourthReponse.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
@@ -403,7 +450,7 @@
     <value>550, 143</value>
   </data>
   <data name="pbFourthReponse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 54</value>
+    <value>54, 54</value>
   </data>
   <data name="pbFourthReponse.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -430,7 +477,7 @@
     <value>413, 143</value>
   </data>
   <data name="pbThirdReponse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 54</value>
+    <value>54, 54</value>
   </data>
   <data name="pbThirdReponse.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -619,10 +666,10 @@
     <value>NoControl</value>
   </data>
   <data name="pbLogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 229</value>
+    <value>274, 282</value>
   </data>
   <data name="pbLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 176</value>
+    <value>200, 200</value>
   </data>
   <data name="pbLogo.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -639,47 +686,6 @@
   <data name="&gt;&gt;pbLogo.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="richTbHelp.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="richTbHelp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 30</value>
-  </data>
-  <data name="richTbHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 405</value>
-  </data>
-  <data name="richTbHelp.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="richTbHelp.Text" xml:space="preserve">
-    <value>Regles : Le but est  mettre K.O. l'adversaire pour gagner son temps, si vous perdez
-vous mourrez.
-
-Afin de gagner la partie, il faut appuyer sur les fleches demandés
-Si vous ne rentrez pas de fleches ou si vous vous trompez vous perdez 
-du temps.
-
-Commandes :
-	Z = flèche haut
-	S = flèche bas
-	Q = flèche gauche
-	D = flèche droite</value>
-  </data>
-  <data name="richTbHelp.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;richTbHelp.Name" xml:space="preserve">
-    <value>richTbHelp</value>
-  </data>
-  <data name="&gt;&gt;richTbHelp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richTbHelp.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;richTbHelp.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -691,9 +697,6 @@ Commandes :
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>751, 589</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>BrasDeFer</value>

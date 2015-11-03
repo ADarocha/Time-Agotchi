@@ -41,6 +41,7 @@
             this.timerGestionnaireJeu = new System.Windows.Forms.Timer(this.components);
             this.btQuitter = new System.Windows.Forms.Button();
             this.lbHelp = new System.Windows.Forms.Label();
+            this.richTbHelp = new System.Windows.Forms.RichTextBox();
             this.pbFourthReponse = new System.Windows.Forms.PictureBox();
             this.pbThirdReponse = new System.Windows.Forms.PictureBox();
             this.pbSecondReponse = new System.Windows.Forms.PictureBox();
@@ -50,7 +51,6 @@
             this.pbSecondArrow = new System.Windows.Forms.PictureBox();
             this.pbFirstArrow = new System.Windows.Forms.PictureBox();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.richTbHelp = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbFourthReponse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbThirdReponse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSecondReponse)).BeginInit();
@@ -85,6 +85,7 @@
             // lbTempsAdversaire
             // 
             resources.ApplyResources(this.lbTempsAdversaire, "lbTempsAdversaire");
+            this.lbTempsAdversaire.BackColor = System.Drawing.SystemColors.ControlText;
             this.lbTempsAdversaire.ForeColor = System.Drawing.Color.SpringGreen;
             this.lbTempsAdversaire.Name = "lbTempsAdversaire";
             // 
@@ -132,6 +133,13 @@
             this.lbHelp.Name = "lbHelp";
             this.lbHelp.MouseLeave += new System.EventHandler(this.lbHelp_MouseLeave);
             this.lbHelp.MouseHover += new System.EventHandler(this.lbHelp_MouseHover);
+            // 
+            // richTbHelp
+            // 
+            this.richTbHelp.BackColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(this.richTbHelp, "richTbHelp");
+            this.richTbHelp.ForeColor = System.Drawing.Color.SpringGreen;
+            this.richTbHelp.Name = "richTbHelp";
             // 
             // pbFourthReponse
             // 
@@ -183,17 +191,10 @@
             // 
             // pbLogo
             // 
-            this.pbLogo.BackgroundImage = global::Time_Agotchi.Properties.Resources.logo;
             resources.ApplyResources(this.pbLogo, "pbLogo");
+            this.pbLogo.Image = global::Time_Agotchi.Properties.Resources.brasDeFer;
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.TabStop = false;
-            // 
-            // richTbHelp
-            // 
-            this.richTbHelp.BackColor = System.Drawing.SystemColors.WindowFrame;
-            resources.ApplyResources(this.richTbHelp, "richTbHelp");
-            this.richTbHelp.ForeColor = System.Drawing.Color.SpringGreen;
-            this.richTbHelp.Name = "richTbHelp";
             // 
             // BrasDeFer
             // 
@@ -220,6 +221,7 @@
             this.Controls.Add(this.progressBarAdversaire);
             this.Controls.Add(this.progressBarPersoMain);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BrasDeFer";
             this.Load += new System.EventHandler(this.BrasDeFer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbFourthReponse)).EndInit();
