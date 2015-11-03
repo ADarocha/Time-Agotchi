@@ -35,29 +35,30 @@
             this.lbTempsJoueur = new System.Windows.Forms.Label();
             this.lbTempsAdversaire = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pbFirstArrow = new System.Windows.Forms.PictureBox();
-            this.pbSecondArrow = new System.Windows.Forms.PictureBox();
-            this.pbThridArrow = new System.Windows.Forms.PictureBox();
-            this.pbFourthArrow = new System.Windows.Forms.PictureBox();
             this.btGo = new System.Windows.Forms.Button();
-            this.timerpre = new System.Windows.Forms.Timer(this.components);
-            this.timersec = new System.Windows.Forms.Timer(this.components);
             this.lbAnnonce = new System.Windows.Forms.Label();
-            this.pbFirstReponse = new System.Windows.Forms.PictureBox();
-            this.pbSecondReponse = new System.Windows.Forms.PictureBox();
-            this.pbThirdReponse = new System.Windows.Forms.PictureBox();
-            this.pbFourthReponse = new System.Windows.Forms.PictureBox();
             this.timerMainJeu = new System.Windows.Forms.Timer(this.components);
             this.timerGestionnaireJeu = new System.Windows.Forms.Timer(this.components);
+            this.btQuitter = new System.Windows.Forms.Button();
+            this.lbHelp = new System.Windows.Forms.Label();
+            this.pbFourthReponse = new System.Windows.Forms.PictureBox();
+            this.pbThirdReponse = new System.Windows.Forms.PictureBox();
+            this.pbSecondReponse = new System.Windows.Forms.PictureBox();
+            this.pbFirstReponse = new System.Windows.Forms.PictureBox();
+            this.pbFourthArrow = new System.Windows.Forms.PictureBox();
+            this.pbThridArrow = new System.Windows.Forms.PictureBox();
+            this.pbSecondArrow = new System.Windows.Forms.PictureBox();
+            this.pbFirstArrow = new System.Windows.Forms.PictureBox();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFirstArrow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSecondArrow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbThridArrow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFourthArrow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFirstReponse)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSecondReponse)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbThirdReponse)).BeginInit();
+            this.richTbHelp = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbFourthReponse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbThirdReponse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSecondReponse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFirstReponse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFourthArrow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbThridArrow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSecondArrow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFirstArrow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,30 +94,6 @@
             this.label1.ForeColor = System.Drawing.Color.SpringGreen;
             this.label1.Name = "label1";
             // 
-            // pbFirstArrow
-            // 
-            resources.ApplyResources(this.pbFirstArrow, "pbFirstArrow");
-            this.pbFirstArrow.Name = "pbFirstArrow";
-            this.pbFirstArrow.TabStop = false;
-            // 
-            // pbSecondArrow
-            // 
-            resources.ApplyResources(this.pbSecondArrow, "pbSecondArrow");
-            this.pbSecondArrow.Name = "pbSecondArrow";
-            this.pbSecondArrow.TabStop = false;
-            // 
-            // pbThridArrow
-            // 
-            resources.ApplyResources(this.pbThridArrow, "pbThridArrow");
-            this.pbThridArrow.Name = "pbThridArrow";
-            this.pbThridArrow.TabStop = false;
-            // 
-            // pbFourthArrow
-            // 
-            resources.ApplyResources(this.pbFourthArrow, "pbFourthArrow");
-            this.pbFourthArrow.Name = "pbFourthArrow";
-            this.pbFourthArrow.TabStop = false;
-            // 
             // btGo
             // 
             this.btGo.BackColor = System.Drawing.Color.Black;
@@ -131,30 +108,6 @@
             resources.ApplyResources(this.lbAnnonce, "lbAnnonce");
             this.lbAnnonce.Name = "lbAnnonce";
             // 
-            // pbFirstReponse
-            // 
-            resources.ApplyResources(this.pbFirstReponse, "pbFirstReponse");
-            this.pbFirstReponse.Name = "pbFirstReponse";
-            this.pbFirstReponse.TabStop = false;
-            // 
-            // pbSecondReponse
-            // 
-            resources.ApplyResources(this.pbSecondReponse, "pbSecondReponse");
-            this.pbSecondReponse.Name = "pbSecondReponse";
-            this.pbSecondReponse.TabStop = false;
-            // 
-            // pbThirdReponse
-            // 
-            resources.ApplyResources(this.pbThirdReponse, "pbThirdReponse");
-            this.pbThirdReponse.Name = "pbThirdReponse";
-            this.pbThirdReponse.TabStop = false;
-            // 
-            // pbFourthReponse
-            // 
-            resources.ApplyResources(this.pbFourthReponse, "pbFourthReponse");
-            this.pbFourthReponse.Name = "pbFourthReponse";
-            this.pbFourthReponse.TabStop = false;
-            // 
             // timerMainJeu
             // 
             this.timerMainJeu.Tick += new System.EventHandler(this.timerMainJeu_Tick);
@@ -163,17 +116,93 @@
             // 
             this.timerGestionnaireJeu.Tick += new System.EventHandler(this.timerGestionnaireJeu_Tick);
             // 
+            // btQuitter
+            // 
+            this.btQuitter.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btQuitter, "btQuitter");
+            this.btQuitter.ForeColor = System.Drawing.Color.SpringGreen;
+            this.btQuitter.Name = "btQuitter";
+            this.btQuitter.UseVisualStyleBackColor = false;
+            this.btQuitter.Click += new System.EventHandler(this.btQuitter_Click);
+            // 
+            // lbHelp
+            // 
+            resources.ApplyResources(this.lbHelp, "lbHelp");
+            this.lbHelp.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbHelp.Name = "lbHelp";
+            this.lbHelp.MouseLeave += new System.EventHandler(this.lbHelp_MouseLeave);
+            this.lbHelp.MouseHover += new System.EventHandler(this.lbHelp_MouseHover);
+            // 
+            // pbFourthReponse
+            // 
+            resources.ApplyResources(this.pbFourthReponse, "pbFourthReponse");
+            this.pbFourthReponse.Name = "pbFourthReponse";
+            this.pbFourthReponse.TabStop = false;
+            // 
+            // pbThirdReponse
+            // 
+            resources.ApplyResources(this.pbThirdReponse, "pbThirdReponse");
+            this.pbThirdReponse.Name = "pbThirdReponse";
+            this.pbThirdReponse.TabStop = false;
+            // 
+            // pbSecondReponse
+            // 
+            resources.ApplyResources(this.pbSecondReponse, "pbSecondReponse");
+            this.pbSecondReponse.Name = "pbSecondReponse";
+            this.pbSecondReponse.TabStop = false;
+            // 
+            // pbFirstReponse
+            // 
+            resources.ApplyResources(this.pbFirstReponse, "pbFirstReponse");
+            this.pbFirstReponse.Name = "pbFirstReponse";
+            this.pbFirstReponse.TabStop = false;
+            // 
+            // pbFourthArrow
+            // 
+            resources.ApplyResources(this.pbFourthArrow, "pbFourthArrow");
+            this.pbFourthArrow.Name = "pbFourthArrow";
+            this.pbFourthArrow.TabStop = false;
+            // 
+            // pbThridArrow
+            // 
+            resources.ApplyResources(this.pbThridArrow, "pbThridArrow");
+            this.pbThridArrow.Name = "pbThridArrow";
+            this.pbThridArrow.TabStop = false;
+            // 
+            // pbSecondArrow
+            // 
+            resources.ApplyResources(this.pbSecondArrow, "pbSecondArrow");
+            this.pbSecondArrow.Name = "pbSecondArrow";
+            this.pbSecondArrow.TabStop = false;
+            // 
+            // pbFirstArrow
+            // 
+            resources.ApplyResources(this.pbFirstArrow, "pbFirstArrow");
+            this.pbFirstArrow.Name = "pbFirstArrow";
+            this.pbFirstArrow.TabStop = false;
+            // 
             // pbLogo
             // 
+            this.pbLogo.BackgroundImage = global::Time_Agotchi.Properties.Resources.logo;
             resources.ApplyResources(this.pbLogo, "pbLogo");
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.TabStop = false;
+            // 
+            // richTbHelp
+            // 
+            this.richTbHelp.BackColor = System.Drawing.SystemColors.WindowFrame;
+            resources.ApplyResources(this.richTbHelp, "richTbHelp");
+            this.richTbHelp.ForeColor = System.Drawing.Color.SpringGreen;
+            this.richTbHelp.Name = "richTbHelp";
             // 
             // BrasDeFer
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Controls.Add(this.richTbHelp);
+            this.Controls.Add(this.lbHelp);
+            this.Controls.Add(this.btQuitter);
             this.Controls.Add(this.pbFourthReponse);
             this.Controls.Add(this.pbThirdReponse);
             this.Controls.Add(this.pbSecondReponse);
@@ -193,14 +222,14 @@
             this.DoubleBuffered = true;
             this.Name = "BrasDeFer";
             this.Load += new System.EventHandler(this.BrasDeFer_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbFirstArrow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSecondArrow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbThridArrow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFourthArrow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFirstReponse)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSecondReponse)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbThirdReponse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFourthReponse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbThirdReponse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSecondReponse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFirstReponse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFourthArrow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbThridArrow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSecondArrow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFirstArrow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -219,8 +248,6 @@
         private System.Windows.Forms.PictureBox pbThridArrow;
         private System.Windows.Forms.PictureBox pbFourthArrow;
         private System.Windows.Forms.Button btGo;
-        private System.Windows.Forms.Timer timerpre;
-        private System.Windows.Forms.Timer timersec;
         private System.Windows.Forms.Label lbAnnonce;
         private System.Windows.Forms.PictureBox pbFirstReponse;
         private System.Windows.Forms.PictureBox pbSecondReponse;
@@ -229,5 +256,8 @@
         private System.Windows.Forms.Timer timerMainJeu;
         private System.Windows.Forms.Timer timerGestionnaireJeu;
         private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.Button btQuitter;
+        private System.Windows.Forms.Label lbHelp;
+        private System.Windows.Forms.RichTextBox richTbHelp;
     }
 }

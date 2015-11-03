@@ -60,3 +60,6 @@ C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Ago
 C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.BrasDeFer.resources
 C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Resume.resources
 C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.VolDuTemps.resources
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Mort.resources
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Resume.resources
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.VolDuTemps.resources

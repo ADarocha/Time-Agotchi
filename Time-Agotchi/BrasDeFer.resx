@@ -117,9 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="progressBarPersoMain.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="progressBarPersoMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 353</value>
+    <value>117, 441</value>
   </data>
   <data name="progressBarPersoMain.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 23</value>
@@ -138,10 +142,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;progressBarPersoMain.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>18</value>
+  </data>
+  <data name="progressBarAdversaire.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="progressBarAdversaire.Location" type="System.Drawing.Point, System.Drawing">
-    <value>391, 353</value>
+    <value>433, 441</value>
   </data>
   <data name="progressBarAdversaire.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 23</value>
@@ -159,7 +166,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;progressBarAdversaire.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>17</value>
   </data>
   <data name="lbTempsJoueur.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -167,8 +174,11 @@
   <data name="lbTempsJoueur.Font" type="System.Drawing.Font, System.Drawing">
     <value>Quartz MS, 24pt, style=Bold</value>
   </data>
+  <data name="lbTempsJoueur.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lbTempsJoueur.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 393</value>
+    <value>157, 481</value>
   </data>
   <data name="lbTempsJoueur.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 38</value>
@@ -186,7 +196,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbTempsJoueur.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>16</value>
   </data>
   <data name="lbTempsAdversaire.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -194,8 +204,11 @@
   <data name="lbTempsAdversaire.Font" type="System.Drawing.Font, System.Drawing">
     <value>Quartz MS, 24pt, style=Bold</value>
   </data>
+  <data name="lbTempsAdversaire.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="lbTempsAdversaire.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 393</value>
+    <value>462, 481</value>
   </data>
   <data name="lbTempsAdversaire.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 38</value>
@@ -213,7 +226,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbTempsAdversaire.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>15</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -221,8 +234,11 @@
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Quartz MS, 24pt, style=Bold</value>
   </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>316, 353</value>
+    <value>358, 441</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 38</value>
@@ -243,110 +259,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pbFirstArrow.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="pbFirstArrow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 30</value>
-  </data>
-  <data name="pbFirstArrow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 93</value>
-  </data>
-  <data name="pbFirstArrow.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;pbFirstArrow.Name" xml:space="preserve">
-    <value>pbFirstArrow</value>
-  </data>
-  <data name="&gt;&gt;pbFirstArrow.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbFirstArrow.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pbFirstArrow.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pbSecondArrow.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="pbSecondArrow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 30</value>
-  </data>
-  <data name="pbSecondArrow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 93</value>
-  </data>
-  <data name="pbSecondArrow.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;pbSecondArrow.Name" xml:space="preserve">
-    <value>pbSecondArrow</value>
-  </data>
-  <data name="&gt;&gt;pbSecondArrow.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbSecondArrow.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pbSecondArrow.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="pbThridArrow.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="pbThridArrow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>365, 30</value>
-  </data>
-  <data name="pbThridArrow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 93</value>
-  </data>
-  <data name="pbThridArrow.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
-  </data>
-  <data name="&gt;&gt;pbThridArrow.Name" xml:space="preserve">
-    <value>pbThridArrow</value>
-  </data>
-  <data name="&gt;&gt;pbThridArrow.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbThridArrow.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pbThridArrow.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="pbFourthArrow.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="pbFourthArrow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>502, 30</value>
-  </data>
-  <data name="pbFourthArrow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 93</value>
-  </data>
-  <data name="pbFourthArrow.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;pbFourthArrow.Name" xml:space="preserve">
-    <value>pbFourthArrow</value>
-  </data>
-  <data name="&gt;&gt;pbFourthArrow.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbFourthArrow.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pbFourthArrow.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="btGo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 11.25pt, style=Bold</value>
   </data>
+  <data name="btGo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btGo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 448</value>
+    <value>331, 536</value>
   </data>
   <data name="btGo.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 34</value>
@@ -367,16 +289,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btGo.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
-  <metadata name="timerpre.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>184, 17</value>
-  </metadata>
-  <metadata name="timersec.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>310, 18</value>
-  </metadata>
   <data name="lbAnnonce.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="lbAnnonce.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lbAnnonce.Location" type="System.Drawing.Point, System.Drawing">
     <value>51, 252</value>
@@ -400,84 +319,78 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbAnnonce.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
-  <data name="pbFirstReponse.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <metadata name="timerMainJeu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>18, 13</value>
+  </metadata>
+  <metadata name="timerGestionnaireJeu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 13</value>
+  </metadata>
+  <data name="btQuitter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 11.25pt, style=Bold</value>
   </data>
-  <data name="pbFirstReponse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 143</value>
-  </data>
-  <data name="pbFirstReponse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 54</value>
-  </data>
-  <data name="pbFirstReponse.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;pbFirstReponse.Name" xml:space="preserve">
-    <value>pbFirstReponse</value>
-  </data>
-  <data name="&gt;&gt;pbFirstReponse.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbFirstReponse.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pbFirstReponse.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pbSecondReponse.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="pbSecondReponse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btQuitter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pbSecondReponse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>244, 143</value>
+  <data name="btQuitter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 536</value>
   </data>
-  <data name="pbSecondReponse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 54</value>
+  <data name="btQuitter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 34</value>
   </data>
-  <data name="pbSecondReponse.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+  <data name="btQuitter.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
   </data>
-  <data name="&gt;&gt;pbSecondReponse.Name" xml:space="preserve">
-    <value>pbSecondReponse</value>
+  <data name="btQuitter.Text" xml:space="preserve">
+    <value>Retour</value>
   </data>
-  <data name="&gt;&gt;pbSecondReponse.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btQuitter.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;pbSecondReponse.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btQuitter.Name" xml:space="preserve">
+    <value>btQuitter</value>
+  </data>
+  <data name="&gt;&gt;btQuitter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btQuitter.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pbSecondReponse.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btQuitter.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="pbThirdReponse.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="lbHelp.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="pbThirdReponse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbHelp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Quartz MS, 11.25pt, style=Bold</value>
+  </data>
+  <data name="lbHelp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pbThirdReponse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>383, 143</value>
+  <data name="lbHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
   </data>
-  <data name="pbThirdReponse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 54</value>
+  <data name="lbHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 18</value>
   </data>
-  <data name="pbThirdReponse.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="lbHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
-  <data name="&gt;&gt;pbThirdReponse.Name" xml:space="preserve">
-    <value>pbThirdReponse</value>
+  <data name="lbHelp.Text" xml:space="preserve">
+    <value>Help</value>
   </data>
-  <data name="&gt;&gt;pbThirdReponse.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lbHelp.Name" xml:space="preserve">
+    <value>lbHelp</value>
   </data>
-  <data name="&gt;&gt;pbThirdReponse.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbHelp.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pbThirdReponse.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbHelp.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="pbFourthReponse.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -487,7 +400,7 @@
     <value>NoControl</value>
   </data>
   <data name="pbFourthReponse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>520, 143</value>
+    <value>550, 143</value>
   </data>
   <data name="pbFourthReponse.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 54</value>
@@ -505,25 +418,211 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pbFourthReponse.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
-  <metadata name="timerMainJeu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>403, 18</value>
-  </metadata>
-  <metadata name="timerGestionnaireJeu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>521, 18</value>
-  </metadata>
+  <data name="pbThirdReponse.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbThirdReponse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbThirdReponse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>413, 143</value>
+  </data>
+  <data name="pbThirdReponse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 54</value>
+  </data>
+  <data name="pbThirdReponse.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;pbThirdReponse.Name" xml:space="preserve">
+    <value>pbThirdReponse</value>
+  </data>
+  <data name="&gt;&gt;pbThirdReponse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbThirdReponse.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbThirdReponse.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pbSecondReponse.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbSecondReponse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbSecondReponse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 143</value>
+  </data>
+  <data name="pbSecondReponse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="pbSecondReponse.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;pbSecondReponse.Name" xml:space="preserve">
+    <value>pbSecondReponse</value>
+  </data>
+  <data name="&gt;&gt;pbSecondReponse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbSecondReponse.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbSecondReponse.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pbFirstReponse.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbFirstReponse.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbFirstReponse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 143</value>
+  </data>
+  <data name="pbFirstReponse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="pbFirstReponse.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;pbFirstReponse.Name" xml:space="preserve">
+    <value>pbFirstReponse</value>
+  </data>
+  <data name="&gt;&gt;pbFirstReponse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbFirstReponse.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbFirstReponse.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pbFourthArrow.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbFourthArrow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbFourthArrow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>532, 30</value>
+  </data>
+  <data name="pbFourthArrow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 93</value>
+  </data>
+  <data name="pbFourthArrow.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;pbFourthArrow.Name" xml:space="preserve">
+    <value>pbFourthArrow</value>
+  </data>
+  <data name="&gt;&gt;pbFourthArrow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbFourthArrow.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbFourthArrow.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="pbThridArrow.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbThridArrow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbThridArrow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>395, 30</value>
+  </data>
+  <data name="pbThridArrow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 93</value>
+  </data>
+  <data name="pbThridArrow.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;pbThridArrow.Name" xml:space="preserve">
+    <value>pbThridArrow</value>
+  </data>
+  <data name="&gt;&gt;pbThridArrow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbThridArrow.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbThridArrow.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="pbSecondArrow.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbSecondArrow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbSecondArrow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 30</value>
+  </data>
+  <data name="pbSecondArrow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 93</value>
+  </data>
+  <data name="pbSecondArrow.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;pbSecondArrow.Name" xml:space="preserve">
+    <value>pbSecondArrow</value>
+  </data>
+  <data name="&gt;&gt;pbSecondArrow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbSecondArrow.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbSecondArrow.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="pbFirstArrow.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbFirstArrow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pbFirstArrow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 30</value>
+  </data>
+  <data name="pbFirstArrow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 93</value>
+  </data>
+  <data name="pbFirstArrow.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;pbFirstArrow.Name" xml:space="preserve">
+    <value>pbFirstArrow</value>
+  </data>
+  <data name="&gt;&gt;pbFirstArrow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbFirstArrow.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pbFirstArrow.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
   <data name="pbLogo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="pbLogo.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="pbLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="pbLogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 231</value>
+    <value>285, 229</value>
   </data>
   <data name="pbLogo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 101</value>
+    <value>177, 176</value>
   </data>
   <data name="pbLogo.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -538,7 +637,48 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pbLogo.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>14</value>
+  </data>
+  <data name="richTbHelp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="richTbHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 30</value>
+  </data>
+  <data name="richTbHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 405</value>
+  </data>
+  <data name="richTbHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="richTbHelp.Text" xml:space="preserve">
+    <value>Regles : Le but est  mettre K.O. l'adversaire pour gagner son temps, si vous perdez
+vous mourrez.
+
+Afin de gagner la partie, il faut appuyer sur les fleches demandés
+Si vous ne rentrez pas de fleches ou si vous vous trompez vous perdez 
+du temps.
+
+Commandes :
+	Z = flèche haut
+	S = flèche bas
+	Q = flèche gauche
+	D = flèche droite</value>
+  </data>
+  <data name="richTbHelp.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;richTbHelp.Name" xml:space="preserve">
+    <value>richTbHelp</value>
+  </data>
+  <data name="&gt;&gt;richTbHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTbHelp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;richTbHelp.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -550,22 +690,13 @@
     <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>690, 494</value>
+    <value>751, 589</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>BrasDeFer</value>
-  </data>
-  <data name="&gt;&gt;timerpre.Name" xml:space="preserve">
-    <value>timerpre</value>
-  </data>
-  <data name="&gt;&gt;timerpre.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;timersec.Name" xml:space="preserve">
-    <value>timersec</value>
-  </data>
-  <data name="&gt;&gt;timersec.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;timerMainJeu.Name" xml:space="preserve">
     <value>timerMainJeu</value>

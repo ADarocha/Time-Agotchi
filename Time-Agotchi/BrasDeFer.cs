@@ -193,9 +193,11 @@ namespace Time_Agotchi
 
         private void timerMainJeu_Tick(object sender, EventArgs e)
         {
+            
             if (progressBarAdversaire.Value == 0 || progressBarPersoMain.Value == 0)
             {
                 timerMainJeu.Stop();
+                btQuitter.Visible = true;
 
             }
             //On peut faire une valeur négative pour diminuer le progressBar
@@ -227,6 +229,21 @@ namespace Time_Agotchi
             GestionnaireMiniJeuBrasDeFer.CalculTemps();
             AffichageDonnesPersonnages();
             timerGestionnaireJeu.Stop();
+        }
+
+        private void lbHelp_MouseHover(object sender, EventArgs e)
+        {
+            richTbHelp.Visible = true;
+        }
+
+        private void lbHelp_MouseLeave(object sender, EventArgs e)
+        {
+            richTbHelp.Visible = false;
+        }
+
+        private void btQuitter_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
