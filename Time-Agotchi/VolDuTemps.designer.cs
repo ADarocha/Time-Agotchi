@@ -120,6 +120,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VolDuTemps";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.VolDuTemps_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbAdversaire)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

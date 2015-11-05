@@ -24,6 +24,7 @@ namespace Time_Agotchi
         string txtSeconde;
 
         bool instancie;
+        bool persoMort;
 
         Banque banque;
 
@@ -46,6 +47,8 @@ namespace Time_Agotchi
 
         private void Timeagotchi_Load(object sender, EventArgs e)
         {
+            persoMort = false;
+
             //ouverture du form d'introduction
             Introduction intro = new Introduction();
 
@@ -210,8 +213,8 @@ namespace Time_Agotchi
             tempsPerso.SetHeure(0);
             tempsPerso.SetMinute(0);
             tempsPerso.SetSeconde(0);
-            timer.Enabled = false;
             lbTempsRestant.Text = "00:00:00";
+            timer.Enabled = false;
             Mort mort = new Mort();
             mort.ShowDialog();
             //ensuite, ajouter l'ouverte d'un Form pour informer le joueur de sa mort. (prévoir une image et un texte, création, instanciation et ouverture d'un Form, puis fermeture du programme après validation)
@@ -258,11 +261,25 @@ namespace Time_Agotchi
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            decouleTemps(tempsPerso); //permet le décompte du temps
-            decouleTemps(tempsDeTama);
-            decouleTemps(tempsDeGot);
-            decouleTemps(tempsDeChi);
-            decouleTemps(tempsDeAxel);
+            if (tempsPerso.GetHeure() > 0 && tempsPerso.GetMinute() > 0 && tempsPerso.GetSeconde() > 0)
+            {
+                decouleTemps(tempsPerso); //permet le décompte du temps
+            }
+            else
+            {
+                if (tempsPerso.GetHeure() == 0 && tempsPerso.GetMinute() == 0 && tempsPerso.GetSeconde() == 0)
+                {
+                        mort();
+                }
+            }
+            if (tempsDeTama.GetHeure() > 0 && tempsDeTama.GetMinute() > 0 && tempsDeTama.GetSeconde() > 0)
+                decouleTemps(tempsDeTama);
+            if (tempsDeGot.GetHeure() > 0 && tempsDeGot.GetMinute() > 0 && tempsDeGot.GetSeconde() > 0)
+                decouleTemps(tempsDeGot);
+            if (tempsDeChi.GetHeure() > 0 && tempsDeChi.GetMinute() > 0 && tempsDeChi.GetSeconde() > 0)
+                decouleTemps(tempsDeChi);
+            if (tempsDeAxel.GetHeure() > 0 && tempsDeAxel.GetMinute() > 0 && tempsDeAxel.GetSeconde() > 0)
+                decouleTemps(tempsDeAxel);
 
 
             //Timer qui check à chaque seconde
@@ -307,7 +324,7 @@ namespace Time_Agotchi
 
             if (leJoueur.GetFaim() == 0 || leJoueur.GetSoif() == 0) //si le personnage a trop faim ou soif, il meurt
             {
-                mort();
+                    mort();
             }
         }
 

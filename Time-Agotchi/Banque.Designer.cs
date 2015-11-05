@@ -34,13 +34,14 @@
             this.timerPlacement = new System.Windows.Forms.Timer(this.components);
             this.tbSecPlacement = new System.Windows.Forms.TextBox();
             this.btRecup = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbTempsAPlacer = new System.Windows.Forms.Label();
             this.btFermer = new System.Windows.Forms.Button();
+            this.lbLeTempsPlace = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btPlacer
             // 
-            this.btPlacer.Location = new System.Drawing.Point(512, 4);
+            this.btPlacer.Location = new System.Drawing.Point(500, 3);
             this.btPlacer.Name = "btPlacer";
             this.btPlacer.Size = new System.Drawing.Size(75, 23);
             this.btPlacer.TabIndex = 0;
@@ -51,7 +52,7 @@
             // lbTempsPlace
             // 
             this.lbTempsPlace.AutoSize = true;
-            this.lbTempsPlace.Location = new System.Drawing.Point(206, 345);
+            this.lbTempsPlace.Location = new System.Drawing.Point(278, 346);
             this.lbTempsPlace.Name = "lbTempsPlace";
             this.lbTempsPlace.Size = new System.Drawing.Size(64, 13);
             this.lbTempsPlace.TabIndex = 2;
@@ -80,15 +81,15 @@
             this.btRecup.UseVisualStyleBackColor = true;
             this.btRecup.Click += new System.EventHandler(this.btRecup_Click);
             // 
-            // label1
+            // lbTempsAPlacer
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(257, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Temps à placer (en secondes) :";
-            this.label1.Visible = false;
+            this.lbTempsAPlacer.AutoSize = true;
+            this.lbTempsAPlacer.Location = new System.Drawing.Point(258, 10);
+            this.lbTempsAPlacer.Name = "lbTempsAPlacer";
+            this.lbTempsAPlacer.Size = new System.Drawing.Size(156, 13);
+            this.lbTempsAPlacer.TabIndex = 5;
+            this.lbTempsAPlacer.Text = "Temps à placer (en secondes) :";
+            this.lbTempsAPlacer.Visible = false;
             // 
             // btFermer
             // 
@@ -100,19 +101,32 @@
             this.btFermer.UseVisualStyleBackColor = true;
             this.btFermer.Click += new System.EventHandler(this.btFermer_Click);
             // 
+            // lbLeTempsPlace
+            // 
+            this.lbLeTempsPlace.AutoSize = true;
+            this.lbLeTempsPlace.Location = new System.Drawing.Point(202, 346);
+            this.lbLeTempsPlace.Name = "lbLeTempsPlace";
+            this.lbLeTempsPlace.Size = new System.Drawing.Size(70, 13);
+            this.lbLeTempsPlace.TabIndex = 7;
+            this.lbLeTempsPlace.Text = "temps placé :";
+            this.lbLeTempsPlace.Visible = false;
+            // 
             // Banque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Time_Agotchi.Properties.Resources.bank;
             this.ClientSize = new System.Drawing.Size(591, 400);
+            this.Controls.Add(this.lbTempsAPlacer);
+            this.Controls.Add(this.lbLeTempsPlace);
             this.Controls.Add(this.btFermer);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btRecup);
             this.Controls.Add(this.tbSecPlacement);
             this.Controls.Add(this.lbTempsPlace);
             this.Controls.Add(this.btPlacer);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Banque";
+            this.Padding = new System.Windows.Forms.Padding(1);
             this.Text = "Banque";
             this.Load += new System.EventHandler(this.Banque_Load);
             this.ResumeLayout(false);
@@ -127,7 +141,8 @@
         private System.Windows.Forms.Timer timerPlacement;
         private System.Windows.Forms.TextBox tbSecPlacement;
         private System.Windows.Forms.Button btRecup;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbTempsAPlacer;
         private System.Windows.Forms.Button btFermer;
+        private System.Windows.Forms.Label lbLeTempsPlace;
     }
 }
