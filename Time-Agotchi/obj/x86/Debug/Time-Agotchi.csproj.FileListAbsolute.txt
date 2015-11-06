@@ -1,0 +1,81 @@
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\bin\Debug\Time-Agotchi.exe
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\bin\Debug\Time-Agotchi.pdb
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Timeagotchi.resources
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Properties.Resources.resources
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.csproj.GenerateResource.Cache
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.exe
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.pdb
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Introduction.resources
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.APropos.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.exe
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.pdb
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\bin\Debug\Time-Agotchi.exe
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\bin\Debug\Time-Agotchi.pdb
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.APropos.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Introduction.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Timeagotchi.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Properties.Resources.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.csproj.GenerateResource.Cache
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Banque.resources
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.exe
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.pdb
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\bin\Debug\Time-Agotchi.exe
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\bin\Debug\Time-Agotchi.pdb
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.APropos.resources
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Banque.resources
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.BrasDeFer.resources
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Introduction.resources
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Timeagotchi.resources
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Properties.Resources.resources
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\COYLAC-J15\Mes documents\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.exe
+C:\Documents and Settings\COYLAC-J15\Mes documents\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.pdb
+C:\Documents and Settings\COYLAC-J15\Mes documents\Dropbox\Time-Agotchi\Time-Agotchi\bin\Debug\Time-Agotchi.exe
+C:\Documents and Settings\COYLAC-J15\Mes documents\Dropbox\Time-Agotchi\Time-Agotchi\bin\Debug\Time-Agotchi.pdb
+C:\Documents and Settings\COYLAC-J15\Mes documents\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\COYLAC-J15\Mes documents\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.APropos.resources
+C:\Documents and Settings\COYLAC-J15\Mes documents\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Banque.resources
+C:\Documents and Settings\COYLAC-J15\Mes documents\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.BrasDeFer.resources
+C:\Documents and Settings\COYLAC-J15\Mes documents\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Introduction.resources
+C:\Documents and Settings\COYLAC-J15\Mes documents\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Timeagotchi.resources
+C:\Documents and Settings\COYLAC-J15\Mes documents\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Properties.Resources.resources
+C:\Documents and Settings\COYLAC-J15\Mes documents\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\COYLAC-J15\Mes documents\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\antho\Time-Agotchi-master\Time-Agotchi-master\Time-Agotchi\obj\x86\Debug\Time-Agotchi.exe
+C:\Users\antho\Time-Agotchi-master\Time-Agotchi-master\Time-Agotchi\obj\x86\Debug\Time-Agotchi.pdb
+C:\Users\antho\Time-Agotchi-master\Time-Agotchi-master\Time-Agotchi\bin\Debug\Time-Agotchi.exe
+C:\Users\antho\Time-Agotchi-master\Time-Agotchi-master\Time-Agotchi\bin\Debug\Time-Agotchi.pdb
+C:\Users\antho\Time-Agotchi-master\Time-Agotchi-master\Time-Agotchi\obj\x86\Debug\Time-Agotchi.csprojResolveAssemblyReference.cache
+C:\Users\antho\Time-Agotchi-master\Time-Agotchi-master\Time-Agotchi\obj\x86\Debug\Time_Agotchi.APropos.resources
+C:\Users\antho\Time-Agotchi-master\Time-Agotchi-master\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Banque.resources
+C:\Users\antho\Time-Agotchi-master\Time-Agotchi-master\Time-Agotchi\obj\x86\Debug\Time_Agotchi.BrasDeFer.resources
+C:\Users\antho\Time-Agotchi-master\Time-Agotchi-master\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Introduction.resources
+C:\Users\antho\Time-Agotchi-master\Time-Agotchi-master\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Timeagotchi.resources
+C:\Users\antho\Time-Agotchi-master\Time-Agotchi-master\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Properties.Resources.resources
+C:\Users\antho\Time-Agotchi-master\Time-Agotchi-master\Time-Agotchi\obj\x86\Debug\Time-Agotchi.csproj.GenerateResource.Cache
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Banque.resources
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.BrasDeFer.resources
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Resume.resources
+C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.VolDuTemps.resources
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Mort.resources
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Resume.resources
+C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.VolDuTemps.resources
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\obj\x86\Debug\Time-Agotchi.exe
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\obj\x86\Debug\Time-Agotchi.pdb
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\bin\Debug\Time-Agotchi.exe
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\bin\Debug\Time-Agotchi.pdb
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\obj\x86\Debug\Time_Agotchi.APropos.resources
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Banque.resources
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\obj\x86\Debug\Time_Agotchi.BrasDeFer.resources
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Introduction.resources
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Mort.resources
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Resume.resources
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Timeagotchi.resources
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Properties.Resources.resources
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\obj\x86\Debug\Time_Agotchi.VolDuTemps.resources
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Juan\Dropbox\Time-Agotchi-9cdfbe8b196182959ab9c59c1c1739a5387c2eb7\Time-Agotchi\obj\x86\Debug\GenerateResource.write.1.tlog
