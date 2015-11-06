@@ -11,7 +11,6 @@ C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-A
 C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.pdb
 C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\bin\Debug\Time-Agotchi.exe
 C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\bin\Debug\Time-Agotchi.pdb
-C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.csprojResolveAssemblyReference.cache
 C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.APropos.resources
 C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Introduction.resources
 C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Timeagotchi.resources
@@ -63,3 +62,8 @@ C:\Users\antho\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Ago
 C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Mort.resources
 C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Resume.resources
 C:\Users\Juan\Dropbox\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.VolDuTemps.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.BrasDeFer.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Mort.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Resume.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.VolDuTemps.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.csprojResolveAssemblyReference.cache
