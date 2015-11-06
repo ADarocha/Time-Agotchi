@@ -51,6 +51,8 @@
             this.pbSecondArrow = new System.Windows.Forms.PictureBox();
             this.pbFirstArrow = new System.Windows.Forms.PictureBox();
             this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.lbNomAdversaire = new System.Windows.Forms.Label();
+            this.lbPersoMain = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbFourthReponse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbThirdReponse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSecondReponse)).BeginInit();
@@ -196,11 +198,25 @@
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.TabStop = false;
             // 
+            // lbNomAdversaire
+            // 
+            resources.ApplyResources(this.lbNomAdversaire, "lbNomAdversaire");
+            this.lbNomAdversaire.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbNomAdversaire.Name = "lbNomAdversaire";
+            // 
+            // lbPersoMain
+            // 
+            resources.ApplyResources(this.lbPersoMain, "lbPersoMain");
+            this.lbPersoMain.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbPersoMain.Name = "lbPersoMain";
+            // 
             // BrasDeFer
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
+            this.Controls.Add(this.lbPersoMain);
+            this.Controls.Add(this.lbNomAdversaire);
             this.Controls.Add(this.richTbHelp);
             this.Controls.Add(this.lbHelp);
             this.Controls.Add(this.btQuitter);
@@ -261,5 +277,7 @@
         private System.Windows.Forms.Button btQuitter;
         private System.Windows.Forms.Label lbHelp;
         private System.Windows.Forms.RichTextBox richTbHelp;
+        private System.Windows.Forms.Label lbNomAdversaire;
+        private System.Windows.Forms.Label lbPersoMain;
     }
 }

@@ -26,7 +26,8 @@ namespace Time_Agotchi
         private void BrasDeFer_Load(object sender, EventArgs e)
         {
             //Affichage de Données Des personnages + Affichage de ProgressBar 
-            AffichageDonnesPersonnages();
+            AffichageNomsPersonnages();
+            AffichageTempsPersonnages();
             progressBarPersoMain.Value = 50;
             progressBarAdversaire.Value = 50;
 
@@ -120,10 +121,17 @@ namespace Time_Agotchi
        /// <summary>
        /// Debut Methodes D'afficahges Donnes Personnages
        /// </summary>
-        private void AffichageDonnesPersonnages()
+        private void AffichageTempsPersonnages()
         {
-            lbTempsJoueur.Text = GestionnaireMiniJeuBrasDeFer.GetMainPerso().ToString();
-            lbTempsAdversaire.Text = GestionnaireMiniJeuBrasDeFer.GetAdversaire().ToString();
+            lbTempsJoueur.Text = GestionnaireMiniJeuBrasDeFer.GetMainPerso().TempsPersonnageString();
+            lbTempsAdversaire.Text = GestionnaireMiniJeuBrasDeFer.GetAdversaire().TempsPersonnageString();
+           
+        }
+
+        private void AffichageNomsPersonnages()
+        {
+            lbPersoMain.Text = GestionnaireMiniJeuBrasDeFer.GetMainPerso().GetNom();
+            lbNomAdversaire.Text = GestionnaireMiniJeuBrasDeFer.GetAdversaire().GetNom();
         }
 
        ///<summary>
@@ -184,11 +192,13 @@ namespace Time_Agotchi
 
         private void timerMainJeu_Tick(object sender, EventArgs e)
         {
-            
+            //si un des joueurs a une vie de 0 alors on arrete le cycle de jeu//
+            //si non on continue le cycle
             if (progressBarAdversaire.Value == 0 || progressBarPersoMain.Value == 0)
             {
                 timerMainJeu.Stop();
                 btQuitter.Visible = true;
+                //fin du cycle de jeu//
 
             }
             //On peut faire une valeur négative pour diminuer le progressBar
@@ -205,8 +215,8 @@ namespace Time_Agotchi
             KeyPreview = false;
 
             GestionnaireMiniJeuBrasDeFer.GenererReponses(); //Recupération des réponses
-            AffichagerAllReponses();
-            GestionnaireMiniJeuBrasDeFer.SetGagnantPrecedent(GestionnaireMiniJeuBrasDeFer.GetGagnant());
+            AffichagerAllReponses();//affiche les images des bonnes et mauvaises réponses
+            GestionnaireMiniJeuBrasDeFer.SetGagnantPrecedent(GestionnaireMiniJeuBrasDeFer.GetGagnant()); //changement du joueur precedent
             if (GestionnaireMiniJeuBrasDeFer.DefinirGagnant() == true)
             {
                 progressBarAdversaire.Increment(-valeur);
@@ -218,7 +228,7 @@ namespace Time_Agotchi
                 progressBarPersoMain.Increment(-valeur);
             }
             GestionnaireMiniJeuBrasDeFer.CalculTemps();
-            AffichageDonnesPersonnages();
+            AffichageTempsPersonnages();
             timerGestionnaireJeu.Stop();
         }
 

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Timeagotchi));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seSuiciderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,6 +55,7 @@
             this.timerAge = new System.Windows.Forms.Timer(this.components);
             this.btPersonnages = new System.Windows.Forms.Button();
             this.pbPersonnage = new System.Windows.Forms.PictureBox();
+            this.listeBoxInfosPersonnages = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.gbStatus.SuspendLayout();
             this.gbActions.SuspendLayout();
@@ -67,7 +69,7 @@
             this.aProposToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(684, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1053, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -96,10 +98,10 @@
             // lbNomPerso
             // 
             this.lbNomPerso.AutoSize = true;
-            this.lbNomPerso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNomPerso.Font = new System.Drawing.Font("Quartz MS", 14F);
             this.lbNomPerso.Location = new System.Drawing.Point(91, 16);
             this.lbNomPerso.Name = "lbNomPerso";
-            this.lbNomPerso.Size = new System.Drawing.Size(91, 13);
+            this.lbNomPerso.Size = new System.Drawing.Size(146, 23);
             this.lbNomPerso.TabIndex = 2;
             this.lbNomPerso.Text = "NOM DU PERSO";
             // 
@@ -113,9 +115,11 @@
             this.gbStatus.Controls.Add(this.pbSoifPerso);
             this.gbStatus.Controls.Add(this.pbFaimPerso);
             this.gbStatus.Controls.Add(this.lbNomPerso);
-            this.gbStatus.Location = new System.Drawing.Point(472, 38);
+            this.gbStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbStatus.ForeColor = System.Drawing.Color.SpringGreen;
+            this.gbStatus.Location = new System.Drawing.Point(792, 38);
             this.gbStatus.Name = "gbStatus";
-            this.gbStatus.Size = new System.Drawing.Size(200, 117);
+            this.gbStatus.Size = new System.Drawing.Size(249, 187);
             this.gbStatus.TabIndex = 3;
             this.gbStatus.TabStop = false;
             this.gbStatus.Text = "Status";
@@ -123,140 +127,174 @@
             // lbSoif
             // 
             this.lbSoif.AutoSize = true;
-            this.lbSoif.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoif.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoif.Location = new System.Drawing.Point(6, 89);
             this.lbSoif.Name = "lbSoif";
-            this.lbSoif.Size = new System.Drawing.Size(34, 13);
+            this.lbSoif.Size = new System.Drawing.Size(65, 23);
             this.lbSoif.TabIndex = 9;
             this.lbSoif.Text = "Soif : ";
             // 
             // lbFaim
             // 
             this.lbFaim.AutoSize = true;
-            this.lbFaim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFaim.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFaim.Location = new System.Drawing.Point(6, 65);
             this.lbFaim.Name = "lbFaim";
-            this.lbFaim.Size = new System.Drawing.Size(35, 13);
+            this.lbFaim.Size = new System.Drawing.Size(67, 23);
             this.lbFaim.TabIndex = 8;
             this.lbFaim.Text = "Faim :";
             // 
             // lbAge
             // 
             this.lbAge.AutoSize = true;
-            this.lbAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAge.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAge.Location = new System.Drawing.Point(6, 40);
             this.lbAge.Name = "lbAge";
-            this.lbAge.Size = new System.Drawing.Size(32, 13);
+            this.lbAge.Size = new System.Drawing.Size(55, 23);
             this.lbAge.TabIndex = 7;
             this.lbAge.Text = "Age :";
             // 
             // lbNom
             // 
             this.lbNom.AutoSize = true;
-            this.lbNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNom.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNom.Location = new System.Drawing.Point(6, 17);
             this.lbNom.Name = "lbNom";
-            this.lbNom.Size = new System.Drawing.Size(38, 13);
+            this.lbNom.Size = new System.Drawing.Size(68, 23);
             this.lbNom.TabIndex = 6;
             this.lbNom.Text = "Nom : ";
             // 
             // lbAgePerso
             // 
             this.lbAgePerso.AutoSize = true;
-            this.lbAgePerso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAgePerso.Font = new System.Drawing.Font("Quartz MS", 14F);
             this.lbAgePerso.Location = new System.Drawing.Point(94, 40);
             this.lbAgePerso.Name = "lbAgePerso";
-            this.lbAgePerso.Size = new System.Drawing.Size(88, 13);
+            this.lbAgePerso.Size = new System.Drawing.Size(138, 23);
             this.lbAgePerso.TabIndex = 5;
             this.lbAgePerso.Text = "AGE DU PERSO";
             // 
             // pbSoifPerso
             // 
-            this.pbSoifPerso.Location = new System.Drawing.Point(94, 89);
+            this.pbSoifPerso.Location = new System.Drawing.Point(98, 99);
             this.pbSoifPerso.Name = "pbSoifPerso";
             this.pbSoifPerso.Size = new System.Drawing.Size(100, 13);
             this.pbSoifPerso.TabIndex = 4;
             // 
             // pbFaimPerso
             // 
-            this.pbFaimPerso.Location = new System.Drawing.Point(94, 65);
+            this.pbFaimPerso.Location = new System.Drawing.Point(98, 75);
             this.pbFaimPerso.Name = "pbFaimPerso";
             this.pbFaimPerso.Size = new System.Drawing.Size(100, 13);
             this.pbFaimPerso.TabIndex = 3;
             // 
             // gbActions
             // 
+            this.gbActions.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gbActions.BackgroundImage")));
+            this.gbActions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gbActions.Controls.Add(this.btPlacerTemps);
             this.gbActions.Controls.Add(this.btMachineASous);
             this.gbActions.Controls.Add(this.btJouerBrasFer);
             this.gbActions.Controls.Add(this.btVolerTemps);
             this.gbActions.Controls.Add(this.btBoire);
             this.gbActions.Controls.Add(this.btManger);
+            this.gbActions.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.gbActions.ForeColor = System.Drawing.Color.SpringGreen;
             this.gbActions.Location = new System.Drawing.Point(12, 38);
             this.gbActions.Name = "gbActions";
-            this.gbActions.Size = new System.Drawing.Size(200, 218);
+            this.gbActions.Size = new System.Drawing.Size(530, 548);
             this.gbActions.TabIndex = 4;
             this.gbActions.TabStop = false;
-            this.gbActions.Text = "Actions";
+            this.gbActions.Text = "Map";
             // 
             // btPlacerTemps
             // 
-            this.btPlacerTemps.Location = new System.Drawing.Point(9, 174);
+            this.btPlacerTemps.BackColor = System.Drawing.Color.Black;
+            this.btPlacerTemps.FlatAppearance.BorderSize = 0;
+            this.btPlacerTemps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btPlacerTemps.Font = new System.Drawing.Font("Quartz MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPlacerTemps.ForeColor = System.Drawing.Color.SpringGreen;
+            this.btPlacerTemps.Location = new System.Drawing.Point(41, 360);
             this.btPlacerTemps.Name = "btPlacerTemps";
-            this.btPlacerTemps.Size = new System.Drawing.Size(182, 23);
+            this.btPlacerTemps.Size = new System.Drawing.Size(130, 68);
             this.btPlacerTemps.TabIndex = 12;
             this.btPlacerTemps.Text = "Placer du temps";
-            this.btPlacerTemps.UseVisualStyleBackColor = true;
+            this.btPlacerTemps.UseVisualStyleBackColor = false;
             this.btPlacerTemps.Click += new System.EventHandler(this.btPlacerTemps_Click);
             // 
             // btMachineASous
             // 
-            this.btMachineASous.Location = new System.Drawing.Point(9, 145);
+            this.btMachineASous.BackColor = System.Drawing.Color.Black;
+            this.btMachineASous.FlatAppearance.BorderSize = 0;
+            this.btMachineASous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btMachineASous.Font = new System.Drawing.Font("Quartz MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMachineASous.ForeColor = System.Drawing.Color.SpringGreen;
+            this.btMachineASous.Location = new System.Drawing.Point(29, 262);
             this.btMachineASous.Name = "btMachineASous";
-            this.btMachineASous.Size = new System.Drawing.Size(182, 23);
+            this.btMachineASous.Size = new System.Drawing.Size(95, 77);
             this.btMachineASous.TabIndex = 11;
             this.btMachineASous.Text = "Machine à sous";
-            this.btMachineASous.UseVisualStyleBackColor = true;
+            this.btMachineASous.UseVisualStyleBackColor = false;
             this.btMachineASous.Click += new System.EventHandler(this.btMachineASous_Click);
             // 
             // btJouerBrasFer
             // 
-            this.btJouerBrasFer.Location = new System.Drawing.Point(9, 116);
+            this.btJouerBrasFer.BackColor = System.Drawing.Color.Black;
+            this.btJouerBrasFer.FlatAppearance.BorderSize = 0;
+            this.btJouerBrasFer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btJouerBrasFer.Font = new System.Drawing.Font("Quartz MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btJouerBrasFer.ForeColor = System.Drawing.Color.SpringGreen;
+            this.btJouerBrasFer.Location = new System.Drawing.Point(179, 208);
             this.btJouerBrasFer.Name = "btJouerBrasFer";
-            this.btJouerBrasFer.Size = new System.Drawing.Size(182, 23);
+            this.btJouerBrasFer.Size = new System.Drawing.Size(73, 87);
             this.btJouerBrasFer.TabIndex = 10;
             this.btJouerBrasFer.Text = "Jouer au bras de fer";
-            this.btJouerBrasFer.UseVisualStyleBackColor = true;
+            this.btJouerBrasFer.UseVisualStyleBackColor = false;
             this.btJouerBrasFer.Click += new System.EventHandler(this.btJouerBrasFer_Click);
             // 
             // btVolerTemps
             // 
-            this.btVolerTemps.Location = new System.Drawing.Point(9, 87);
+            this.btVolerTemps.BackColor = System.Drawing.Color.Black;
+            this.btVolerTemps.FlatAppearance.BorderSize = 0;
+            this.btVolerTemps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btVolerTemps.Font = new System.Drawing.Font("Quartz MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btVolerTemps.ForeColor = System.Drawing.Color.SpringGreen;
+            this.btVolerTemps.Location = new System.Drawing.Point(364, 174);
             this.btVolerTemps.Name = "btVolerTemps";
-            this.btVolerTemps.Size = new System.Drawing.Size(182, 23);
+            this.btVolerTemps.Size = new System.Drawing.Size(61, 140);
             this.btVolerTemps.TabIndex = 8;
             this.btVolerTemps.Text = "Tenter de voler du temps";
-            this.btVolerTemps.UseVisualStyleBackColor = true;
+            this.btVolerTemps.UseVisualStyleBackColor = false;
             this.btVolerTemps.Click += new System.EventHandler(this.btVolerTemps_Click);
             // 
             // btBoire
             // 
-            this.btBoire.Location = new System.Drawing.Point(9, 58);
+            this.btBoire.BackColor = System.Drawing.Color.Black;
+            this.btBoire.FlatAppearance.BorderSize = 0;
+            this.btBoire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btBoire.Font = new System.Drawing.Font("Quartz MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBoire.ForeColor = System.Drawing.Color.SpringGreen;
+            this.btBoire.Location = new System.Drawing.Point(110, 47);
             this.btBoire.Name = "btBoire";
-            this.btBoire.Size = new System.Drawing.Size(182, 23);
+            this.btBoire.Size = new System.Drawing.Size(121, 106);
             this.btBoire.TabIndex = 7;
             this.btBoire.Text = "Acheter à boire - Prix : 1min";
-            this.btBoire.UseVisualStyleBackColor = true;
+            this.btBoire.UseVisualStyleBackColor = false;
             this.btBoire.Click += new System.EventHandler(this.btBoire_Click);
             // 
             // btManger
             // 
-            this.btManger.Location = new System.Drawing.Point(9, 29);
+            this.btManger.BackColor = System.Drawing.Color.Black;
+            this.btManger.FlatAppearance.BorderSize = 0;
+            this.btManger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btManger.Font = new System.Drawing.Font("Quartz MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btManger.ForeColor = System.Drawing.Color.SpringGreen;
+            this.btManger.Location = new System.Drawing.Point(377, 40);
             this.btManger.Name = "btManger";
-            this.btManger.Size = new System.Drawing.Size(182, 23);
+            this.btManger.Size = new System.Drawing.Size(117, 113);
             this.btManger.TabIndex = 6;
             this.btManger.Text = "Acheter à manger - Prix : 2min";
-            this.btManger.UseVisualStyleBackColor = true;
+            this.btManger.UseVisualStyleBackColor = false;
             this.btManger.Click += new System.EventHandler(this.btManger_Click);
             // 
             // timer
@@ -266,11 +304,11 @@
             // 
             // lbTempsRestant
             // 
-            this.lbTempsRestant.AutoSize = true;
-            this.lbTempsRestant.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTempsRestant.Location = new System.Drawing.Point(259, 38);
+            this.lbTempsRestant.Font = new System.Drawing.Font("Quartz MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTempsRestant.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbTempsRestant.Location = new System.Drawing.Point(564, 293);
             this.lbTempsRestant.Name = "lbTempsRestant";
-            this.lbTempsRestant.Size = new System.Drawing.Size(149, 37);
+            this.lbTempsRestant.Size = new System.Drawing.Size(239, 68);
             this.lbTempsRestant.TabIndex = 6;
             this.lbTempsRestant.Text = "00:10:00";
             // 
@@ -281,9 +319,11 @@
             // 
             // btPersonnages
             // 
-            this.btPersonnages.Location = new System.Drawing.Point(536, 326);
+            this.btPersonnages.Font = new System.Drawing.Font("Quartz MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPersonnages.ForeColor = System.Drawing.Color.SpringGreen;
+            this.btPersonnages.Location = new System.Drawing.Point(852, 467);
             this.btPersonnages.Name = "btPersonnages";
-            this.btPersonnages.Size = new System.Drawing.Size(130, 23);
+            this.btPersonnages.Size = new System.Drawing.Size(177, 79);
             this.btPersonnages.TabIndex = 13;
             this.btPersonnages.Text = "Voir personnages";
             this.btPersonnages.UseVisualStyleBackColor = true;
@@ -291,18 +331,37 @@
             // 
             // pbPersonnage
             // 
+            this.pbPersonnage.BackColor = System.Drawing.Color.White;
             this.pbPersonnage.Image = global::Time_Agotchi.Properties.Resources.personnage;
-            this.pbPersonnage.Location = new System.Drawing.Point(238, 96);
+            this.pbPersonnage.Location = new System.Drawing.Point(574, 38);
             this.pbPersonnage.Name = "pbPersonnage";
             this.pbPersonnage.Size = new System.Drawing.Size(200, 200);
             this.pbPersonnage.TabIndex = 1;
             this.pbPersonnage.TabStop = false;
+            this.pbPersonnage.Click += new System.EventHandler(this.pbPersonnage_Click);
+            // 
+            // listeBoxInfosPersonnages
+            // 
+            this.listeBoxInfosPersonnages.BackColor = System.Drawing.SystemColors.InfoText;
+            this.listeBoxInfosPersonnages.Font = new System.Drawing.Font("Quartz MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listeBoxInfosPersonnages.ForeColor = System.Drawing.Color.SpringGreen;
+            this.listeBoxInfosPersonnages.FormattingEnabled = true;
+            this.listeBoxInfosPersonnages.ItemHeight = 18;
+            this.listeBoxInfosPersonnages.Location = new System.Drawing.Point(574, 398);
+            this.listeBoxInfosPersonnages.Name = "listeBoxInfosPersonnages";
+            this.listeBoxInfosPersonnages.Size = new System.Drawing.Size(227, 148);
+            this.listeBoxInfosPersonnages.TabIndex = 14;
+            this.listeBoxInfosPersonnages.Visible = false;
+            this.listeBoxInfosPersonnages.VisibleChanged += new System.EventHandler(this.listeBoxInfosPersonnages_VisibleChanged);
+            this.listeBoxInfosPersonnages.MouseHover += new System.EventHandler(this.listeBoxInfosPersonnages_MouseHover);
             // 
             // Timeagotchi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 361);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(1053, 598);
+            this.Controls.Add(this.listeBoxInfosPersonnages);
             this.Controls.Add(this.btPersonnages);
             this.Controls.Add(this.lbTempsRestant);
             this.Controls.Add(this.gbActions);
@@ -351,6 +410,7 @@
         private System.Windows.Forms.Button btMachineASous;
         private System.Windows.Forms.Button btPlacerTemps;
         private System.Windows.Forms.Button btPersonnages;
+        private System.Windows.Forms.ListBox listeBoxInfosPersonnages;
     }
 }
 

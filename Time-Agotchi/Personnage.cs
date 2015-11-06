@@ -112,7 +112,7 @@ namespace Time_Agotchi
             secondesPlacees = secondes;
         }
 
-        public override string ToString()
+        public  string TempsPersonnageString()
         {
             string txtHeure;
             string txtMinute;
@@ -135,6 +135,11 @@ namespace Time_Agotchi
 
             temps = txtHeure + ":" + txtMinute + ":" + txtSeconde;
             return temps;
+        }
+
+        public override string ToString()
+        {
+            return nom + "   " + TempsPersonnageString();
         }
     }
 }

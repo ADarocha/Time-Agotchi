@@ -166,11 +166,27 @@ namespace Time_Agotchi
 
         private void btJouerBrasFer_Click(object sender, EventArgs e)
         {
-        
-            timer.Stop();
-            BrasDeFer brasDeFer = new BrasDeFer();
-            brasDeFer.ShowDialog();
-            timer.Start();
+            if (listeBoxInfosPersonnages.SelectedItem == null)
+            {
+                
+                    MessageBox.Show("Veuillez selectionner un adversaire");
+                    listeBoxInfosPersonnages.Visible = true;
+                
+            }
+            else
+            {
+              
+                Personnage adversaire = (Personnage)listeBoxInfosPersonnages.SelectedItem;
+                Donnees.GetAdversaires().Add(adversaire);
+                timer.Stop();
+                BrasDeFer brasDeFer = new BrasDeFer();
+                brasDeFer.ShowDialog();
+                timer.Start();
+                Donnees.GetAdversaires().Clear();
+                listeBoxInfosPersonnages.Visible = true;
+                listeBoxInfosPersonnages.Visible = false;
+                MessageBox.Show(Donnees.GetAdversaires().Count.ToString());
+            }
             //Ouvre un nouveau Form avec un mini jeu où il faut spammer un bouton pour gagner
         }
 
@@ -316,5 +332,33 @@ namespace Time_Agotchi
             Resume resume = new Resume();
             resume.Show();
         }
+
+        private void rafraichirListeBox()
+        {
+            listeBoxInfosPersonnages.DataSource = null;
+            listeBoxInfosPersonnages.DataSource = Donnees.GetPersos();
+        }
+
+        private void listeBoxInfosPersonnages_MouseHover(object sender, EventArgs e)
+        {
+            
+            
+                rafraichirListeBox();
+            
+        }
+
+        private void listeBoxInfosPersonnages_VisibleChanged(object sender, EventArgs e)
+        {
+            rafraichirListeBox();
+        }
+
+    
+
+        private void pbPersonnage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 }

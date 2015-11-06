@@ -12,7 +12,7 @@ namespace Time_Agotchi
         private static List<string> listeFlechesEntrees = new List<string>(); //les fléches entrées par le joueur
         private static List<bool> listeReponses = new List<bool>(); //bonne ou mauvais réponses du joueur 
         private static Personnage personnageMain = Donnees.GetPersos()[0];
-        private static Personnage adversaire = Donnees.GetPersos()[1];
+        private static Personnage adversaire = Donnees.GetAdversaires()[0];
         private static Personnage gagnant;
         private static Personnage perdant;
         private static Personnage gagnatPrecedant;
