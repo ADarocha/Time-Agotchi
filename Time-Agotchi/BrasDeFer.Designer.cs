@@ -239,6 +239,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BrasDeFer";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BrasDeFer_FormClosed);
             this.Load += new System.EventHandler(this.BrasDeFer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbFourthReponse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbThirdReponse)).EndInit();

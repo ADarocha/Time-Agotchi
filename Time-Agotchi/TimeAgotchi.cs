@@ -128,6 +128,9 @@ namespace Time_Agotchi
                 mort();
             else
             {
+                TimerAffichageManger.Interval = 3000;
+                TimerAffichageManger.Start();
+                pbPersonnage.Image = Properties.Resources.GIF_manger;//stop remettre image personnage
                 tempsPerso.retirerMinute(2);
                 leJoueur.AjouterRetirerFaim(true);
                 if(leJoueur.GetFaim() < 10)
@@ -144,6 +147,10 @@ namespace Time_Agotchi
                 mort();
             else
             {
+                //on veut afficher l'image boire gif pendant 3 secondes puis ont arrete dans le timerGif
+                timerAffichageGif.Interval = 3000;
+                timerAffichageGif.Start();
+                pbPersonnage.Image = Properties.Resources.GIF_Boire;//stop remettre image personnage
                 tempsPerso.retirerMinute(1);
                 leJoueur.AjouterRetirerSoif(true);
                 if (leJoueur.GetSoif() < 10)
@@ -166,7 +173,7 @@ namespace Time_Agotchi
 
         private void btJouerBrasFer_Click(object sender, EventArgs e)
         {
-            if (listeBoxInfosPersonnages.SelectedItem == null)
+            if (listeBoxInfosPersonnages.Visible ==false)
             {
                 
                     MessageBox.Show("Veuillez selectionner un adversaire");
@@ -178,6 +185,7 @@ namespace Time_Agotchi
                 MessageBox.Show(Donnees.GetAdversaires().Count.ToString());
                 Personnage adversaire = (Personnage)listeBoxInfosPersonnages.SelectedItem;
                     Donnees.GetAdversaires().Add(adversaire);
+                    MessageBox.Show(Donnees.GetAdversaires().Count.ToString()+" "+ Donnees.GetAdversaires()[0].GetNom());
                     timer.Stop();
                     BrasDeFer brasDeFer = new BrasDeFer();
                     brasDeFer.ShowDialog();
@@ -358,6 +366,18 @@ namespace Time_Agotchi
         private void pbPersonnage_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void timerAffichageGif_Tick(object sender, EventArgs e)
+        {
+            timerAffichageGif.Stop();
+            pbPersonnage.Image = Properties.Resources.personnage;
+        }
+
+        private void TimerAffichageManger_Tick(object sender, EventArgs e)
+        {
+            TimerAffichageManger.Stop();
+            pbPersonnage.Image = Properties.Resources.personnage;
         }
 
       

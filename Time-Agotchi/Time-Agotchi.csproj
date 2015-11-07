@@ -202,6 +202,24 @@
   <ItemGroup>
     <None Include="Resources\personnage.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_MachineASous.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Voleur.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_Boire.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIF_manger.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_BrasDeFer.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_Argent.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -119,5 +119,10 @@ namespace Time_Agotchi
         
         }
 
+        private void VolDuTemps_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

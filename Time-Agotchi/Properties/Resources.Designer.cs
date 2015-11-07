@@ -151,6 +151,34 @@ namespace Time_Agotchi.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap GIF_Boire {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Boire", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap GIF_MachineASous {
+            get {
+                object obj = ResourceManager.GetObject("GIF_MachineASous", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap GIF_manger {
+            get {
+                object obj = ResourceManager.GetObject("GIF_manger", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap GIF_Voleur {
+            get {
+                object obj = ResourceManager.GetObject("GIF_Voleur", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -204,6 +232,18 @@ namespace Time_Agotchi.Properties {
             get {
                 object obj = ResourceManager.GetObject("Policier2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.IO.UnmanagedMemoryStream Sound_Argent {
+            get {
+                return ResourceManager.GetStream("Sound_Argent", resourceCulture);
+            }
+        }
+        
+        internal static System.IO.UnmanagedMemoryStream Sound_BrasDeFer {
+            get {
+                return ResourceManager.GetStream("Sound_BrasDeFer", resourceCulture);
             }
         }
         

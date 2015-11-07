@@ -8,17 +8,18 @@ using System.Text;
 using System.Windows.Forms;
 using System.Threading;
 using System.Timers;
+using System.Media;
 
 namespace Time_Agotchi
 {
     public partial class BrasDeFer : Form
     {
-        List<string> listeEntrees = new List<string>();
-        
+        List<string> listeEntrees = new List<string>();//liste des entrees du joueur (saisie)
+        SoundPlayer sound = new SoundPlayer(Properties.Resources.Sound_BrasDeFer); //musique de fond
         
         public BrasDeFer()
         {
-            
+           
             InitializeComponent();
 
         }
@@ -26,11 +27,13 @@ namespace Time_Agotchi
         private void BrasDeFer_Load(object sender, EventArgs e)
         {
             //Affichage de Données Des personnages + Affichage de ProgressBar 
+            GestionnaireMiniJeuBrasDeFer.SetAdversaire(Donnees.GetAdversaires()[0]);
             AffichageNomsPersonnages();
             AffichageTempsPersonnages();
             progressBarPersoMain.Value = 50;
             progressBarAdversaire.Value = 50;
-
+            sound.PlayLooping();
+            
             
 
             //fin
@@ -54,6 +57,7 @@ namespace Time_Agotchi
 
         private void AffichagerAllReponses()
         {
+            //affiche les reponses qui se trouvent dans une liste pour les pictureimage
             for (int i = 0; i < GestionnaireMiniJeuBrasDeFer.GetlisteReponses().Count; i++)
             {
                 if (i == 0)
@@ -147,7 +151,7 @@ namespace Time_Agotchi
             AfficherAllFleches(); //on affiche les fléches (images)
             GestionnaireMiniJeuBrasDeFer.GetlisteFlechesEntrees().Clear();//avant de réactiver les entrees pour le joueur on clean la listeDes entrees d'avant
             KeyPreview = true; //activation des entrees
-            timerGestionnaireJeu.Interval = 2000; //on attends 2 secondes avant de desactiver
+            timerGestionnaireJeu.Interval = 1500; //on attends 2 secondes avant de desactiver
             timerGestionnaireJeu.Start(); //on desactive et vérifications (voir le tick)
             
             
@@ -184,7 +188,7 @@ namespace Time_Agotchi
         private void btGo_Click(object sender, EventArgs e)
         {
             //lance le timer du main jeu
-            timerMainJeu.Interval = 2500;
+            timerMainJeu.Interval = 2000;
             timerMainJeu.Start();
             
         }
@@ -245,6 +249,11 @@ namespace Time_Agotchi
         private void btQuitter_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BrasDeFer_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            sound.Stop();
         }
     }
 }

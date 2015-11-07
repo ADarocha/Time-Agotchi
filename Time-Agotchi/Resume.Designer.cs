@@ -44,72 +44,88 @@
             // lbTama
             // 
             this.lbTama.AutoSize = true;
-            this.lbTama.Location = new System.Drawing.Point(72, 56);
+            this.lbTama.Font = new System.Drawing.Font("Quartz MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTama.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbTama.Location = new System.Drawing.Point(78, 56);
             this.lbTama.Name = "lbTama";
-            this.lbTama.Size = new System.Drawing.Size(34, 13);
+            this.lbTama.Size = new System.Drawing.Size(56, 19);
             this.lbTama.TabIndex = 0;
             this.lbTama.Text = "Tama";
             // 
             // lbGot
             // 
             this.lbGot.AutoSize = true;
-            this.lbGot.Location = new System.Drawing.Point(72, 93);
+            this.lbGot.Font = new System.Drawing.Font("Quartz MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGot.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbGot.Location = new System.Drawing.Point(78, 93);
             this.lbGot.Name = "lbGot";
-            this.lbGot.Size = new System.Drawing.Size(24, 13);
+            this.lbGot.Size = new System.Drawing.Size(40, 19);
             this.lbGot.TabIndex = 1;
             this.lbGot.Text = "Got";
             // 
             // lbChi
             // 
             this.lbChi.AutoSize = true;
-            this.lbChi.Location = new System.Drawing.Point(72, 131);
+            this.lbChi.Font = new System.Drawing.Font("Quartz MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbChi.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbChi.Location = new System.Drawing.Point(78, 131);
             this.lbChi.Name = "lbChi";
-            this.lbChi.Size = new System.Drawing.Size(22, 13);
+            this.lbChi.Size = new System.Drawing.Size(32, 19);
             this.lbChi.TabIndex = 2;
             this.lbChi.Text = "Chi";
             // 
             // lbAxel
             // 
             this.lbAxel.AutoSize = true;
-            this.lbAxel.Location = new System.Drawing.Point(72, 170);
+            this.lbAxel.Font = new System.Drawing.Font("Quartz MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAxel.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbAxel.Location = new System.Drawing.Point(78, 170);
             this.lbAxel.Name = "lbAxel";
-            this.lbAxel.Size = new System.Drawing.Size(27, 13);
+            this.lbAxel.Size = new System.Drawing.Size(47, 19);
             this.lbAxel.TabIndex = 3;
             this.lbAxel.Text = "Axel";
             // 
             // lbTempsTama
             // 
             this.lbTempsTama.AutoSize = true;
-            this.lbTempsTama.Location = new System.Drawing.Point(134, 56);
+            this.lbTempsTama.Font = new System.Drawing.Font("Quartz MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTempsTama.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbTempsTama.Location = new System.Drawing.Point(140, 56);
             this.lbTempsTama.Name = "lbTempsTama";
-            this.lbTempsTama.Size = new System.Drawing.Size(39, 13);
+            this.lbTempsTama.Size = new System.Drawing.Size(65, 19);
             this.lbTempsTama.TabIndex = 4;
             this.lbTempsTama.Text = "Temps";
             // 
             // lbTempsGot
             // 
             this.lbTempsGot.AutoSize = true;
-            this.lbTempsGot.Location = new System.Drawing.Point(134, 93);
+            this.lbTempsGot.Font = new System.Drawing.Font("Quartz MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTempsGot.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbTempsGot.Location = new System.Drawing.Point(140, 93);
             this.lbTempsGot.Name = "lbTempsGot";
-            this.lbTempsGot.Size = new System.Drawing.Size(39, 13);
+            this.lbTempsGot.Size = new System.Drawing.Size(65, 19);
             this.lbTempsGot.TabIndex = 5;
             this.lbTempsGot.Text = "Temps";
             // 
             // lbTempsChi
             // 
             this.lbTempsChi.AutoSize = true;
-            this.lbTempsChi.Location = new System.Drawing.Point(134, 131);
+            this.lbTempsChi.Font = new System.Drawing.Font("Quartz MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTempsChi.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbTempsChi.Location = new System.Drawing.Point(140, 131);
             this.lbTempsChi.Name = "lbTempsChi";
-            this.lbTempsChi.Size = new System.Drawing.Size(39, 13);
+            this.lbTempsChi.Size = new System.Drawing.Size(65, 19);
             this.lbTempsChi.TabIndex = 6;
             this.lbTempsChi.Text = "Temps";
             // 
             // lbTempsAxel
             // 
             this.lbTempsAxel.AutoSize = true;
-            this.lbTempsAxel.Location = new System.Drawing.Point(134, 170);
+            this.lbTempsAxel.Font = new System.Drawing.Font("Quartz MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTempsAxel.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbTempsAxel.Location = new System.Drawing.Point(140, 170);
             this.lbTempsAxel.Name = "lbTempsAxel";
-            this.lbTempsAxel.Size = new System.Drawing.Size(39, 13);
+            this.lbTempsAxel.Size = new System.Drawing.Size(65, 19);
             this.lbTempsAxel.TabIndex = 7;
             this.lbTempsAxel.Text = "Temps";
             // 
@@ -122,10 +138,11 @@
             // lbResume
             // 
             this.lbResume.AutoSize = true;
-            this.lbResume.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbResume.Location = new System.Drawing.Point(12, 21);
+            this.lbResume.Font = new System.Drawing.Font("Quartz MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbResume.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbResume.Location = new System.Drawing.Point(18, 21);
             this.lbResume.Name = "lbResume";
-            this.lbResume.Size = new System.Drawing.Size(240, 16);
+            this.lbResume.Size = new System.Drawing.Size(324, 19);
             this.lbResume.TabIndex = 8;
             this.lbResume.Text = "Temps restant des personnages :";
             // 
@@ -133,7 +150,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(270, 216);
+            this.BackColor = System.Drawing.SystemColors.ControlText;
+            this.ClientSize = new System.Drawing.Size(360, 240);
             this.Controls.Add(this.lbResume);
             this.Controls.Add(this.lbTempsAxel);
             this.Controls.Add(this.lbTempsChi);

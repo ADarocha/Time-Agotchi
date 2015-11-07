@@ -36,12 +36,14 @@
             // lbApropos
             // 
             this.lbApropos.AutoSize = true;
+            this.lbApropos.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbApropos.ForeColor = System.Drawing.Color.BlanchedAlmond;
             this.lbApropos.Location = new System.Drawing.Point(12, 211);
             this.lbApropos.Name = "lbApropos";
-            this.lbApropos.Size = new System.Drawing.Size(164, 130);
+            this.lbApropos.Size = new System.Drawing.Size(251, 170);
             this.lbApropos.TabIndex = 0;
             this.lbApropos.Text = "Time-Agotchi V.Pré-pré-pré-Alpha\r\n\r\nProjet inspiré par le film Time Out\r\n\r\nRéalis" +
-    "é par : \r\n\r\nAnthony Da Rocha\r\nJuan Carlos Coyla\r\nAxel Evrard\r\nMeriem Djouama\r\n";
+                "é par : \r\n\r\nAnthony Da Rocha\r\nJuan Carlos Coyla\r\nAxel Evrard\r\nMeriem Djouama\r\n";
             // 
             // pbImgAPropos
             // 
@@ -56,7 +58,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(365, 354);
+            this.BackColor = System.Drawing.Color.LightCoral;
+            this.ClientSize = new System.Drawing.Size(360, 421);
             this.Controls.Add(this.pbImgAPropos);
             this.Controls.Add(this.lbApropos);
             this.Name = "APropos";

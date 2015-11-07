@@ -43,6 +43,12 @@
             this.lbAgePerso = new System.Windows.Forms.Label();
             this.pbSoifPerso = new System.Windows.Forms.ProgressBar();
             this.pbFaimPerso = new System.Windows.Forms.ProgressBar();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.lbTempsRestant = new System.Windows.Forms.Label();
+            this.timerAge = new System.Windows.Forms.Timer(this.components);
+            this.btPersonnages = new System.Windows.Forms.Button();
+            this.listeBoxInfosPersonnages = new System.Windows.Forms.ListBox();
+            this.timerAffichageGif = new System.Windows.Forms.Timer(this.components);
             this.gbActions = new System.Windows.Forms.GroupBox();
             this.btPlacerTemps = new System.Windows.Forms.Button();
             this.btMachineASous = new System.Windows.Forms.Button();
@@ -50,12 +56,8 @@
             this.btVolerTemps = new System.Windows.Forms.Button();
             this.btBoire = new System.Windows.Forms.Button();
             this.btManger = new System.Windows.Forms.Button();
-            this.timer = new System.Windows.Forms.Timer(this.components);
-            this.lbTempsRestant = new System.Windows.Forms.Label();
-            this.timerAge = new System.Windows.Forms.Timer(this.components);
-            this.btPersonnages = new System.Windows.Forms.Button();
             this.pbPersonnage = new System.Windows.Forms.PictureBox();
-            this.listeBoxInfosPersonnages = new System.Windows.Forms.ListBox();
+            this.TimerAffichageManger = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.gbStatus.SuspendLayout();
             this.gbActions.SuspendLayout();
@@ -188,6 +190,57 @@
             this.pbFaimPerso.Size = new System.Drawing.Size(100, 13);
             this.pbFaimPerso.TabIndex = 3;
             // 
+            // timer
+            // 
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // lbTempsRestant
+            // 
+            this.lbTempsRestant.Font = new System.Drawing.Font("Quartz MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTempsRestant.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbTempsRestant.Location = new System.Drawing.Point(564, 293);
+            this.lbTempsRestant.Name = "lbTempsRestant";
+            this.lbTempsRestant.Size = new System.Drawing.Size(239, 68);
+            this.lbTempsRestant.TabIndex = 6;
+            this.lbTempsRestant.Text = "00:10:00";
+            // 
+            // timerAge
+            // 
+            this.timerAge.Interval = 60000;
+            this.timerAge.Tick += new System.EventHandler(this.timerAge_Tick);
+            // 
+            // btPersonnages
+            // 
+            this.btPersonnages.Font = new System.Drawing.Font("Quartz MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPersonnages.ForeColor = System.Drawing.Color.SpringGreen;
+            this.btPersonnages.Location = new System.Drawing.Point(852, 467);
+            this.btPersonnages.Name = "btPersonnages";
+            this.btPersonnages.Size = new System.Drawing.Size(177, 79);
+            this.btPersonnages.TabIndex = 13;
+            this.btPersonnages.Text = "Voir personnages";
+            this.btPersonnages.UseVisualStyleBackColor = true;
+            this.btPersonnages.Click += new System.EventHandler(this.btPersonnages_Click);
+            // 
+            // listeBoxInfosPersonnages
+            // 
+            this.listeBoxInfosPersonnages.BackColor = System.Drawing.SystemColors.InfoText;
+            this.listeBoxInfosPersonnages.Font = new System.Drawing.Font("Quartz MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listeBoxInfosPersonnages.ForeColor = System.Drawing.Color.SpringGreen;
+            this.listeBoxInfosPersonnages.FormattingEnabled = true;
+            this.listeBoxInfosPersonnages.ItemHeight = 18;
+            this.listeBoxInfosPersonnages.Location = new System.Drawing.Point(574, 398);
+            this.listeBoxInfosPersonnages.Name = "listeBoxInfosPersonnages";
+            this.listeBoxInfosPersonnages.Size = new System.Drawing.Size(227, 148);
+            this.listeBoxInfosPersonnages.TabIndex = 14;
+            this.listeBoxInfosPersonnages.Visible = false;
+            this.listeBoxInfosPersonnages.VisibleChanged += new System.EventHandler(this.listeBoxInfosPersonnages_VisibleChanged);
+            this.listeBoxInfosPersonnages.MouseHover += new System.EventHandler(this.listeBoxInfosPersonnages_MouseHover);
+            // 
+            // timerAffichageGif
+            // 
+            this.timerAffichageGif.Tick += new System.EventHandler(this.timerAffichageGif_Tick);
+            // 
             // gbActions
             // 
             this.gbActions.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gbActions.BackgroundImage")));
@@ -259,9 +312,9 @@
             this.btVolerTemps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btVolerTemps.Font = new System.Drawing.Font("Quartz MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btVolerTemps.ForeColor = System.Drawing.Color.SpringGreen;
-            this.btVolerTemps.Location = new System.Drawing.Point(364, 174);
+            this.btVolerTemps.Location = new System.Drawing.Point(355, 174);
             this.btVolerTemps.Name = "btVolerTemps";
-            this.btVolerTemps.Size = new System.Drawing.Size(61, 140);
+            this.btVolerTemps.Size = new System.Drawing.Size(70, 140);
             this.btVolerTemps.TabIndex = 8;
             this.btVolerTemps.Text = "Tenter de voler du temps";
             this.btVolerTemps.UseVisualStyleBackColor = false;
@@ -297,38 +350,6 @@
             this.btManger.UseVisualStyleBackColor = false;
             this.btManger.Click += new System.EventHandler(this.btManger_Click);
             // 
-            // timer
-            // 
-            this.timer.Interval = 1000;
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
-            // lbTempsRestant
-            // 
-            this.lbTempsRestant.Font = new System.Drawing.Font("Quartz MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTempsRestant.ForeColor = System.Drawing.Color.SpringGreen;
-            this.lbTempsRestant.Location = new System.Drawing.Point(564, 293);
-            this.lbTempsRestant.Name = "lbTempsRestant";
-            this.lbTempsRestant.Size = new System.Drawing.Size(239, 68);
-            this.lbTempsRestant.TabIndex = 6;
-            this.lbTempsRestant.Text = "00:10:00";
-            // 
-            // timerAge
-            // 
-            this.timerAge.Interval = 60000;
-            this.timerAge.Tick += new System.EventHandler(this.timerAge_Tick);
-            // 
-            // btPersonnages
-            // 
-            this.btPersonnages.Font = new System.Drawing.Font("Quartz MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btPersonnages.ForeColor = System.Drawing.Color.SpringGreen;
-            this.btPersonnages.Location = new System.Drawing.Point(852, 467);
-            this.btPersonnages.Name = "btPersonnages";
-            this.btPersonnages.Size = new System.Drawing.Size(177, 79);
-            this.btPersonnages.TabIndex = 13;
-            this.btPersonnages.Text = "Voir personnages";
-            this.btPersonnages.UseVisualStyleBackColor = true;
-            this.btPersonnages.Click += new System.EventHandler(this.btPersonnages_Click);
-            // 
             // pbPersonnage
             // 
             this.pbPersonnage.BackColor = System.Drawing.Color.White;
@@ -340,20 +361,9 @@
             this.pbPersonnage.TabStop = false;
             this.pbPersonnage.Click += new System.EventHandler(this.pbPersonnage_Click);
             // 
-            // listeBoxInfosPersonnages
+            // TimerAffichageManger
             // 
-            this.listeBoxInfosPersonnages.BackColor = System.Drawing.SystemColors.InfoText;
-            this.listeBoxInfosPersonnages.Font = new System.Drawing.Font("Quartz MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listeBoxInfosPersonnages.ForeColor = System.Drawing.Color.SpringGreen;
-            this.listeBoxInfosPersonnages.FormattingEnabled = true;
-            this.listeBoxInfosPersonnages.ItemHeight = 18;
-            this.listeBoxInfosPersonnages.Location = new System.Drawing.Point(574, 398);
-            this.listeBoxInfosPersonnages.Name = "listeBoxInfosPersonnages";
-            this.listeBoxInfosPersonnages.Size = new System.Drawing.Size(227, 148);
-            this.listeBoxInfosPersonnages.TabIndex = 14;
-            this.listeBoxInfosPersonnages.Visible = false;
-            this.listeBoxInfosPersonnages.VisibleChanged += new System.EventHandler(this.listeBoxInfosPersonnages_VisibleChanged);
-            this.listeBoxInfosPersonnages.MouseHover += new System.EventHandler(this.listeBoxInfosPersonnages_MouseHover);
+            this.TimerAffichageManger.Tick += new System.EventHandler(this.TimerAffichageManger_Tick);
             // 
             // Timeagotchi
             // 
@@ -411,6 +421,8 @@
         private System.Windows.Forms.Button btPlacerTemps;
         private System.Windows.Forms.Button btPersonnages;
         private System.Windows.Forms.ListBox listeBoxInfosPersonnages;
+        private System.Windows.Forms.Timer timerAffichageGif;
+        private System.Windows.Forms.Timer TimerAffichageManger;
     }
 }
 

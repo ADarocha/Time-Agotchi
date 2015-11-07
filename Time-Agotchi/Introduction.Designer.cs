@@ -55,26 +55,28 @@
             // lbResume
             // 
             this.lbResume.AutoSize = true;
-            this.lbResume.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbResume.Font = new System.Drawing.Font("Miramonte", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbResume.ForeColor = System.Drawing.Color.SpringGreen;
             this.lbResume.Location = new System.Drawing.Point(6, 16);
             this.lbResume.Name = "lbResume";
-            this.lbResume.Size = new System.Drawing.Size(415, 91);
+            this.lbResume.Size = new System.Drawing.Size(448, 105);
             this.lbResume.TabIndex = 1;
             this.lbResume.Text = resources.GetString("lbResume.Text");
             // 
             // lbVotreNom
             // 
             this.lbVotreNom.AutoSize = true;
-            this.lbVotreNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVotreNom.Font = new System.Drawing.Font("Quartz MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVotreNom.ForeColor = System.Drawing.Color.SpringGreen;
             this.lbVotreNom.Location = new System.Drawing.Point(43, 585);
             this.lbVotreNom.Name = "lbVotreNom";
-            this.lbVotreNom.Size = new System.Drawing.Size(90, 16);
+            this.lbVotreNom.Size = new System.Drawing.Size(115, 18);
             this.lbVotreNom.TabIndex = 2;
             this.lbVotreNom.Text = "Votre nom : ";
             // 
             // tbNom
             // 
-            this.tbNom.Location = new System.Drawing.Point(139, 585);
+            this.tbNom.Location = new System.Drawing.Point(164, 585);
             this.tbNom.MaxLength = 15;
             this.tbNom.Name = "tbNom";
             this.tbNom.Size = new System.Drawing.Size(151, 20);
@@ -82,9 +84,11 @@
             // 
             // btValider
             // 
+            this.btValider.Font = new System.Drawing.Font("Quartz MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btValider.ForeColor = System.Drawing.Color.SpringGreen;
             this.btValider.Location = new System.Drawing.Point(337, 575);
             this.btValider.Name = "btValider";
-            this.btValider.Size = new System.Drawing.Size(95, 39);
+            this.btValider.Size = new System.Drawing.Size(104, 39);
             this.btValider.TabIndex = 4;
             this.btValider.Text = "Commencer";
             this.btValider.UseVisualStyleBackColor = true;
@@ -113,10 +117,11 @@
             // lbRegles
             // 
             this.lbRegles.AutoSize = true;
-            this.lbRegles.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRegles.Font = new System.Drawing.Font("Miramonte", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRegles.ForeColor = System.Drawing.Color.SpringGreen;
             this.lbRegles.Location = new System.Drawing.Point(6, 16);
             this.lbRegles.Name = "lbRegles";
-            this.lbRegles.Size = new System.Drawing.Size(428, 104);
+            this.lbRegles.Size = new System.Drawing.Size(456, 120);
             this.lbRegles.TabIndex = 1;
             this.lbRegles.Text = resources.GetString("lbRegles.Text");
             // 
@@ -124,6 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(520, 661);
             this.Controls.Add(this.gbRegles);
             this.Controls.Add(this.gbResume);

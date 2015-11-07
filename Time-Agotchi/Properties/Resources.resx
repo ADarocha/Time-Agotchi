@@ -184,4 +184,22 @@
   <data name="personnage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\personnage.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GIF_MachineASous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIF_MachineASous.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIF_Voleur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIF_Voleur.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIF_Boire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIF_Boire.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIF_manger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIF_manger.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sound_BrasDeFer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sound_BrasDeFer.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Sound_Argent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sound_Argent.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

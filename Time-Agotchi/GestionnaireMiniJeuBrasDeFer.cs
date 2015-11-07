@@ -11,12 +11,12 @@ namespace Time_Agotchi
         private static List<string> listeFleches = new List<string>(); //liste de fléches généres par l'ordinateur
         private static List<string> listeFlechesEntrees = new List<string>(); //les fléches entrées par le joueur
         private static List<bool> listeReponses = new List<bool>(); //bonne ou mauvais réponses du joueur 
-        private static Personnage personnageMain = Donnees.GetPersos()[0];
-        private static Personnage adversaire = Donnees.GetAdversaires()[0];
+        private static Personnage personnageMain = Donnees.GetPersos()[0]; //recuprer le personnage principal
+        private static Personnage adversaire; //prends l'adversaire dans la liste de la classe donnes
         private static Personnage gagnant;
         private static Personnage perdant;
-        private static Personnage gagnatPrecedant;
-        private static int points;
+        private static Personnage gagnatPrecedant; //pour faire le systeme du "MemeGagnant?"
+        private static int points; //points perdu du joueur perdant de la manche precédente
         
         
         
@@ -50,7 +50,10 @@ namespace Time_Agotchi
                 listeFleches.Add(nomDeFleches[numeroRandom]);
             }
         }
-
+        /// <summary>
+        /// Debut Sets et Gets
+        /// </summary>
+        /// <param name="unPerso"></param>
         public static void SetAdversaire(Personnage unPerso)
         {
             adversaire = unPerso;
@@ -85,7 +88,10 @@ namespace Time_Agotchi
         {
             gagnatPrecedant = unPerso;
         }
-
+        /// <summary>
+        /// FIN SET ET GET
+        /// </summary>
+        /// <returns></returns>
         private static bool VerificationDesEntreesVides()
         {
             bool verification_valide;

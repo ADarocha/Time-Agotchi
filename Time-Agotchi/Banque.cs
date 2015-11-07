@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Time_Agotchi
 {
@@ -15,7 +16,7 @@ namespace Time_Agotchi
         {
             InitializeComponent();
         }
-
+        SoundPlayer sound = new SoundPlayer(Properties.Resources.Sound_Argent);
         int minutes = 0; //minute pour l'affichage
         int secondes = 0; //secondes pour l'affichage
         int secondesgagnees = 0; //nombre de secondes gagnées grâce au placement
@@ -31,21 +32,30 @@ namespace Time_Agotchi
 
         private void btPlacer_Click(object sender, EventArgs e)
         {
-            timerPlacement.Enabled = true;
+            if (tbSecPlacement.Text == "")
+            {
+                MessageBox.Show("veuillez entrer votre temps");
+            }
+            else
+            {
 
-            leJoueur.SetSecondesPlacees(Convert.ToInt32(tbSecPlacement.Text)); //on place le temps
+                timerPlacement.Enabled = true;
 
-            minutes = leJoueur.GetSecondesPlacees() / 60; //on converti en minutes et en secondes
-            secondes = leJoueur.GetSecondesPlacees() % 60;
+                leJoueur.SetSecondesPlacees(Convert.ToInt32(tbSecPlacement.Text)); //on place le temps
 
-            tempsPerso.retirerSeconde(secondes); //on retire le temps placé au temps du joueur
-            tempsPerso.retirerMinute(minutes);
+                minutes = leJoueur.GetSecondesPlacees() / 60; //on converti en minutes et en secondes
+                secondes = leJoueur.GetSecondesPlacees() % 60;
 
-            lbTempsPlace.Visible = true; //on fait apparaitre l'affichage du temps placé
-            lbTempsPlace.Text = minutes + " minutes et " + secondes + " secondes."; //actualisation de l'affichage
-            btPlacer.Enabled = false;
-            btRecup.Enabled = true;
+                tempsPerso.retirerSeconde(secondes); //on retire le temps placé au temps du joueur
+                tempsPerso.retirerMinute(minutes);
 
+                lbTempsPlace.Visible = true; //on fait apparaitre l'affichage du temps placé
+                lbTempsPlace.Text = minutes + " minutes et " + secondes + " secondes."; //actualisation de l'affichage
+                btPlacer.Enabled = false;
+                btRecup.Enabled = true;
+
+                sound.Play();
+            }
         }
 
         private void timerPlacement_Tick(object sender, EventArgs e)
