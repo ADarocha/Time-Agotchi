@@ -51,6 +51,7 @@ namespace Time_Agotchi
                 Donnees.SetPersonnages((List<Personnage>)bformatter.Deserialize(streamLecture)); //ajoute la nouvelle liste désérialisé
 
                 streamLecture.Close(); //fermeture de stream
+                Donnees.SetCharge(true);
                this.Close(); //ferme le form
                 
             }

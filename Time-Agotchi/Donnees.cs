@@ -11,6 +11,7 @@ namespace Time_Agotchi
         private static List<Personnage> listePersos = new List<Personnage>();
         private static List<Personnage> listeAdversaires = new List<Personnage>(); //liste de personnages qui vont faire le mini jeu
         private static string nomPerso;
+        private static bool charge;
 
         public static void SetNom(string leNom)
         {
@@ -40,6 +41,16 @@ namespace Time_Agotchi
         public static List<Personnage> GetAdversaires()
         {
             return listeAdversaires;
+        }
+
+        public static void SetCharge(bool rep)
+        {
+            charge = rep;
+        }
+
+        public static bool GetCharge()
+        {
+            return charge;
         }
     }
 }

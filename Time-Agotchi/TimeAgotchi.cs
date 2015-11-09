@@ -49,37 +49,43 @@ namespace Time_Agotchi
 
         private void Timeagotchi_Load(object sender, EventArgs e)
         {
+           
             //ouverture du form d'introduction
             Introduction intro = new Introduction();
            
-            Temps tempsTama = new Temps(0, 10, 0);
-            tama = new Personnage("tama", tempsTama);
-            Donnees.AjouterPerso(tama);
-
-            Temps tempsGot = new Temps(0, 10, 0);
-            got = new Personnage("got", tempsGot);
-            Donnees.AjouterPerso(got);
-
-            Temps tempsChi = new Temps(0, 10, 0);
-            chi = new Personnage("chi", tempsChi);
-            Donnees.AjouterPerso(chi);
-
-            Temps tempsAxel = new Temps(0, 10, 0);
-            axel = new Personnage("axel", tempsAxel);
-            Donnees.AjouterPerso(axel);
-
             intro.ShowDialog();
 
-            Temps tempsJoueur = new Temps(0, 10, 0);
-            joueur = new Personnage(Donnees.GetNom(), tempsJoueur);
-            Donnees.AjouterPerso(joueur);
+            if (Donnees.GetCharge() == false)
+            {
+                Temps tempsJoueur = new Temps(0, 10, 0);
+                joueur = new Personnage(Donnees.GetNom(), tempsJoueur);
+                Donnees.AjouterPerso(joueur);
+
+                Temps tempsTama = new Temps(0, 10, 0);
+                tama = new Personnage("tama", tempsTama);
+                Donnees.AjouterPerso(tama);
+
+                Temps tempsGot = new Temps(0, 10, 0);
+                got = new Personnage("got", tempsGot);
+                Donnees.AjouterPerso(got);
+
+                Temps tempsChi = new Temps(0, 10, 0);
+                chi = new Personnage("chi", tempsChi);
+                Donnees.AjouterPerso(chi);
+
+                Temps tempsAxel = new Temps(0, 10, 0);
+                axel = new Personnage("axel", tempsAxel);
+                Donnees.AjouterPerso(axel);
+
+
+                
 
 
 
-            //Création des personnages
+                //Création des personnages
 
-            // création du joueur 
-           
+                // création du joueur 
+            }
 
             //references
             tempsPerso = Donnees.GetPersos()[0].GetTemps();
@@ -92,26 +98,40 @@ namespace Time_Agotchi
 
             //configuration du personnage principal
 
-            leJoueur.SetFaim(10);
-            leJoueur.SetSoif(10);
+            if (Donnees.GetCharge() == false)
+            {
+                leJoueur.SetFaim(10);
+                leJoueur.SetSoif(10);
+                pbFaimPerso.Maximum = 10; //maximum de la barre
+                pbFaimPerso.Minimum = 0;// minimum de la barre
+                pbFaimPerso.Step = 1; //status de la barre
+                pbFaimPerso.Value = 10;
+                pbSoifPerso.Maximum = 10;
+                pbSoifPerso.Minimum = 0;
+                pbSoifPerso.Step = 1;
+                pbSoifPerso.Value = 10;
+                tempsPerso.SetHeure(0); //nombre d'heure au départ
+                tempsPerso.SetMinute(10); //nombre dem inutes au départ
+                tempsPerso.SetSeconde(0); //nombre de secondes au départ
+
+
+                age = 0; //age du personnage en minute
+            }
+            else
+            {
+                pbFaimPerso.Maximum = 10; //maximum de la barre
+                pbFaimPerso.Minimum = 0;// minimum de la barre
+                pbFaimPerso.Step = 1; //status de la barre
+                pbFaimPerso.Value = leJoueur.GetFaim();
+                pbSoifPerso.Maximum = 10;
+                pbSoifPerso.Minimum = 0;
+                pbSoifPerso.Step = 1;
+                pbSoifPerso.Value = leJoueur.GetSoif();
+            }
+
             timer.Enabled = true;
             timerAge.Enabled = true;
-            pbFaimPerso.Maximum = 10; //maximum de la barre
-            pbFaimPerso.Minimum = 0;// minimum de la barre
-            pbFaimPerso.Step = 1; //status de la barre
-            pbFaimPerso.Value = 10;
-            pbSoifPerso.Maximum = 10;
-            pbSoifPerso.Minimum = 0;
-            pbSoifPerso.Step = 1;
-            pbSoifPerso.Value = 10;
-
-
-
-            age = 0; //age du personnage en minute
             lbNomPerso.Text = leJoueur.GetNom(); //affichage du nom du personnage
-            tempsPerso.SetHeure(0); //nombre d'heure au départ
-            tempsPerso.SetMinute(10); //nombre dem inutes au départ
-            tempsPerso.SetSeconde(0); //nombre de secondes au départ
             lbAgePerso.Text = age.ToString() + " minutes"; //affichage de l'âge du personnage au départ
 
 
