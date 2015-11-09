@@ -38,12 +38,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btFermer = new System.Windows.Forms.Button();
             this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.lbTaux = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // btPlacer
             // 
-            this.btPlacer.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPlacer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btPlacer.ForeColor = System.Drawing.Color.SpringGreen;
             this.btPlacer.Location = new System.Drawing.Point(486, 42);
             this.btPlacer.Name = "btPlacer";
@@ -56,11 +57,11 @@
             // lbTempsPlace
             // 
             this.lbTempsPlace.AutoSize = true;
-            this.lbTempsPlace.Font = new System.Drawing.Font("Quartz MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTempsPlace.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTempsPlace.ForeColor = System.Drawing.Color.SpringGreen;
             this.lbTempsPlace.Location = new System.Drawing.Point(228, 263);
             this.lbTempsPlace.Name = "lbTempsPlace";
-            this.lbTempsPlace.Size = new System.Drawing.Size(174, 29);
+            this.lbTempsPlace.Size = new System.Drawing.Size(144, 29);
             this.lbTempsPlace.TabIndex = 2;
             this.lbTempsPlace.Text = "temps place";
             this.lbTempsPlace.Visible = false;
@@ -79,7 +80,7 @@
             // 
             // btRecup
             // 
-            this.btRecup.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btRecup.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRecup.ForeColor = System.Drawing.Color.SpringGreen;
             this.btRecup.Location = new System.Drawing.Point(12, 336);
             this.btRecup.Name = "btRecup";
@@ -92,17 +93,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SpringGreen;
             this.label1.Location = new System.Drawing.Point(27, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(319, 23);
+            this.label1.Size = new System.Drawing.Size(278, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "Temps a placer (en secondes) :";
             // 
             // btFermer
             // 
-            this.btFermer.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btFermer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btFermer.ForeColor = System.Drawing.Color.SpringGreen;
             this.btFermer.Location = new System.Drawing.Point(486, 336);
             this.btFermer.Name = "btFermer";
@@ -122,12 +123,24 @@
             this.pbLogo.TabIndex = 7;
             this.pbLogo.TabStop = false;
             // 
+            // lbTaux
+            // 
+            this.lbTaux.AutoSize = true;
+            this.lbTaux.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTaux.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbTaux.Location = new System.Drawing.Point(12, 94);
+            this.lbTaux.Name = "lbTaux";
+            this.lbTaux.Size = new System.Drawing.Size(266, 48);
+            this.lbTaux.TabIndex = 8;
+            this.lbTaux.Text = "Taux du livret T : 10%\r\nActualisation à chaque minute.";
+            // 
             // Banque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(641, 457);
+            this.Controls.Add(this.lbTaux);
             this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.btFermer);
             this.Controls.Add(this.label1);
@@ -154,5 +167,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btFermer;
         private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.Label lbTaux;
     }
 }

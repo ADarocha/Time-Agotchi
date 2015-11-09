@@ -98,3 +98,4 @@ C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_A
 C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Mort.resources
 C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.Resume.resources
 C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time_Agotchi.VolDuTemps.resources
+C:\Users\Anthony\Documents\GitHub\Time-Agotchi\Time-Agotchi\obj\x86\Debug\Time-Agotchi.csprojResolveAssemblyReference.cache

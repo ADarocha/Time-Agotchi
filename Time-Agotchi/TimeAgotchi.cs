@@ -182,17 +182,17 @@ namespace Time_Agotchi
             }
             else
             {
-                MessageBox.Show(Donnees.GetAdversaires().Count.ToString());
+                //MessageBox.Show(Donnees.GetAdversaires().Count.ToString());
                 Personnage adversaire = (Personnage)listeBoxInfosPersonnages.SelectedItem;
                     Donnees.GetAdversaires().Add(adversaire);
-                    MessageBox.Show(Donnees.GetAdversaires().Count.ToString()+" "+ Donnees.GetAdversaires()[0].GetNom());
+                    //MessageBox.Show(Donnees.GetAdversaires().Count.ToString()+" "+ Donnees.GetAdversaires()[0].GetNom());
                     timer.Stop();
                     BrasDeFer brasDeFer = new BrasDeFer();
                     brasDeFer.ShowDialog();
                     //Après fermeture du mini jeu (comeback fenetre principal)
                     timer.Start();
                     Donnees.GetAdversaires().Clear();
-                    MessageBox.Show(Donnees.GetAdversaires().Count.ToString());
+                    //MessageBox.Show(Donnees.GetAdversaires().Count.ToString());
                     listeBoxInfosPersonnages.Visible = false;
                 
             }
@@ -202,6 +202,7 @@ namespace Time_Agotchi
         private void btMachineASous_Click(object sender, EventArgs e)
         {
             //jeu de machine à sous
+            MessageBox.Show("Partie non faite.");
         }
 
         private void btPlacerTemps_Click(object sender, EventArgs e)

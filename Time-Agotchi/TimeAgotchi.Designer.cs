@@ -58,7 +58,6 @@
             this.btManger = new System.Windows.Forms.Button();
             this.pbPersonnage = new System.Windows.Forms.PictureBox();
             this.TimerAffichageManger = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.gbStatus.SuspendLayout();
             this.gbActions.SuspendLayout();
@@ -366,25 +365,12 @@
             // 
             this.TimerAffichageManger.Tick += new System.EventHandler(this.TimerAffichageManger_Tick);
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.SpringGreen;
-            this.button1.Location = new System.Drawing.Point(792, 282);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 79);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Voir personnages";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Timeagotchi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1053, 598);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.listeBoxInfosPersonnages);
             this.Controls.Add(this.btPersonnages);
             this.Controls.Add(this.lbTempsRestant);
@@ -437,7 +423,6 @@
         private System.Windows.Forms.ListBox listeBoxInfosPersonnages;
         private System.Windows.Forms.Timer timerAffichageGif;
         private System.Windows.Forms.Timer TimerAffichageManger;
-        private System.Windows.Forms.Button button1;
     }
 }
 

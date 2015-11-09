@@ -106,6 +106,7 @@
             // 
             // pbAdversaire
             // 
+            this.pbAdversaire.Image = global::Time_Agotchi.Properties.Resources.Qui;
             this.pbAdversaire.Location = new System.Drawing.Point(29, 82);
             this.pbAdversaire.Name = "pbAdversaire";
             this.pbAdversaire.Size = new System.Drawing.Size(154, 207);
@@ -126,7 +127,7 @@
             this.lbTousMorts.AutoSize = true;
             this.lbTousMorts.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTousMorts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbTousMorts.Location = new System.Drawing.Point(175, 292);
+            this.lbTousMorts.Location = new System.Drawing.Point(189, 316);
             this.lbTousMorts.Name = "lbTousMorts";
             this.lbTousMorts.Size = new System.Drawing.Size(377, 75);
             this.lbTousMorts.TabIndex = 7;
@@ -148,9 +149,9 @@
             this.Controls.Add(this.btVolDuTemps);
             this.Controls.Add(this.lbInfoVol);
             this.Controls.Add(this.cBVolDuTemps);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "VolDuTemps";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Load += new System.EventHandler(this.VolDuTemps_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbAdversaire)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGifVoler)).EndInit();
