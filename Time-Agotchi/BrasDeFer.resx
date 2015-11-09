@@ -268,7 +268,7 @@
     <value>15</value>
   </data>
   <data name="btGo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 12.25pt, style=Bold</value>
+    <value>Quartz MS, 12pt, style=Bold</value>
   </data>
   <data name="btGo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -334,7 +334,7 @@
     <value>132, 13</value>
   </metadata>
   <data name="btQuitter.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 11.25pt, style=Bold</value>
+    <value>Quartz MS, 11.25pt, style=Bold</value>
   </data>
   <data name="btQuitter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -370,16 +370,16 @@
     <value>True</value>
   </data>
   <data name="lbHelp.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Quartz MS, 11.25pt, style=Bold</value>
+    <value>Quartz MS, 14.25pt, style=Bold</value>
   </data>
   <data name="lbHelp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lbHelp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>12, 21</value>
   </data>
   <data name="lbHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 18</value>
+    <value>60, 23</value>
   </data>
   <data name="lbHelp.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -439,6 +439,72 @@ Commandes :
   </data>
   <data name="&gt;&gt;richTbHelp.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="lbNomAdversaire.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbNomAdversaire.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Quartz MS, 11.25pt</value>
+  </data>
+  <data name="lbNomAdversaire.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbNomAdversaire.Location" type="System.Drawing.Point, System.Drawing">
+    <value>573, 410</value>
+  </data>
+  <data name="lbNomAdversaire.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 18</value>
+  </data>
+  <data name="lbNomAdversaire.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="lbNomAdversaire.Text" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;lbNomAdversaire.Name" xml:space="preserve">
+    <value>lbNomAdversaire</value>
+  </data>
+  <data name="&gt;&gt;lbNomAdversaire.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbNomAdversaire.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbNomAdversaire.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbPersoMain.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbPersoMain.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Quartz MS, 11.25pt</value>
+  </data>
+  <data name="lbPersoMain.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbPersoMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 410</value>
+  </data>
+  <data name="lbPersoMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 18</value>
+  </data>
+  <data name="lbPersoMain.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="lbPersoMain.Text" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;lbPersoMain.Name" xml:space="preserve">
+    <value>lbPersoMain</value>
+  </data>
+  <data name="&gt;&gt;lbPersoMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbPersoMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbPersoMain.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="pbFourthReponse.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -686,69 +752,6 @@ Commandes :
   <data name="&gt;&gt;pbLogo.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="lbNomAdversaire.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbNomAdversaire.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Quartz MS, 11.25pt</value>
-  </data>
-  <data name="lbNomAdversaire.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 410</value>
-  </data>
-  <data name="lbNomAdversaire.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 18</value>
-  </data>
-  <data name="lbNomAdversaire.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="lbNomAdversaire.Text" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;lbNomAdversaire.Name" xml:space="preserve">
-    <value>lbNomAdversaire</value>
-  </data>
-  <data name="&gt;&gt;lbNomAdversaire.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbNomAdversaire.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbNomAdversaire.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lbPersoMain.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbPersoMain.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Quartz MS, 11.25pt</value>
-  </data>
-  <data name="lbPersoMain.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbPersoMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 410</value>
-  </data>
-  <data name="lbPersoMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 18</value>
-  </data>
-  <data name="lbPersoMain.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="lbPersoMain.Text" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;lbPersoMain.Name" xml:space="preserve">
-    <value>lbPersoMain</value>
-  </data>
-  <data name="&gt;&gt;lbPersoMain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbPersoMain.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbPersoMain.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -760,6 +763,9 @@ Commandes :
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>751, 589</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>BrasDeFer</value>

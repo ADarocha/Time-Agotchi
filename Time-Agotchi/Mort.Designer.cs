@@ -80,6 +80,7 @@
             this.Controls.Add(this.lbMort);
             this.Name = "Mort";
             this.Text = "Mort";
+            this.Load += new System.EventHandler(this.Mort_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbMort)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

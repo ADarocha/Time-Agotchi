@@ -212,7 +212,15 @@ namespace Time_Agotchi
 
             }
         }
-
+        /// <summary>
+        /// Timer Qui va s'occuper de la gestion de jeu
+        /// Recupération de donnes
+        /// Chargenement d'aimges
+        /// Etat des Barres et labels etc
+        /// Definition des gagant recalculs de leur vie
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timerGestionnaireJeu_Tick(object sender, EventArgs e)
         {
             int valeur = 25;
@@ -238,21 +246,25 @@ namespace Time_Agotchi
 
         private void lbHelp_MouseHover(object sender, EventArgs e)
         {
+            //Affichage des instruction du jeux
             richTbHelp.Visible = true;
         }
 
         private void lbHelp_MouseLeave(object sender, EventArgs e)
         {
+            //On enleve les instruction
             richTbHelp.Visible = false;
         }
 
         private void btQuitter_Click(object sender, EventArgs e)
         {
+            //quitter le jeu
             this.Close();
         }
 
         private void BrasDeFer_FormClosed(object sender, FormClosedEventArgs e)
         {
+            //Arret de la musique
             sound.Stop();
         }
     }

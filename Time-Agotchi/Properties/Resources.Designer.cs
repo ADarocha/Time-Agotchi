@@ -261,6 +261,12 @@ namespace Time_Agotchi.Properties {
             }
         }
         
+        internal static System.IO.UnmanagedMemoryStream Sound_GameOver {
+            get {
+                return ResourceManager.GetStream("Sound_GameOver", resourceCulture);
+            }
+        }
+        
         internal static System.Drawing.Bitmap Time_Out {
             get {
                 object obj = ResourceManager.GetObject("Time_Out", resourceCulture);

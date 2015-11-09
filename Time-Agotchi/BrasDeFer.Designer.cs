@@ -42,6 +42,8 @@
             this.btQuitter = new System.Windows.Forms.Button();
             this.lbHelp = new System.Windows.Forms.Label();
             this.richTbHelp = new System.Windows.Forms.RichTextBox();
+            this.lbNomAdversaire = new System.Windows.Forms.Label();
+            this.lbPersoMain = new System.Windows.Forms.Label();
             this.pbFourthReponse = new System.Windows.Forms.PictureBox();
             this.pbThirdReponse = new System.Windows.Forms.PictureBox();
             this.pbSecondReponse = new System.Windows.Forms.PictureBox();
@@ -51,8 +53,6 @@
             this.pbSecondArrow = new System.Windows.Forms.PictureBox();
             this.pbFirstArrow = new System.Windows.Forms.PictureBox();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.lbNomAdversaire = new System.Windows.Forms.Label();
-            this.lbPersoMain = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbFourthReponse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbThirdReponse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSecondReponse)).BeginInit();
@@ -143,6 +143,18 @@
             this.richTbHelp.ForeColor = System.Drawing.Color.SpringGreen;
             this.richTbHelp.Name = "richTbHelp";
             // 
+            // lbNomAdversaire
+            // 
+            resources.ApplyResources(this.lbNomAdversaire, "lbNomAdversaire");
+            this.lbNomAdversaire.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbNomAdversaire.Name = "lbNomAdversaire";
+            // 
+            // lbPersoMain
+            // 
+            resources.ApplyResources(this.lbPersoMain, "lbPersoMain");
+            this.lbPersoMain.ForeColor = System.Drawing.Color.SpringGreen;
+            this.lbPersoMain.Name = "lbPersoMain";
+            // 
             // pbFourthReponse
             // 
             resources.ApplyResources(this.pbFourthReponse, "pbFourthReponse");
@@ -197,18 +209,6 @@
             this.pbLogo.Image = global::Time_Agotchi.Properties.Resources.brasDeFer;
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.TabStop = false;
-            // 
-            // lbNomAdversaire
-            // 
-            resources.ApplyResources(this.lbNomAdversaire, "lbNomAdversaire");
-            this.lbNomAdversaire.ForeColor = System.Drawing.Color.SpringGreen;
-            this.lbNomAdversaire.Name = "lbNomAdversaire";
-            // 
-            // lbPersoMain
-            // 
-            resources.ApplyResources(this.lbPersoMain, "lbPersoMain");
-            this.lbPersoMain.ForeColor = System.Drawing.Color.SpringGreen;
-            this.lbPersoMain.Name = "lbPersoMain";
             // 
             // BrasDeFer
             // 

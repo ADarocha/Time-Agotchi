@@ -36,7 +36,7 @@ namespace Time_Agotchi
         {
 
         }
-
+        //Partie de Chargement de donnes sauvagardés//
         private void btReprendre_Click(object sender, EventArgs e)
         {
             string monFichierLecture;

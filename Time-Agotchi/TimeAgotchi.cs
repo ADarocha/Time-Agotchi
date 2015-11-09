@@ -196,14 +196,16 @@ namespace Time_Agotchi
         {
             //Ouvre un form pour faire un mini jeu de poker (déroulement à déterminer).
         }
-
+   
         private void btJouerBrasFer_Click(object sender, EventArgs e)
         {
+            //Si le tableau d'adversaire n'est pas visible on l'affiche
             if (listeBoxInfosPersonnages.Visible ==false)
             {
                 
                     MessageBox.Show("Veuillez selectionner un adversaire");
                     listeBoxInfosPersonnages.Visible = true;
+                   
                 
             }
             else
@@ -393,13 +395,6 @@ namespace Time_Agotchi
             listeBoxInfosPersonnages.DataSource = Donnees.GetPersos();
         }
 
-        private void listeBoxInfosPersonnages_MouseHover(object sender, EventArgs e)
-        {
-            
-            
-                
-            
-        }
 
         private void listeBoxInfosPersonnages_VisibleChanged(object sender, EventArgs e)
         {
@@ -430,7 +425,7 @@ namespace Time_Agotchi
             tama.GetTemps().SetMinute(0);
             tama.GetTemps().SetSeconde(2);
         }
-
+        //Sauvegarde des données en cours//
         private void btSave_Click(object sender, EventArgs e)
         {
             String nomFichEnr;

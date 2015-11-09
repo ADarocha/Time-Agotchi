@@ -88,7 +88,7 @@
             // seSuiciderToolStripMenuItem
             // 
             this.seSuiciderToolStripMenuItem.Name = "seSuiciderToolStripMenuItem";
-            this.seSuiciderToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.seSuiciderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.seSuiciderToolStripMenuItem.Text = "Se suicider";
             this.seSuiciderToolStripMenuItem.Click += new System.EventHandler(this.seSuiciderToolStripMenuItem_Click);
             // 
@@ -102,10 +102,10 @@
             // lbNomPerso
             // 
             this.lbNomPerso.AutoSize = true;
-            this.lbNomPerso.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lbNomPerso.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNomPerso.Location = new System.Drawing.Point(91, 16);
             this.lbNomPerso.Name = "lbNomPerso";
-            this.lbNomPerso.Size = new System.Drawing.Size(156, 24);
+            this.lbNomPerso.Size = new System.Drawing.Size(146, 23);
             this.lbNomPerso.TabIndex = 2;
             this.lbNomPerso.Text = "NOM DU PERSO";
             // 
@@ -171,10 +171,10 @@
             // lbAgePerso
             // 
             this.lbAgePerso.AutoSize = true;
-            this.lbAgePerso.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lbAgePerso.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAgePerso.Location = new System.Drawing.Point(94, 40);
             this.lbAgePerso.Name = "lbAgePerso";
-            this.lbAgePerso.Size = new System.Drawing.Size(151, 24);
+            this.lbAgePerso.Size = new System.Drawing.Size(138, 23);
             this.lbAgePerso.TabIndex = 5;
             this.lbAgePerso.Text = "AGE DU PERSO";
             // 
@@ -237,7 +237,6 @@
             this.listeBoxInfosPersonnages.TabIndex = 14;
             this.listeBoxInfosPersonnages.Visible = false;
             this.listeBoxInfosPersonnages.VisibleChanged += new System.EventHandler(this.listeBoxInfosPersonnages_VisibleChanged);
-            this.listeBoxInfosPersonnages.MouseHover += new System.EventHandler(this.listeBoxInfosPersonnages_MouseHover);
             // 
             // timerAffichageGif
             // 
@@ -369,12 +368,13 @@
             // 
             // btSave
             // 
-            this.btSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btSave.Location = new System.Drawing.Point(905, 293);
+            this.btSave.Font = new System.Drawing.Font("Quartz MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSave.ForeColor = System.Drawing.Color.SpringGreen;
+            this.btSave.Location = new System.Drawing.Point(852, 231);
             this.btSave.Name = "btSave";
-            this.btSave.Size = new System.Drawing.Size(75, 23);
+            this.btSave.Size = new System.Drawing.Size(163, 58);
             this.btSave.TabIndex = 15;
-            this.btSave.Text = "button1";
+            this.btSave.Text = "Sauvegarder partie";
             this.btSave.UseVisualStyleBackColor = true;
             this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
