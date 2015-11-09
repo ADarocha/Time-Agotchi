@@ -37,6 +37,7 @@
             this.VerifVivant = new System.Windows.Forms.Timer(this.components);
             this.pbAdversaire = new System.Windows.Forms.PictureBox();
             this.pbGifVoler = new System.Windows.Forms.PictureBox();
+            this.lbTousMorts = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdversaire)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGifVoler)).BeginInit();
             this.SuspendLayout();
@@ -44,10 +45,6 @@
             // cBVolDuTemps
             // 
             this.cBVolDuTemps.FormattingEnabled = true;
-            this.cBVolDuTemps.Items.AddRange(new object[] {
-            "Tama",
-            "Got",
-            "Chi"});
             this.cBVolDuTemps.Location = new System.Drawing.Point(305, 82);
             this.cBVolDuTemps.Name = "cBVolDuTemps";
             this.cBVolDuTemps.Size = new System.Drawing.Size(121, 21);
@@ -57,17 +54,17 @@
             // lbInfoVol
             // 
             this.lbInfoVol.AutoSize = true;
-            this.lbInfoVol.Font = new System.Drawing.Font("Quartz MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbInfoVol.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbInfoVol.ForeColor = System.Drawing.Color.SpringGreen;
             this.lbInfoVol.Location = new System.Drawing.Point(232, 29);
             this.lbInfoVol.Name = "lbInfoVol";
-            this.lbInfoVol.Size = new System.Drawing.Size(294, 25);
+            this.lbInfoVol.Size = new System.Drawing.Size(261, 25);
             this.lbInfoVol.TabIndex = 1;
             this.lbInfoVol.Text = "Qui voulez-vous voler ?";
             // 
             // btVolDuTemps
             // 
-            this.btVolDuTemps.Font = new System.Drawing.Font("Quartz MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btVolDuTemps.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btVolDuTemps.ForeColor = System.Drawing.Color.SpringGreen;
             this.btVolDuTemps.Location = new System.Drawing.Point(253, 209);
             this.btVolDuTemps.Name = "btVolDuTemps";
@@ -79,7 +76,7 @@
             // 
             // btRetourMenu
             // 
-            this.btRetourMenu.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btRetourMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRetourMenu.ForeColor = System.Drawing.Color.SpringGreen;
             this.btRetourMenu.Location = new System.Drawing.Point(270, 413);
             this.btRetourMenu.Name = "btRetourMenu";
@@ -92,18 +89,19 @@
             // infoDuVol
             // 
             this.infoDuVol.AutoSize = true;
-            this.infoDuVol.Font = new System.Drawing.Font("Quartz MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infoDuVol.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoDuVol.ForeColor = System.Drawing.Color.SpringGreen;
             this.infoDuVol.Location = new System.Drawing.Point(265, 341);
             this.infoDuVol.Name = "infoDuVol";
-            this.infoDuVol.Size = new System.Drawing.Size(186, 25);
+            this.infoDuVol.Size = new System.Drawing.Size(202, 25);
             this.infoDuVol.TabIndex = 5;
             this.infoDuVol.Text = "REUSSI OU RATE";
             this.infoDuVol.Visible = false;
             // 
             // VerifVivant
             // 
-            this.VerifVivant.Interval = 5000;
+            this.VerifVivant.Enabled = true;
+            this.VerifVivant.Interval = 500;
             this.VerifVivant.Tick += new System.EventHandler(this.VerifVivant_Tick);
             // 
             // pbAdversaire
@@ -123,12 +121,26 @@
             this.pbGifVoler.TabIndex = 6;
             this.pbGifVoler.TabStop = false;
             // 
+            // lbTousMorts
+            // 
+            this.lbTousMorts.AutoSize = true;
+            this.lbTousMorts.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTousMorts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbTousMorts.Location = new System.Drawing.Point(175, 292);
+            this.lbTousMorts.Name = "lbTousMorts";
+            this.lbTousMorts.Size = new System.Drawing.Size(377, 75);
+            this.lbTousMorts.TabIndex = 7;
+            this.lbTousMorts.Text = "          En arrivant en ville,\r\n     vous vous rendez compte\r\nque vous êtes le d" +
+    "ernier survivant.";
+            this.lbTousMorts.Visible = false;
+            // 
             // VolDuTemps
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(753, 490);
+            this.Controls.Add(this.lbTousMorts);
             this.Controls.Add(this.pbGifVoler);
             this.Controls.Add(this.infoDuVol);
             this.Controls.Add(this.pbAdversaire);
@@ -157,5 +169,6 @@
         private System.Windows.Forms.Label infoDuVol;
         private System.Windows.Forms.Timer VerifVivant;
         private System.Windows.Forms.PictureBox pbGifVoler;
+        private System.Windows.Forms.Label lbTousMorts;
     }
 }

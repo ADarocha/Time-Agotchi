@@ -283,11 +283,25 @@ namespace Time_Agotchi
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            decouleTemps(tempsPerso); //permet le décompte du temps
-            decouleTemps(tempsDeTama);
-            decouleTemps(tempsDeGot);
-            decouleTemps(tempsDeChi);
-            decouleTemps(tempsDeAxel);
+            if (tempsPerso.GetHeure() > 0 || tempsPerso.GetMinute() > 0 || tempsPerso.GetSeconde() > 0)
+            {
+                decouleTemps(tempsPerso); //permet le décompte du temps
+            }
+            else
+            {
+                if (tempsPerso.GetHeure() == 0 || tempsPerso.GetMinute() == 0 || tempsPerso.GetSeconde() == 0)
+                {
+                    mort();
+                }
+            }
+            if (tempsDeTama.GetHeure() > 0 || tempsDeTama.GetMinute() > 0 || tempsDeTama.GetSeconde() > 0)
+                decouleTemps(tempsDeTama);
+            if (tempsDeGot.GetHeure() > 0 || tempsDeGot.GetMinute() > 0 || tempsDeGot.GetSeconde() > 0)
+                decouleTemps(tempsDeGot);
+            if (tempsDeChi.GetHeure() > 0 || tempsDeChi.GetMinute() > 0 || tempsDeChi.GetSeconde() > 0)
+                decouleTemps(tempsDeChi);
+            if (tempsDeAxel.GetHeure() > 0 || tempsDeAxel.GetMinute() > 0 || tempsDeAxel.GetSeconde() > 0)
+                decouleTemps(tempsDeAxel);
 
 
             //Timer qui check à chaque seconde
@@ -308,7 +322,6 @@ namespace Time_Agotchi
 
 
             lbTempsRestant.Text = txtHeure + ":" + txtMinute + ":" + txtSeconde; //affiche le temps restant 
-
 
         }
 
@@ -378,6 +391,12 @@ namespace Time_Agotchi
         {
             TimerAffichageManger.Stop();
             pbPersonnage.Image = Properties.Resources.personnage;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tama.GetTemps().SetMinute(0);
+            tama.GetTemps().SetSeconde(2);
         }
 
       

@@ -126,6 +126,8 @@ namespace Time_Agotchi
             if (minute < 0)
             {
                 minute = 0;
+                if (heure == 0)
+                    seconde = 1;
             }
             
         }

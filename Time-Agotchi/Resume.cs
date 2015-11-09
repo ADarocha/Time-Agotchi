@@ -42,14 +42,7 @@ namespace Time_Agotchi
             tempsChi = Donnees.GetPersos()[3].GetTemps();
             tempsAxel = Donnees.GetPersos()[4].GetTemps();
 
-            if (tempsTama.GetHeure() == 0 && tempsTama.GetMinute() == 0 && tempsTama.GetSeconde() == 0)
-                lbTempsTama.Text = "Mort(e)";
-            if (tempsGot.GetHeure() == 0 && tempsGot.GetMinute() == 0 && tempsGot.GetSeconde() == 0)
-                lbTempsGot.Text = "Mort(e)";
-            if (tempsChi.GetHeure() == 0 && tempsChi.GetMinute() == 0 && tempsChi.GetSeconde() == 0)
-                lbTempsChi.Text = "Mort(e)";
-            if (tempsAxel.GetHeure() == 0 && tempsAxel.GetMinute() == 0 && tempsAxel.GetSeconde() == 0)
-                lbTempsAxel.Text = "Mort(e)";
+            
 
             //temps Tama
 
@@ -123,6 +116,17 @@ namespace Time_Agotchi
             else
                 txtSeconde = tempsAxel.GetSeconde().ToString();
             lbTempsAxel.Text = txtHeure + ":" + txtMinute + ":" + txtSeconde;
+
+
+            if (tempsTama.GetHeure() == 0 && tempsTama.GetMinute() == 0 && tempsTama.GetSeconde() == 0)
+                lbTempsTama.Text = "Mort(e)";
+            if (tempsGot.GetHeure() == 0 && tempsGot.GetMinute() == 0 && tempsGot.GetSeconde() == 0)
+                lbTempsGot.Text = "Mort(e)";
+            if (tempsChi.GetHeure() == 0 && tempsChi.GetMinute() == 0 && tempsChi.GetSeconde() == 0)
+                lbTempsChi.Text = "Mort(e)";
+            if (tempsAxel.GetHeure() == 0 && tempsAxel.GetMinute() == 0 && tempsAxel.GetSeconde() == 0)
+                lbTempsAxel.Text = "Mort(e)";
+
 
 
 

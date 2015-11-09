@@ -18,8 +18,15 @@ namespace Time_Agotchi
 
         private void btValider_Click(object sender, EventArgs e)
         {
-            Donnees.SetNom(tbNom.Text); //enregistre le nom
-            this.Close(); //ferme le form
+            if (tbNom.Text == "")
+            {
+                MessageBox.Show("Vous devez entrer votre nom.");
+            }
+            else
+            {
+                Donnees.SetNom(tbNom.Text); //enregistre le nom
+                this.Close(); //ferme le form
+            }
         }
     }
 }

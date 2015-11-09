@@ -40,6 +40,9 @@ namespace Time_Agotchi
 
         private void btVolDuTemps_Click(object sender, EventArgs e)
         {
+
+            if (cBVolDuTemps.SelectedItem == null)
+                return;
             Random rnd = new Random();
             int chanceReussite;
             infoDuVol.Visible = true;
@@ -121,8 +124,19 @@ namespace Time_Agotchi
 
         private void VolDuTemps_Load(object sender, EventArgs e)
         {
+            cBVolDuTemps.Items.Add("Tama");
+            cBVolDuTemps.Items.Add("Got");
+            cBVolDuTemps.Items.Add("Chi");
 
-        }
+            if (cBVolDuTemps.Items.Count == 0)
+            {
+                lbTousMorts.Visible = true;
+                lbInfoVol.Visible = false;
+                cBVolDuTemps.Enabled = false;
+                btVolDuTemps.Enabled = false;
+            }
+
+            }
 
     }
 }
