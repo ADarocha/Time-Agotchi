@@ -37,6 +37,8 @@
             this.gbResume = new System.Windows.Forms.GroupBox();
             this.gbRegles = new System.Windows.Forms.GroupBox();
             this.lbRegles = new System.Windows.Forms.Label();
+            this.btReprendre = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pbIntro)).BeginInit();
             this.gbResume.SuspendLayout();
             this.gbRegles.SuspendLayout();
@@ -125,12 +127,28 @@
             this.lbRegles.TabIndex = 1;
             this.lbRegles.Text = resources.GetString("lbRegles.Text");
             // 
+            // btReprendre
+            // 
+            this.btReprendre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btReprendre.Location = new System.Drawing.Point(240, 626);
+            this.btReprendre.Name = "btReprendre";
+            this.btReprendre.Size = new System.Drawing.Size(75, 23);
+            this.btReprendre.TabIndex = 7;
+            this.btReprendre.Text = "button1";
+            this.btReprendre.UseVisualStyleBackColor = true;
+            this.btReprendre.Click += new System.EventHandler(this.btReprendre_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Introduction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(542, 661);
+            this.Controls.Add(this.btReprendre);
             this.Controls.Add(this.gbRegles);
             this.Controls.Add(this.gbResume);
             this.Controls.Add(this.btValider);
@@ -139,6 +157,7 @@
             this.Controls.Add(this.pbIntro);
             this.Name = "Introduction";
             this.Text = "Introduction";
+            this.Load += new System.EventHandler(this.Introduction_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbIntro)).EndInit();
             this.gbResume.ResumeLayout(false);
             this.gbResume.PerformLayout();
@@ -159,6 +178,8 @@
         private System.Windows.Forms.GroupBox gbResume;
         private System.Windows.Forms.GroupBox gbRegles;
         private System.Windows.Forms.Label lbRegles;
+        private System.Windows.Forms.Button btReprendre;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
 
     }
 }

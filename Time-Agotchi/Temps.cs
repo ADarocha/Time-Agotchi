@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 namespace Time_Agotchi
-{
+{   [Serializable]
     class Temps
     {
 

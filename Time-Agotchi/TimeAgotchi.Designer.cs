@@ -58,6 +58,8 @@
             this.btManger = new System.Windows.Forms.Button();
             this.pbPersonnage = new System.Windows.Forms.PictureBox();
             this.TimerAffichageManger = new System.Windows.Forms.Timer(this.components);
+            this.btSave = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1.SuspendLayout();
             this.gbStatus.SuspendLayout();
             this.gbActions.SuspendLayout();
@@ -80,20 +82,20 @@
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.seSuiciderToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // seSuiciderToolStripMenuItem
             // 
             this.seSuiciderToolStripMenuItem.Name = "seSuiciderToolStripMenuItem";
-            this.seSuiciderToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.seSuiciderToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.seSuiciderToolStripMenuItem.Text = "Se suicider";
             this.seSuiciderToolStripMenuItem.Click += new System.EventHandler(this.seSuiciderToolStripMenuItem_Click);
             // 
             // aProposToolStripMenuItem
             // 
             this.aProposToolStripMenuItem.Name = "aProposToolStripMenuItem";
-            this.aProposToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.aProposToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.aProposToolStripMenuItem.Text = "A propos";
             this.aProposToolStripMenuItem.Click += new System.EventHandler(this.aProposToolStripMenuItem_Click);
             // 
@@ -129,40 +131,40 @@
             // lbSoif
             // 
             this.lbSoif.AutoSize = true;
-            this.lbSoif.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoif.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoif.Location = new System.Drawing.Point(6, 89);
             this.lbSoif.Name = "lbSoif";
-            this.lbSoif.Size = new System.Drawing.Size(56, 24);
+            this.lbSoif.Size = new System.Drawing.Size(65, 23);
             this.lbSoif.TabIndex = 9;
             this.lbSoif.Text = "Soif : ";
             // 
             // lbFaim
             // 
             this.lbFaim.AutoSize = true;
-            this.lbFaim.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFaim.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFaim.Location = new System.Drawing.Point(6, 65);
             this.lbFaim.Name = "lbFaim";
-            this.lbFaim.Size = new System.Drawing.Size(62, 24);
+            this.lbFaim.Size = new System.Drawing.Size(67, 23);
             this.lbFaim.TabIndex = 8;
             this.lbFaim.Text = "Faim :";
             // 
             // lbAge
             // 
             this.lbAge.AutoSize = true;
-            this.lbAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAge.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAge.Location = new System.Drawing.Point(6, 40);
             this.lbAge.Name = "lbAge";
-            this.lbAge.Size = new System.Drawing.Size(55, 24);
+            this.lbAge.Size = new System.Drawing.Size(55, 23);
             this.lbAge.TabIndex = 7;
             this.lbAge.Text = "Age :";
             // 
             // lbNom
             // 
             this.lbNom.AutoSize = true;
-            this.lbNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNom.Font = new System.Drawing.Font("Quartz MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNom.Location = new System.Drawing.Point(6, 17);
             this.lbNom.Name = "lbNom";
-            this.lbNom.Size = new System.Drawing.Size(66, 24);
+            this.lbNom.Size = new System.Drawing.Size(68, 23);
             this.lbNom.TabIndex = 6;
             this.lbNom.Text = "Nom : ";
             // 
@@ -197,7 +199,7 @@
             // 
             // lbTempsRestant
             // 
-            this.lbTempsRestant.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTempsRestant.Font = new System.Drawing.Font("Quartz MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTempsRestant.ForeColor = System.Drawing.Color.SpringGreen;
             this.lbTempsRestant.Location = new System.Drawing.Point(564, 293);
             this.lbTempsRestant.Name = "lbTempsRestant";
@@ -212,7 +214,7 @@
             // 
             // btPersonnages
             // 
-            this.btPersonnages.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPersonnages.Font = new System.Drawing.Font("Quartz MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btPersonnages.ForeColor = System.Drawing.Color.SpringGreen;
             this.btPersonnages.Location = new System.Drawing.Point(852, 467);
             this.btPersonnages.Name = "btPersonnages";
@@ -265,7 +267,7 @@
             this.btPlacerTemps.BackColor = System.Drawing.Color.Black;
             this.btPlacerTemps.FlatAppearance.BorderSize = 0;
             this.btPlacerTemps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btPlacerTemps.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPlacerTemps.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btPlacerTemps.ForeColor = System.Drawing.Color.SpringGreen;
             this.btPlacerTemps.Location = new System.Drawing.Point(41, 360);
             this.btPlacerTemps.Name = "btPlacerTemps";
@@ -280,7 +282,7 @@
             this.btMachineASous.BackColor = System.Drawing.Color.Black;
             this.btMachineASous.FlatAppearance.BorderSize = 0;
             this.btMachineASous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMachineASous.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMachineASous.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMachineASous.ForeColor = System.Drawing.Color.SpringGreen;
             this.btMachineASous.Location = new System.Drawing.Point(29, 262);
             this.btMachineASous.Name = "btMachineASous";
@@ -295,7 +297,7 @@
             this.btJouerBrasFer.BackColor = System.Drawing.Color.Black;
             this.btJouerBrasFer.FlatAppearance.BorderSize = 0;
             this.btJouerBrasFer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btJouerBrasFer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btJouerBrasFer.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btJouerBrasFer.ForeColor = System.Drawing.Color.SpringGreen;
             this.btJouerBrasFer.Location = new System.Drawing.Point(179, 208);
             this.btJouerBrasFer.Name = "btJouerBrasFer";
@@ -310,7 +312,7 @@
             this.btVolerTemps.BackColor = System.Drawing.Color.Black;
             this.btVolerTemps.FlatAppearance.BorderSize = 0;
             this.btVolerTemps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btVolerTemps.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btVolerTemps.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btVolerTemps.ForeColor = System.Drawing.Color.SpringGreen;
             this.btVolerTemps.Location = new System.Drawing.Point(355, 174);
             this.btVolerTemps.Name = "btVolerTemps";
@@ -325,7 +327,7 @@
             this.btBoire.BackColor = System.Drawing.Color.Black;
             this.btBoire.FlatAppearance.BorderSize = 0;
             this.btBoire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btBoire.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBoire.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btBoire.ForeColor = System.Drawing.Color.SpringGreen;
             this.btBoire.Location = new System.Drawing.Point(110, 47);
             this.btBoire.Name = "btBoire";
@@ -340,7 +342,7 @@
             this.btManger.BackColor = System.Drawing.Color.Black;
             this.btManger.FlatAppearance.BorderSize = 0;
             this.btManger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btManger.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btManger.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btManger.ForeColor = System.Drawing.Color.SpringGreen;
             this.btManger.Location = new System.Drawing.Point(377, 40);
             this.btManger.Name = "btManger";
@@ -365,12 +367,24 @@
             // 
             this.TimerAffichageManger.Tick += new System.EventHandler(this.TimerAffichageManger_Tick);
             // 
+            // btSave
+            // 
+            this.btSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btSave.Location = new System.Drawing.Point(905, 293);
+            this.btSave.Name = "btSave";
+            this.btSave.Size = new System.Drawing.Size(75, 23);
+            this.btSave.TabIndex = 15;
+            this.btSave.Text = "button1";
+            this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
+            // 
             // Timeagotchi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1053, 598);
+            this.Controls.Add(this.btSave);
             this.Controls.Add(this.listeBoxInfosPersonnages);
             this.Controls.Add(this.btPersonnages);
             this.Controls.Add(this.lbTempsRestant);
@@ -423,6 +437,8 @@
         private System.Windows.Forms.ListBox listeBoxInfosPersonnages;
         private System.Windows.Forms.Timer timerAffichageGif;
         private System.Windows.Forms.Timer TimerAffichageManger;
+        private System.Windows.Forms.Button btSave;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 

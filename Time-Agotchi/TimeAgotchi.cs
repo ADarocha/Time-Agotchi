@@ -6,6 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 namespace Time_Agotchi
 {
@@ -48,17 +51,7 @@ namespace Time_Agotchi
         {
             //ouverture du form d'introduction
             Introduction intro = new Introduction();
-
-            intro.ShowDialog();
-
-
-            //Création des personnages
-
-            // création du joueur 
-            Temps tempsJoueur = new Temps(0, 10, 0);
-            joueur = new Personnage(Donnees.GetNom(), tempsJoueur);
-            Donnees.AjouterPerso(joueur);
-
+           
             Temps tempsTama = new Temps(0, 10, 0);
             tama = new Personnage("tama", tempsTama);
             Donnees.AjouterPerso(tama);
@@ -74,6 +67,19 @@ namespace Time_Agotchi
             Temps tempsAxel = new Temps(0, 10, 0);
             axel = new Personnage("axel", tempsAxel);
             Donnees.AjouterPerso(axel);
+
+            intro.ShowDialog();
+
+            Temps tempsJoueur = new Temps(0, 10, 0);
+            joueur = new Personnage(Donnees.GetNom(), tempsJoueur);
+            Donnees.AjouterPerso(joueur);
+
+
+
+            //Création des personnages
+
+            // création du joueur 
+           
 
             //references
             tempsPerso = Donnees.GetPersos()[0].GetTemps();
@@ -184,6 +190,10 @@ namespace Time_Agotchi
             {
                 //MessageBox.Show(Donnees.GetAdversaires().Count.ToString());
                 Personnage adversaire = (Personnage)listeBoxInfosPersonnages.SelectedItem;
+                if (adversaire.GetNom() == Donnees.GetPersos()[0].GetNom())
+                    MessageBox.Show("Prends un autre adversaire");
+                else
+                {
                     Donnees.GetAdversaires().Add(adversaire);
                     //MessageBox.Show(Donnees.GetAdversaires().Count.ToString()+" "+ Donnees.GetAdversaires()[0].GetNom());
                     timer.Stop();
@@ -194,6 +204,7 @@ namespace Time_Agotchi
                     Donnees.GetAdversaires().Clear();
                     //MessageBox.Show(Donnees.GetAdversaires().Count.ToString());
                     listeBoxInfosPersonnages.Visible = false;
+                }
                 
             }
             //Ouvre un nouveau Form avec un mini jeu où il faut spammer un bouton pour gagner
@@ -366,7 +377,7 @@ namespace Time_Agotchi
         {
             
             
-                rafraichirListeBox();
+                
             
         }
 
@@ -398,6 +409,26 @@ namespace Time_Agotchi
         {
             tama.GetTemps().SetMinute(0);
             tama.GetTemps().SetSeconde(2);
+        }
+
+        private void btSave_Click(object sender, EventArgs e)
+        {
+            String nomFichEnr;
+            saveFileDialog1.InitialDirectory = Environment.CurrentDirectory;
+            saveFileDialog1.Filter = "bin files (*.bin)|*.bin";
+            DialogResult dr = saveFileDialog1.ShowDialog();
+            if (dr == DialogResult.OK)
+            {  // un répertoire et un nom de fichier d'enregistrement a été choisi
+                nomFichEnr = saveFileDialog1.FileName;
+                Stream streamEcriture;
+                BinaryFormatter bformatter = new BinaryFormatter();
+                streamEcriture = File.Open(nomFichEnr, FileMode.OpenOrCreate);
+                bformatter.Serialize(streamEcriture, Donnees.GetPersos());
+                streamEcriture.Close();
+                MessageBox.Show("Sauvegarde réussie");
+
+            }
+
         }
 
       

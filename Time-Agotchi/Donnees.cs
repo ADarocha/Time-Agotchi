@@ -27,6 +27,10 @@ namespace Time_Agotchi
         {
             return listePersos;
         }
+        public static void SetPersonnages(List<Personnage> maliste)
+        {
+            listePersos = maliste;
+        }
 
         public static void AjouterPerso(Personnage perso)
         {
